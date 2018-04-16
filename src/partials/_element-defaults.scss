@@ -1,0 +1,28 @@
+body {
+  background-image: none;
+  background-color: $color-page-background;
+  color: black;
+  font-family: $font-stack;
+}
+
+blockquote {
+  background-color: #fde1c3;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  padding: 4px 8px 8px 8px;
+  -webkit-margin-start: 20px;
+}
+
+a:hover {
+  color: $color-logos-complement;
+}
+
+select,
+textarea,
+input,
+button {
+  background-color: #fef7f0;
+  border-radius: 5px !important;
+  font-family: $font-stack;
+}

@@ -1,0 +1,14 @@
+#CommonSidebarRight .CommonContentBoxHeader {
+  border-bottom: 1px solid #f9a64d;
+  margin: 8px;
+  padding: 0;
+}
+
+#CommonSidebarRight .CommonContentBox {
+  padding: 5px;
+}
+
+ul.CommonContentBoxList,
+ul.CommonSidebarList a {
+  color: $color-light-secondary-head;
+}

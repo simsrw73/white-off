@@ -1,0 +1,145 @@
+.CommonContentBoxHeader {
+  background-image: none;
+  color: #f9a64d;
+  padding: 0;
+  padding: 5px 5px 0 5px;
+}
+
+#CommonContent .CommonContentBoxHeader {
+  background-image: none;
+  color: #f9a64d;
+  padding: 10px 10px 0 10px;
+}
+
+.CommonTitle {
+  color: black;
+}
+
+h1.CommonTitle {
+  font-variant: small-caps;
+  font-size: 200%;
+  font-weight: 500;
+}
+
+.CommonContentBox {
+  background-color: $color-content-background;
+  border-radius: 10px;
+  padding-top: 5px;
+}
+
+.CommonContentBoxHeaderForm {
+  background-image: none;
+  margin-left: 5px;
+  margin-right: 5px;
+  border: 1px solid $color-logos-brand-header;
+  border-radius: 8px;
+  padding: 5px;
+  color: $color-logos-brand-header;
+}
+
+.CommonContentBoxHeaderForm a {
+  color: #f9a64d;
+}
+
+.CommonContentBoxHeaderForm a.ForumLinkUnread,
+.ForumLinkUnread:link,
+.ForumLinkUnread:visited {
+  color: #f9a64d;
+}
+
+.CommonDescription {
+  margin: 0;
+}
+
+.CommonContentBoxContent {
+  padding: 5px;
+}
+
+.CommonContentBoxContent table tr td a {
+  color: #f9a64d;
+}
+
+.CommonContentBoxContent .ForumPostButtons table tr td a {
+  color: $color-logos-complement;
+}
+
+.CommonListArea table tr td a {
+  color: #056cb6;
+}
+
+.CommonListArea {
+  padding: 2px 0;
+}
+
+.CommonListHeader {
+  color: black;
+  background-color: $color-logos-brand-header !important;
+  font-family: $font-stack;
+}
+
+.CommonDescription {
+  color: $color-logos-brand-header;
+}
+
+.CommonListRow {
+  background-color: $color-light-primary-background;
+}
+
+.CommonListRowAlt {
+  background-color: $color-light-primary-head;
+}
+
+.CommonListCell {
+  font-family: $font-stack;
+  padding: 10px;
+}
+
+.CommonContentBoxFooter {
+  padding: 10px;
+  border-top: none;
+  color: $color-logos-brand-header;
+}
+
+.ForumPostHeader {
+  background-color: $color-logos-brand-header;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+}
+
+.ForumPostHeader .CommonContentBoxFooter {
+  color: Black;
+}
+
+.CommonContentBoxFooter a:visited {
+  color: #f9a64d;
+}
+
+.CommonContentBoxFooter a:link {
+  color: #f9a64d;
+}
+
+// Comment Area
+.CommonCommentArea {
+  background-color: $color-light-primary-head;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+}
+
+.CommonCommentContent {
+  background-color: $color-light-primary-background !important;
+  border-left: 2px solid $color-logos-blue;
+  padding: 10px;
+}
+
+.CommonCommentAreaAlt {
+  background-color: $color-light-secondary-head;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: 10px;
+}
+
+.CommonCommentContentAlt {
+  background-color: $color-light-secondary-background !important;
+  border-left: 2px solid $color-logos-blue;
+  padding: 10px;
+}

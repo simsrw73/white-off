@@ -1,0 +1,26 @@
+#CommonHeader {
+  background-color: $color-logos-brand-header;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+#CommonNavigationShadow {
+  visibility: hidden;
+  display: inline;
+}
+
+// Search Bar
+div.CommonSearchContent {
+  height: 1.2em;
+  margin: 0;
+  padding: 0.3em;
+}
+
+.CommonSearchContent input,
+.CommonSearchContentSidebar input {
+  background-color: $color-logos-brand-header;
+}
+
+.CommonSearchContent input:focus,
+.CommonSearchContentSidebar input:focus {
+  outline: none;
+}

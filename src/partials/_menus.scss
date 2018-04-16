@@ -1,0 +1,12 @@
+.CommonContextMenuItem {
+  background-color: $color-light-secondary-background;
+  border: solid 1px $color-light-secondary-background;
+  padding: 8px;
+}
+
+.CommonContextMenuItemHover {
+  background-color: $color-light-secondary-head;
+  border: solid 1px #e1e1e1;
+  color: black;
+  padding: 8px;
+}

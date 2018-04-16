@@ -1,0 +1,31 @@
+{
+  "name": "white-off",
+  "version": "1.0.0",
+  "description": "Theme for Logos forums",
+  "main": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-task:scss-compile": "node-sass-chokidar --source-map true src/ -o dist/",
+    "build-task:autoprefixer": "postcss dist/*.css --use autoprefixer -d dist/",
+    "sass:build": "npm-run-all -p build-task:*",
+    "sass:watch": "chokidar 'src/**/*.scss' -c 'npm run sass:build'",
+    "dev": "npm-run-all -p sass:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simsrw73/white-off.git"
+  },
+  "author": "Randy W. Sims",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/simsrw73/white-off/issues"
+  },
+  "homepage": "https://github.com/simsrw73/white-off#readme",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "chokidar-cli": "^1.2.0",
+    "node-sass-chokidar": "^1.2.2",
+    "npm-run-all": "^4.1.2",
+    "postcss-cli": "^5.0.0"
+  }
+}

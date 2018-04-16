@@ -1,0 +1,34 @@
+
+/* colors
+    From Logos' homepage header: f4f4f4
+    20% darker: c3c3c3; // body
+    60% darker: 616161;
+
+    Logos Blue: 0663c7
+    90% lighter: e1effe => desaturated 30%: eaeff4
+    95% lighter: f0f7fe => desaturated 30%: f4f7f9
+
+    Logos Blue complement: c76a06
+    40% lighter: f9a64d
+    90% lighter: fef0e1 => desaturated 30%: f4efea
+    95% lighter: fef7f0 => desaturated 30%: f9f7f4
+*/
+
+// Colors
+$color-faithlife-green: #5fbc39;
+
+$color-logos-blue: #0663c7;
+$color-light-primary-head: mix(#fff, $color-logos-blue, $weight: 85%); // lighten($color-logos-blue, 40%);
+$color-light-primary-background: mix(#fff, $color-logos-blue, $weight: 95%); //lighten($color-logos-blue, 48%);
+
+$color-logos-complement: complement($color-logos-blue); /* #c76a06; */
+$color-light-secondary-head: mix(#fff, $color-logos-complement, $weight: 85%);
+$color-light-secondary-background: mix(#fff, $color-logos-complement, $weight: 95%);
+
+$color-logos-brand-header: #f4f4f4;
+$color-page-background: mix(#000, $color-logos-brand-header, $weight: 20); //darken($color-logos-brand-header, 20);
+$color-content-background: mix(#000, $color-logos-brand-header, $weight: 60); // darken($color-logos-brand-header, 60);
+
+
+// Wordpress font stack
+$font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
