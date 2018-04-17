@@ -44,10 +44,6 @@ h1.CommonTitle {
   .ForumLinkUnread:visited {
     color: $color-medium-secondary-text;
   }
-
-  .CommonDescription {
-    
-  }
 }
 
 .CommonContentBoxContent {
@@ -62,6 +58,12 @@ h1.CommonTitle {
   }
 
   li.CommonAvatarListItemArea {
+    background-color: desaturate($color-light-primary-background, 30);
+    color: #000;
+  }
+
+  li.CommonAvatarListItemArea.Alt {
+    background-color: desaturate($color-light-secondary-background, 30);
     color: #000;
   }
 }
@@ -104,12 +106,12 @@ ul.CommonContentBoxList {
   margin: 0;
 }
 
-.CommonListRow {
-  background-color: $color-light-primary-background;
+.CommonListRow td {
+  background-color: desaturate($color-light-primary-background, 30);
 }
 
-.CommonListRowAlt {
-  background-color: $color-light-primary-head;
+.CommonListRowAlt td {
+  background-color: desaturate($color-light-secondary-background, 30);
 }
 
 .CommonListCell {
