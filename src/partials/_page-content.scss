@@ -1,13 +1,13 @@
 .CommonContentBoxHeader {
   background-image: none;
-  color: #f9a64d;
+  color: $color-medium-secondary-text;
   padding: 0;
-  padding: 5px 5px 0 5px;
+  padding: 10px 10px 0 10px;
 }
 
 #CommonContent .CommonContentBoxHeader {
   background-image: none;
-  color: #f9a64d;
+  color: $color-medium-secondary-text;
   padding: 10px 10px 0 10px;
 }
 
@@ -24,49 +24,56 @@ h1.CommonTitle {
 .CommonContentBox {
   background-color: $color-content-background;
   border-radius: 10px;
-  padding-top: 5px;
+  padding: 5px;
 }
 
 .CommonContentBoxHeaderForm {
   background-image: none;
-  margin-left: 5px;
-  margin-right: 5px;
-  border: 1px solid $color-logos-brand-header;
+  margin: 10px 10px 0 10px;
+  border: 1px outset $color-logos-brand-header;
   border-radius: 8px;
   padding: 5px;
   color: $color-logos-brand-header;
 
   a {
-    color: #f9a64d;
+    color: $color-medium-secondary-text;
   }
 
   a.ForumLinkUnread,
   .ForumLinkUnread:link,
   .ForumLinkUnread:visited {
-    color: #f9a64d;
+    color: $color-medium-secondary-text;
   }
 
   .CommonDescription {
-    margin: 0;
+    
   }
 }
 
 .CommonContentBoxContent {
-  padding: 5px;
+  padding: 10px;
 
-  table tr td a {
-    color: #f9a64d;
+  table a {
+    color: $color-medium-secondary-text;
   }
 
-  .ForumPostButtons table tr td a {
+  .ForumPostButtons table a {
     color: $color-logos-complement;
+  }
+
+  li.CommonAvatarListItemArea {
+    color: #000;
   }
 }
 
 ul.CommonContentBoxList {
   li.Header {
-    color: $color-light-secondary-background;
+    color: #fff;
     font-weight: normal;
+  }
+
+  li.CommonActivity {
+    color: #fff;
   }
 
   li.CommonActivity.NewForumThread {
@@ -94,6 +101,7 @@ ul.CommonContentBoxList {
 
 .CommonDescription {
   color: $color-logos-brand-header;
+  margin: 0;
 }
 
 .CommonListRow {
@@ -109,17 +117,11 @@ ul.CommonContentBoxList {
   padding: 10px;
 }
 
-.CommonContentBoxFooter {
-  padding: 10px;
-  border-top: none;
-  color: $color-logos-brand-header;
-}
-
 .ForumPostHeader {
   background-color: $color-logos-brand-header;
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 10px;
+  margin: 10px 0;
 
   .CommonContentBoxFooter {
     color: Black;
@@ -127,12 +129,16 @@ ul.CommonContentBoxList {
 }
 
 .CommonContentBoxFooter {
+  padding: 0 10px 10px 10px;
+  border-top: none;
+  color: $color-logos-brand-header;
+
   a:link {
-    color: #f9a64d;
+    color: $color-medium-secondary-text;
   }
 
   a:visited {
-    color: #f9a64d;
+    color: $color-medium-secondary-text;
   }
 }
 
@@ -140,7 +146,7 @@ ul.CommonContentBoxList {
 .CommonCommentArea {
   background-color: $color-light-primary-head;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .CommonCommentContent {
@@ -152,7 +158,7 @@ ul.CommonContentBoxList {
 .CommonCommentAreaAlt {
   background-color: $color-light-secondary-head;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .CommonCommentContentAlt {

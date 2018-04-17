@@ -13,7 +13,7 @@
 }
 
 .CommonFormFieldName {
-  color: #f9a64d;
+  color: $color-medium-secondary-text;
 }
 
 div.CommonFormFieldName {
@@ -21,7 +21,7 @@ div.CommonFormFieldName {
 
   input {
     background-image: none;
-    background-color: #fab56a;
+    background-color: $color-medium-secondary-text;
     border: none;
     border-radius: 8px;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);

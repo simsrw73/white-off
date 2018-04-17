@@ -1,11 +1,11 @@
 .CommonTextButton {
-  color: #f9a64d;
+  color: $color-medium-secondary-text;
 }
 
 .ReplyButton,
 .MoreButton {
   background-image: none;
-  background-color: #fab56a;
+  background-color: $color-medium-secondary-text;
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   margin: 0 2px;
@@ -25,7 +25,7 @@
 
 .TabButton {
   background-image: none;
-  background-color: #fab56a;
+  background-color: $color-medium-secondary-text;
   border-radius: 8px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
   color: black;
