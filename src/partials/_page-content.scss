@@ -35,53 +35,55 @@ h1.CommonTitle {
   border-radius: 8px;
   padding: 5px;
   color: $color-logos-brand-header;
-}
 
-.CommonContentBoxHeaderForm a {
-  color: #f9a64d;
-}
+  a {
+    color: #f9a64d;
+  }
 
-.CommonContentBoxHeaderForm a.ForumLinkUnread,
-.ForumLinkUnread:link,
-.ForumLinkUnread:visited {
-  color: #f9a64d;
-}
+  a.ForumLinkUnread,
+  .ForumLinkUnread:link,
+  .ForumLinkUnread:visited {
+    color: #f9a64d;
+  }
 
-.CommonDescription {
-  margin: 0;
+  .CommonDescription {
+    margin: 0;
+  }
 }
 
 .CommonContentBoxContent {
   padding: 5px;
+
+  table tr td a {
+    color: #f9a64d;
+  }
+
+  .ForumPostButtons table tr td a {
+    color: $color-logos-complement;
+  }
 }
 
-.CommonContentBoxContent table tr td a {
-  color: #f9a64d;
-}
+ul.CommonContentBoxList {
+  li.Header {
+    color: $color-light-secondary-background;
+    font-weight: normal;
+  }
 
-.CommonContentBoxContent .ForumPostButtons table tr td a {
-  color: $color-logos-complement;
-}
+  li.CommonActivity.NewForumThread {
+    background-image: $icon-reply;
+  }
 
-UL.CommonContentBoxList LI.Header {
-  color: $color-light-secondary-background;
-  font-weight: normal;
-}
-
-UL.CommonContentBoxList LI.CommonActivity.NewForumThread {
-  background-image: $icon-reply;
-}
-
-UL.CommonContentBoxList LI.CommonActivity.NewForumPost {
-  background-image: $icon-envelope;
-}
-
-.CommonListArea table tr td a {
-  color: #056cb6;
+  li.CommonActivity.NewForumPost {
+    background-image: $icon-envelope;
+  }
 }
 
 .CommonListArea {
   padding: 2px 0;
+
+  table tr td a {
+    color: #056cb6;
+  }
 }
 
 .CommonListHeader {
@@ -118,18 +120,20 @@ UL.CommonContentBoxList LI.CommonActivity.NewForumPost {
   border-radius: 8px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   margin: 10px;
+
+  .CommonContentBoxFooter {
+    color: Black;
+  }
 }
 
-.ForumPostHeader .CommonContentBoxFooter {
-  color: Black;
-}
+.CommonContentBoxFooter {
+  a:link {
+    color: #f9a64d;
+  }
 
-.CommonContentBoxFooter a:visited {
-  color: #f9a64d;
-}
-
-.CommonContentBoxFooter a:link {
-  color: #f9a64d;
+  a:visited {
+    color: #f9a64d;
+  }
 }
 
 // Comment Area

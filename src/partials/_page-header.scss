@@ -18,9 +18,8 @@ div.CommonSearchContent {
 .CommonSearchContent input,
 .CommonSearchContentSidebar input {
   background-color: $color-logos-brand-header;
-}
 
-.CommonSearchContent input:focus,
-.CommonSearchContentSidebar input:focus {
-  outline: none;
+  &:focus {
+    outline: none;
+  }
 }

@@ -2,10 +2,10 @@
   transition: all 0.4s ease;
   overflow: visible;
   z-index: 1;
-}
 
-.ForumPostUserAvatar img:hover {
-  position: absolute;
-  transform: scale(2);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  &:hover {
+    position: absolute;
+    transform: scale(2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);  
+  }
 }
