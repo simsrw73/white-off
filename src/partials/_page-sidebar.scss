@@ -1,3 +1,19 @@
+// Left Sidebar
+#CommonSidebarLeft .CommonContentBoxHeader {
+  border-bottom: 1px solid #f9a64d;
+  margin: 8px;
+  padding: 0;
+}
+
+#CommonSidebarLeft .CommonContentBox {
+  padding: 5px;
+}
+
+#CommonSidebarLeft ul.CommonContentBoxList a {
+  color: $color-light-secondary-head;
+}
+
+// Right Sidebar
 #CommonSidebarRight .CommonContentBoxHeader {
   border-bottom: 1px solid #f9a64d;
   margin: 8px;
@@ -8,6 +24,11 @@
   padding: 5px;
 }
 
+#CommonSidebarRight ul.CommonContentBoxList a {
+  color: $color-light-secondary-head;
+}
+
+// Sidebar common
 ul.CommonContentBoxList,
 ul.CommonSidebarList a {
   color: $color-light-secondary-head;

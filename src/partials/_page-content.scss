@@ -63,6 +63,19 @@ h1.CommonTitle {
   color: $color-logos-complement;
 }
 
+UL.CommonContentBoxList LI.Header {
+  color: $color-light-secondary-background;
+  font-weight: normal;
+}
+
+UL.CommonContentBoxList LI.CommonActivity.NewForumThread {
+  background-image: $icon-reply;
+}
+
+UL.CommonContentBoxList LI.CommonActivity.NewForumPost {
+  background-image: $icon-envelope;
+}
+
 .CommonListArea table tr td a {
   color: #056cb6;
 }
