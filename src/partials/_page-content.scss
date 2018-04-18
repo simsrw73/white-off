@@ -88,14 +88,25 @@ ul.CommonContentBoxList {
 
   li.CommonActivity {
     color: white;
+
+    // Hide the Delete Activity image
+    table a img {
+      display: none;
+    }
+
+    // Trick in a new custom replacement
+    table tr td:last-child a {  
+      background: transparent $icon-trash center right no-repeat;
+      padding-right: 16px;
+    }
   }
 
   li.CommonActivity.NewForumThread {
-    background-image: $icon-reply;
+    background-image: $icon-message;
   }
 
   li.CommonActivity.NewForumPost {
-    background-image: $icon-envelope;
+    background-image: $icon-message-reply;
   }
 }
 
