@@ -1,0 +1,29 @@
+// Error page appears to be the only place where this id is used.
+body div#content {
+  background-color: $color-light-secondary-background;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  h2 {
+      color: $color-logos-complement;
+  }
+}
+
+// Inline messages
+.CommonMessageSuccess {
+	color: black;
+	border: solid 1px black;
+	background-color: $color-warning-yellow;
+}
+
+.CommonMessageWarning {
+	color: black;
+	border: solid 1px black;
+	background-color: $color-warning-yellow;
+}
+
+.CommonMessageError {
+	color: black;
+	border: solid 1px black;
+	background-color: $color-error-red;
+}

@@ -95,7 +95,7 @@ ul.CommonContentBoxList {
     }
 
     // Trick in a new custom replacement
-    table tr td + td a {  
+    table tr td + td a {
       background: transparent $icon-trash center right no-repeat;
       padding-right: 16px;
     }
@@ -107,6 +107,32 @@ ul.CommonContentBoxList {
 
   li.CommonActivity.NewForumPost {
     background-image: $icon-message-reply;
+  }
+}
+
+// I believe this section only occurs on profile edit page; otherwise, breakage
+.CommonGroupedContentArea {
+  background-color: $color-light-secondary-background;
+  border-radius: 10px;
+  padding: 10px;
+
+  h3.CommonSubTitle {
+    color: $color-logos-complement;
+    margin-top: 5px;
+  }
+
+  .CommonFormFieldDescription {
+    color: black;
+  }
+
+  .CommonFormField {
+    label {
+      color: black;
+
+      input {
+        margin: 0 2px 0 10px;
+      }
+    }
   }
 }
 
