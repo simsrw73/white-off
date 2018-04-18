@@ -18,17 +18,17 @@
 $color-faithlife-green: #5fbc39;
 
 $color-logos-blue: #0663c7; // #056CB6
-$color-light-primary-head: saturate(mix(#fff, $color-logos-blue, $weight: 85%), 10);
-$color-light-primary-background: mix(#fff, $color-logos-blue, $weight: 95%);
+$color-light-primary-head: saturate(mix(white, $color-logos-blue, $weight: 85%), 10);
+$color-light-primary-background: mix(white, $color-logos-blue, $weight: 95%);
 
 $color-logos-complement: complement($color-logos-blue);
-$color-medium-secondary-text: saturate(mix(#fff, $color-logos-complement, $weight: 35%), 10);
-$color-light-secondary-head: saturate(mix(#fff, $color-logos-complement, $weight: 85%), 10);
-$color-light-secondary-background: mix(#fff, $color-logos-complement, $weight: 95%);
+$color-medium-secondary-text: saturate(mix(white, $color-logos-complement, $weight: 35%), 10);
+$color-light-secondary-head: saturate(mix(white, $color-logos-complement, $weight: 85%), 10);
+$color-light-secondary-background: mix(white, $color-logos-complement, $weight: 95%);
 
 $color-logos-brand-header: #f4f4f4;
-$color-page-background: mix(#000, $color-logos-brand-header, $weight: 20); //darken($color-logos-brand-header, 20);
-$color-content-background: mix(#000, $color-logos-brand-header, $weight: 60); // darken($color-logos-brand-header, 60);
+$color-page-background: mix(black, $color-logos-brand-header, $weight: 20); //darken($color-logos-brand-header, 20);
+$color-content-background: mix(black, $color-logos-brand-header, $weight: 60); // darken($color-logos-brand-header, 60);
 
 
 // Wordpress font stack

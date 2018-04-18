@@ -5,6 +5,10 @@
   padding: 10px 10px 0 10px;
 }
 
+h4.CommonContentBoxHeader + .CommonContentBoxContent {
+  color: white;
+}
+
 #CommonContent .CommonContentBoxHeader {
   background-image: none;
   color: $color-medium-secondary-text;
@@ -59,23 +63,31 @@ h1.CommonTitle {
 
   li.CommonAvatarListItemArea {
     background-color: desaturate($color-light-primary-background, 30);
-    color: #000;
+    color: black;
   }
 
   li.CommonAvatarListItemArea.Alt {
     background-color: desaturate($color-light-secondary-background, 30);
-    color: #000;
+    color: black;
+  }
+
+  div.CommonPane {
+    background-color: $color-light-secondary-background;
+
+    .CommonFormField label {
+      color: black;
+    }
   }
 }
 
 ul.CommonContentBoxList {
   li.Header {
-    color: #fff;
+    color: white;
     font-weight: normal;
   }
 
   li.CommonActivity {
-    color: #fff;
+    color: white;
   }
 
   li.CommonActivity.NewForumThread {
@@ -111,7 +123,7 @@ ul.CommonContentBoxList {
 }
 
 .CommonListRowAlt td {
-  background-color: desaturate($color-light-secondary-background, 30);
+  background-color: grayscale($color-light-primary-background);
 }
 
 .CommonListCell {
