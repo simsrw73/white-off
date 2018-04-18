@@ -95,7 +95,7 @@ ul.CommonContentBoxList {
     }
 
     // Trick in a new custom replacement
-    table tr td:last-child a {  
+    table tr td + td a {  
       background: transparent $icon-trash center right no-repeat;
       padding-right: 16px;
     }
