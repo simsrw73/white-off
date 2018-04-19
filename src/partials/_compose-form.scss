@@ -47,10 +47,6 @@ div.CommonFormFieldName input {
   }
 }
 
-div.CommonPaneTabSet a:hover {
-  background-color: $color-light-secondary-background;
-  color:$color-light-secondary-background;
-}
 
 // HTML Editor
 
@@ -77,6 +73,8 @@ body#image {
     background-color: $color-page-background;
   }
 
+ 
+
   #insert,
   #cancel,
   .mceActionPanel input {
@@ -86,4 +84,10 @@ body#image {
     border-radius: 8px;
     color: black;
   }
+}
+
+
+div#ctl00_bcr_MediaTabs_TabSet a:hover {
+  background-color: $color-light-secondary-background;
+  color: black;
 }
