@@ -58,7 +58,7 @@ h1.CommonTitle {
   }
 
   .ForumPostButtons table a {
-    color: $color-logos-complement;
+    color: $color-secondary;
   }
 
   li.CommonAvatarListItemArea {
@@ -117,7 +117,7 @@ ul.CommonContentBoxList {
   padding: 10px;
 
   h3.CommonSubTitle {
-    color: $color-logos-complement;
+    color: $color-secondary;
     margin-top: 5px;
   }
 
@@ -202,7 +202,7 @@ ul.CommonContentBoxList {
 
 .CommonCommentContent {
   background-color: $color-light-primary-background !important;
-  border-left: 2px solid $color-logos-blue;
+  border-left: 2px solid $color-primary;
   padding: 10px;
 }
 
@@ -214,6 +214,6 @@ ul.CommonContentBoxList {
 
 .CommonCommentContentAlt {
   background-color: $color-light-secondary-background !important;
-  border-left: 2px solid $color-logos-blue;
+  border-left: 2px solid $color-primary;
   padding: 10px;
 }

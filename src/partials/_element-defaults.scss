@@ -16,11 +16,11 @@ blockquote {
 
 
 a {
-  color: $color-logos-blue;
+  color: $color-primary;
   font-weight: 500;
 
   &:hover {
-    color: $color-logos-complement;
+    color: $color-secondary;
   }
 }
 
