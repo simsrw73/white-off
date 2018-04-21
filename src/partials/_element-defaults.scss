@@ -17,14 +17,10 @@ blockquote {
 a {
   font-weight: 500;
 
-  &:visited {
-    color: $color-primary;
-    text-decoration: none;
-  }
-
+  &:visited,
   &:link,
   &:active {
-    color: $color-primary;
+    color: $color-secondary;
     text-decoration: none;
   }
 
@@ -47,6 +43,34 @@ a {
 #subHeader a {
   color: $color-header-footer-link;
   font-weight: normal;
+}
+
+#navInfo .current a:link,
+#navSites .current a:visited,
+#navSites .current a {
+  color: $color-secondary;
+}
+
+#navInfo a:hover,
+#navSites a:hover,
+#subHeader a:hover {
+  color: $color-secondary;
+}
+
+#CommonHeaderUserArea a {
+}
+
+#CommonHeaderUserWelcome .sub a {
+  color: $color-header-footer-link;
+}
+
+#CommonHeaderUserWelcome .sub a:hover {
+  color: $color-header-footer-link;
+}
+
+.CommonContentBoxHeaderForm a {
+  color: $color-medium-secondary-text;
+
 }
 
 a.ForumLinkUnread,
@@ -78,4 +102,11 @@ button {
   background-color: $color-light-secondary-background;
   border-radius: 5px !important;
   font-family: $font-stack;
+}
+
+button:hover,
+[type='button']:hover,
+[type='reset']:hover,
+[type='submit']:hover {
+  cursor: pointer;
 }
