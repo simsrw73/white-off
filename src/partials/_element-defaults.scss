@@ -17,12 +17,13 @@ blockquote {
 a {
   font-weight: 500;
 
-  &:VISITED {
+  &:visited {
     color: $color-primary;
     text-decoration: none;
-  } 
+  }
 
-  &:LINK, &:ACTIVE {
+  &:link,
+  &:active {
     color: $color-primary;
     text-decoration: none;
   }
@@ -31,6 +32,43 @@ a {
     color: $color-secondary;
     text-decoration: underline;
   }
+}
+
+.CommonBreadCrumbArea a {
+  color: $color-header-footer-link;
+}
+
+#CommonFooter a {
+  color: $color-header-footer-link;
+}
+
+#navInfo a,
+#navSites a,
+#subHeader a {
+  color: $color-header-footer-link;
+  font-weight: normal;
+}
+
+a.ForumLinkUnread,
+.ForumLinkUnread:link,
+.ForumLinkUnread:visited {
+  color: $color-dark-link;
+}
+
+a.ForumNameUnRead,
+.ForumNameUnRead:link,
+.ForumNameUnRead:visited {
+  color: $color-dark-link;
+  font-weight: bold;
+}
+a.ForumGroupNameReadText,
+a.ForumGroupNameUnReadText,
+.ForumGroupNameReadText:link,
+.ForumGroupNameUnReadText:link,
+.ForumGroupNameReadText:visited,
+.ForumGroupNameUnReadText:visited {
+  font-weight: bold;
+  color: $color-dark-link;
 }
 
 select,
