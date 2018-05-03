@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/simsrw73/white-off#readme",
   "devDependencies": {
-    "autoprefixer": "^8.2.0",
+    "autoprefixer": "^8.4.1",
     "chokidar-cli": "^1.2.0",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
