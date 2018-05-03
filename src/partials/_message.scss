@@ -5,25 +5,25 @@ body div#content {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   h2 {
-    color: $color-secondary;
+      color: $color-secondary;
   }
 }
 
 // Inline messages
 .CommonMessageSuccess {
-  color: black;
-  border: solid 1px black;
-  background-color: $color-warning-yellow;
+	color: black;
+	border: solid 1px black;
+	background-color: $color-warning-yellow;
 }
 
 .CommonMessageWarning {
-  color: black;
-  border: solid 1px black;
-  background-color: $color-warning-yellow;
+	color: black;
+	border: solid 1px black;
+	background-color: $color-warning-yellow;
 }
 
 .CommonMessageError {
-  color: black;
-  border: solid 1px black;
-  background-color: $color-error-red;
+	color: black;
+	border: solid 1px black;
+	background-color: $color-error-red;
 }

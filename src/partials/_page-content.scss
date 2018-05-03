@@ -38,6 +38,16 @@ h1.CommonTitle {
   border-radius: 8px;
   padding: 5px;
   color: $color-logos-brand-header;
+
+  a {
+    color: $color-medium-secondary-text;
+  }
+
+  a.ForumLinkUnread,
+  .ForumLinkUnread:link,
+  .ForumLinkUnread:visited {
+    color: $color-medium-secondary-text;
+  }
 }
 
 .CommonContentBoxContent {
