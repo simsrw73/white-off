@@ -2,11 +2,16 @@
   "name": "white-off",
   "version": "1.0.0",
   "description": "Theme for Logos forums",
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
   "main": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-task:scss-compile": "node-sass-chokidar --source-map true src/ -o dist/",
-    "build-task:autoprefixer": "postcss dist/*.css --use autoprefixer -d dist/",
+    "build-task:autoprefixer": "postcss dist/*.css --use autoprefixer --replace",
     "sass:build": "npm-run-all -p build-task:*",
     "sass:watch": "chokidar 'src/**/*.scss' -c 'npm run sass:build'",
     "dev": "npm-run-all -p sass:*"
@@ -22,7 +27,7 @@
   },
   "homepage": "https://github.com/simsrw73/white-off#readme",
   "devDependencies": {
-    "autoprefixer": "^8.4.1",
+    "autoprefixer": "^8.5.0",
     "chokidar-cli": "^1.2.0",
     "node-sass-chokidar": "^1.2.2",
     "npm-run-all": "^4.1.2",
