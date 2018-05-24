@@ -3,6 +3,44 @@
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
 }
 
+#CommonHeaderTitleArea {
+  width: 970px;
+
+  tr {
+    vertical-align: middle;
+
+    td:first-child {
+      width: 300px;
+    }
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  a:first-child {
+    display: inline-block;
+    background-image: url(https://styles2.faithlifecdn.com/Content/Images/faithlife-logo.svg);
+    background-size: cover;
+    width: 180px;
+    height: 52px;
+
+    &::after {
+      content: "Commmunity";
+      color: #666666;
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 44px;
+      font-weight: 400;
+      position: relative;
+      left: 190px;
+    }
+    
+    img {
+      display: none;
+    }
+  }
+}
+
 #CommonNavigationShadow {
   visibility: hidden;
   display: inline;
