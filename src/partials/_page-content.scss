@@ -217,3 +217,9 @@ ul.CommonContentBoxList {
   border-left: 2px solid $color-primary;
   padding: 10px;
 }
+
+// XXX: This selector feels naughty and dangerously non-specific.
+//      Fixes the mis-colored empty form on the favorites page.
+h4.CommonAvatarListItemName ~ .CommonFormArea {
+  display: none;
+}
