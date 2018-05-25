@@ -38,6 +38,8 @@ $color-error-red: #d66;
 // Wordpress font stack
 $font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 // Icons: Placeholders from https://material.io/icons/
 $icon-message: url(https://image.ibb.co/gR1qp7/ic_mail_e59e53_18px.png);
 $icon-message-reply: url(https://image.ibb.co/eYtLp7/ic_reply_e59e53_18px.png);
