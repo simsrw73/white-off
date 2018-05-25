@@ -91,3 +91,15 @@ div#ctl00_bcr_MediaTabs_TabSet a:hover {
   background-color: $color-light-secondary-background;
   color: black;
 }
+
+
+/* TODO: Fix Report Abuse form
+// Report Abuse
+a.CommonPaneTabSelected[href="#"] {
+  display: none !important;
+}
+
+div#ctl00_ctl00_bcr_bcr_PostForm_ctl05_EditorTabs.CommonPane {
+  background-color: $color-content-background;
+}
+*/
