@@ -13,6 +13,7 @@ h4.CommonContentBoxHeader + .CommonContentBoxContent {
   background-image: none;
   color: $color-medium-secondary-text;
   padding: 10px 10px 0 10px;
+  text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 .CommonTitle {
@@ -36,6 +37,7 @@ h1.CommonTitle {
   margin: 10px 10px 0 10px;
   border: 1px outset $color-logos-brand-header;
   border-radius: 8px;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
   padding: 5px;
   color: $color-logos-brand-header;
 
@@ -138,6 +140,7 @@ ul.CommonContentBoxList {
 
 .CommonListArea {
   padding: 2px 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   table tr td a {
     color: #056cb6;
