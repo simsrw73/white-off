@@ -45,6 +45,79 @@
   }
 }
 
+// Header Navigation links
+
+#navInfo li,
+#navSites li {
+  margin: 0 0.1em;
+  padding: 0;
+}
+
+#navInfo li.current,
+#navSites li.current {
+  color: $color-content-background;
+  text-decoration: none;
+}
+
+#navInfo a,
+#navSites a,
+#subHeader a {
+  padding: 0.3em 0.7em;
+  border-radius: 5px;
+  color: $color-primary;
+}
+
+#navInfo .current a:link,
+#navSites .current a:visited,
+#navSites .current a {
+  color: $color-content-background;
+  text-decoration: none;
+}
+
+#navInfo a:hover,
+#navSites a:hover,
+#subHeader a:hover {
+  color: $color-primary;
+  background-color: $color-light-primary-head;
+}
+
+#navInfo .current a:hover,
+#navSites .current a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#CommonHeaderUserArea a {
+  padding: 0.3em 0.7em;
+  border-radius: 5px;
+  color: $color-primary;
+  text-decoration: none;
+
+  &:link,
+  &:visited {
+    color: $color-content-background;
+  }
+
+  &:hover {
+    text-decoration: underline;
+    background-color: transparent;
+  }
+}
+
+#CommonHeaderUserWelcome .sub a {
+  padding: 0.3em 0.7em;
+  border-radius: 5px;
+  color: $color-primary;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+    color: $color-primary;
+    background-color: $color-light-primary-head;
+  }
+}
+
+// Hide header shadow image
 #CommonNavigationShadow {
   visibility: hidden;
   display: inline;
