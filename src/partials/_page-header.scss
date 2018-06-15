@@ -88,32 +88,45 @@
 }
 
 #CommonHeaderUserArea a {
-  padding: 0.3em 0.7em;
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: .1em 1em;
+
+  // padding: 0.3em 0.7em;
   border-radius: 5px;
   color: $color-primary;
   text-decoration: none;
 
   &:link,
   &:visited {
-    color: $color-content-background;
+    color: $color-primary;
   }
 
   &:hover {
-    text-decoration: underline;
-    background-color: transparent;
+    text-decoration: none;
+    background-color: $color-light-primary-head;
   }
+}
+
+#CommonHeaderUserWelcome .sub:not(:last-child) {
+  color: transparent;
 }
 
 #CommonHeaderUserWelcome .sub a {
   padding: 0.3em 0.7em;
-  border-radius: 5px;
+  border: none;
   color: $color-primary;
+  font-weight: normal;
+  letter-spacing: 0;
   text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
-    color: $color-primary;
     background-color: $color-light-primary-head;
+    color: $color-primary;
+    text-decoration: underline;
+    border-radius: 5px;
   }
 }
 
