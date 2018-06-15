@@ -18,34 +18,17 @@ $color-logos-blue: #0663c7;
 $color-logos-complement: complement($color-logos-blue);
 
 $color-primary: $color-logos-blue;
-$color-light-primary-head: saturate(
-  mix(white, $color-primary, $weight: 85%),
-  10
-);
+$color-light-primary-head: saturate( mix(white, $color-primary, $weight: 85%), 10 );
 $color-light-primary-background: mix(white, $color-primary, $weight: 95%);
 
 $color-secondary: $color-logos-complement;
-$color-medium-secondary-text: saturate(
-  mix(white, $color-secondary, $weight: 35%),
-  10
-);
-$color-light-secondary-head: saturate(
-  mix(white, $color-secondary, $weight: 85%),
-  10
-);
+$color-medium-secondary-text: saturate( mix(white, $color-secondary, $weight: 35%), 10 );
+$color-light-secondary-head: saturate( mix(white, $color-secondary, $weight: 85%), 10 );
 $color-light-secondary-background: mix(white, $color-secondary, $weight: 95%);
 
 $color-logos-brand-header: #f4f4f4;
-$color-page-background: mix(
-  black,
-  $color-logos-brand-header,
-  $weight: 20
-); //darken($color-logos-brand-header, 20);
-$color-content-background: mix(
-  black,
-  $color-logos-brand-header,
-  $weight: 60
-); // darken($color-logos-brand-header, 60);
+$color-page-background: mix( black, $color-logos-brand-header, $weight: 20); //darken($color-logos-brand-header, 20);
+$color-content-background: mix( black, $color-logos-brand-header, $weight: 60); // darken($color-logos-brand-header, 60);
 
 $color-warning-yellow: #ffebb4;
 $color-error-red: #d66;
@@ -89,8 +72,3 @@ $font-stack: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
 }
-
-// Icons: Placeholders from https://material.io/icons/
-$icon-message: url(https://image.ibb.co/gR1qp7/ic_mail_e59e53_18px.png);
-$icon-message-reply: url(https://image.ibb.co/eYtLp7/ic_reply_e59e53_18px.png);
-$icon-trash: url(https://image.ibb.co/mpNkNS/ic_delete_e59e53_18px.png);
