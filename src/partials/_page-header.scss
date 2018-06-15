@@ -125,6 +125,22 @@
   border-radius: 5px;
 }
 
+#CommonHeaderUserWelcome .sub a[href*='EditProfile.aspx']::before {
+  font-family: 'Material Icons';
+  font-size: larger;
+  font-weight: 600;
+  content: 'edit';
+  margin-right: .3em;
+}
+
+#CommonHeaderUserWelcome .sub a[href$='logout.aspx']::before {
+  font-family: 'Material Icons';
+  font-size: larger;
+  font-weight: 600;
+  content: 'power_settings_new';
+  margin-right: .3em;
+}
+
 // Hide header shadow image
 #CommonNavigationShadow {
   visibility: hidden;
