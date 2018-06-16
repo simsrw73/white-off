@@ -1,16 +1,3 @@
-// Initial colors used in design derrived from http://pinetools.com; replaced by sass functions below
-// From Logos' homepage header: f4f4f4
-// 20% darker: c3c3c3; // body
-// 60% darker: 616161;
-
-// Logos Blue: 0663c7
-// 90% lighter: e1effe => desaturated 30%: eaeff4
-// 95% lighter: f0f7fe => desaturated 30%: f4f7f9
-
-// Logos Blue complement: c76a06
-// 40% lighter: f9a64d
-// 90% lighter: fef0e1 => desaturated 30%: f4efea
-// 95% lighter: fef7f0 => desaturated 30%: f9f7f4
 
 // Colors
 $color-faithlife-green: #5fbc39;
@@ -27,8 +14,8 @@ $color-light-secondary-head: saturate( mix(white, $color-secondary, $weight: 85%
 $color-light-secondary-background: mix(white, $color-secondary, $weight: 95%);
 
 $color-logos-brand-header: #f4f4f4;
-$color-page-background: mix( black, $color-logos-brand-header, $weight: 20); //darken($color-logos-brand-header, 20);
-$color-content-background: mix( black, $color-logos-brand-header, $weight: 60); // darken($color-logos-brand-header, 60);
+$color-page-background: mix(black, $color-logos-brand-header, $weight: 20); // darken($color-logos-brand-header, 20);
+$color-content-background: mix(black, $color-logos-brand-header, $weight: 60); // darken($color-logos-brand-header, 60);
 
 $color-warning-yellow: #ffebb4;
 $color-error-red: #d66;

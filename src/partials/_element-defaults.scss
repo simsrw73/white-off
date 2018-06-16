@@ -10,15 +10,22 @@ blockquote {
   border: none;
   border-radius: 5px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
-  padding: 4px 8px 8px 8px;
+  margin: 1em 2em 1em 1em;
+  padding: .5em 1em 1em 1em;
 }
 
 a {
-  color: $color-primary;
-  font-weight: 500;
+  &:link,
+  &:active,
+  &:visited {
+    color: $color-primary;
+    text-decoration: none;
+    font-weight: 500;
+  }
 
   &:hover {
     color: $color-secondary;
+    text-decoration: underline;
   }
 }
 
