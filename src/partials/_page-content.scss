@@ -98,9 +98,8 @@ ul.CommonContentBoxList {
 
     // Trick in a new custom replacement
     table tr td + td a::after {
-      font-family: 'Material Icons';
+      @include material-icons;
       font-size: large;
-      font-weight: 600;
       color: $color-medium-secondary-text;
       content: 'delete';
 
@@ -117,9 +116,8 @@ ul.CommonContentBoxList {
     background-image: none;
 
     & td:first-child::before {
-      font-family: 'Material Icons';
+      @include material-icons;
       font-size: large;
-      font-weight: 600;
       color: $color-medium-secondary-text;
       content: 'local_post_office';
       margin-right: .5em;
@@ -131,9 +129,8 @@ ul.CommonContentBoxList {
     background-image: none;
 
     & td:first-child::before {
-      font-family: 'Material Icons';
+      @include material-icons;
       font-size: large;
-      font-weight: 600;
       color: $color-medium-secondary-text;
       content: 'reply';
       margin-right: .5em;

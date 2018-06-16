@@ -83,7 +83,7 @@
 }
 
 #CommonHeaderUserWelcome .sub a[href*="EditProfile.aspx"]::before {
-  font-family: "Material Icons";
+  @include material-icons;
   font-size: larger;
   font-weight: 600;
   content: "edit";
@@ -91,7 +91,7 @@
 }
 
 #CommonHeaderUserWelcome .sub a[href$="logout.aspx"]::before {
-  font-family: "Material Icons";
+  @include material-icons;
   font-size: larger;
   font-weight: 600;
   content: "power_settings_new";
