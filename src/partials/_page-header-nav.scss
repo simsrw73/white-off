@@ -1,0 +1,99 @@
+// Header Navigation links
+
+#navSites {
+  top: 5px;
+}
+
+#navInfo li,
+#navSites li {
+  margin: 0 0.1em;
+  padding: 0;
+}
+
+#navInfo li.current,
+#navSites li.current {
+  color: $color-content-background;
+  text-decoration: none;
+}
+
+#navInfo a,
+#navSites a,
+#subHeader a {
+  padding: 0.3em 0.7em;
+  border-radius: 5px;
+  color: $color-primary;
+  text-decoration: none;
+}
+
+#navInfo .current a:link,
+#navSites .current a:visited,
+#navSites .current a {
+  color: $color-content-background;
+  text-decoration: none;
+}
+
+#navInfo a:hover,
+#navSites a:hover,
+#subHeader a:hover {
+  color: $color-primary;
+  background-color: $color-light-primary-head;
+}
+
+#navInfo .current a:hover,
+#navSites .current a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+#CommonHeaderUserArea a:link,
+#CommonHeaderUserArea a:visited {
+  border: 1px solid $color-primary;
+  color: $color-primary;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 0.1em 1em;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+#CommonHeaderUserArea a:hover {
+  text-decoration: none;
+  background-color: $color-light-primary-head;
+}
+
+#CommonHeaderUserWelcome .sub:not(:last-child) {
+  color: transparent;
+}
+
+#CommonHeaderUserWelcome .sub a:link,
+#CommonHeaderUserWelcome .sub a:visited {
+  padding: 0.3em 0.7em;
+  border: none;
+  color: $color-primary;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-decoration: none;
+}
+
+#CommonHeaderUserWelcome .sub a:hover {
+  background-color: $color-light-primary-head;
+  color: $color-primary;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+#CommonHeaderUserWelcome .sub a[href*="EditProfile.aspx"]::before {
+  font-family: "Material Icons";
+  font-size: larger;
+  font-weight: 600;
+  content: "edit";
+  margin-right: 0.3em;
+}
+
+#CommonHeaderUserWelcome .sub a[href$="logout.aspx"]::before {
+  font-family: "Material Icons";
+  font-size: larger;
+  font-weight: 600;
+  content: "power_settings_new";
+  margin-right: 0.3em;
+}
