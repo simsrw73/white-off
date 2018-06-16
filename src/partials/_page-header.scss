@@ -47,6 +47,10 @@
 
 // Header Navigation links
 
+#navSites{
+  top: 5px;
+}
+
 #navInfo li,
 #navSites li {
   margin: 0 0.1em;
@@ -65,6 +69,7 @@
   padding: 0.3em 0.7em;
   border-radius: 5px;
   color: $color-primary;
+  text-decoration: none;
 }
 
 #navInfo .current a:link,
@@ -121,7 +126,7 @@
 #CommonHeaderUserWelcome .sub a:hover {
   background-color: $color-light-primary-head;
   color: $color-primary;
-  text-decoration: underline;
+  text-decoration: none;
   border-radius: 5px;
 }
 
