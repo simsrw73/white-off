@@ -22,11 +22,12 @@
     format("woff2");
 }
 
-@mixin material-icons {
+@mixin material-icon($icon, $size: 24px, $weight: normal) {
+  content: $icon;
   font-family: "Material Icons";
-  font-weight: normal;
+  font-weight: $weight;
   font-style: normal;
-  font-size: 24px;
+  font-size: $size;
   line-height: 1;
   letter-spacing: normal;
   text-transform: none;
@@ -34,7 +35,7 @@
   white-space: nowrap;
   word-wrap: normal;
   direction: ltr;
-  font-feature-settings: "liga";
-  -webkit-font-feature-settings: "liga";
+  font-feature-settings: "liga" 1;
+  -webkit-font-feature-settings: "liga" 1;
   -webkit-font-smoothing: antialiased;
 }

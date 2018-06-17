@@ -23,6 +23,7 @@
   border-radius: 5px;
   color: $color-primary;
   text-decoration: none;
+  transition: background-color 250ms ease-in-out;
 }
 
 #navInfo .current a:link,
@@ -54,6 +55,7 @@
   padding: 0.1em 1em;
   border-radius: 5px;
   text-decoration: none;
+  transition: background-color 250ms ease-in-out;
 }
 
 #CommonHeaderUserArea a:hover {
@@ -62,7 +64,7 @@
 }
 
 #CommonHeaderUserWelcome .sub:not(:last-child) {
-  color: transparent;
+  color: transparent; // Hide '|' separator
 }
 
 #CommonHeaderUserWelcome .sub a:link,
@@ -83,17 +85,11 @@
 }
 
 #CommonHeaderUserWelcome .sub a[href*="EditProfile.aspx"]::before {
-  @include material-icons;
-  font-size: larger;
-  font-weight: 600;
-  content: "edit";
+  @include material-icon('edit', $size: larger, $weight: 600);
   margin-right: 0.3em;
 }
 
 #CommonHeaderUserWelcome .sub a[href$="logout.aspx"]::before {
-  @include material-icons;
-  font-size: larger;
-  font-weight: 600;
-  content: "power_settings_new";
+  @include material-icon('power_settings_new', $size: larger, $weight: 600);
   margin-right: 0.3em;
 }

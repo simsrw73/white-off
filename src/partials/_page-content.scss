@@ -91,19 +91,15 @@ ul.CommonContentBoxList {
   li.CommonActivity {
     color: white;
 
-    // Hide the Delete Activity image
     table a img {
+      // Hide the Delete Activity image
       display: none;
     }
 
-    // Trick in a new custom replacement
+    // & replace with Material icon
     table tr td + td a::after {
-      @include material-icons;
-      font-size: large;
+      @include material-icon('delete', $size: large);
       color: $color-medium-secondary-text;
-      content: 'delete';
-
-
     }
 
     table tr td + td a:hover {
@@ -112,27 +108,25 @@ ul.CommonContentBoxList {
   }
 
   li.CommonActivity.NewForumThread {
-    // background-image: $icon-message;
+    // Hide default image
     background-image: none;
 
+    // & replace with Material icon
     & td:first-child::before {
-      @include material-icons;
-      font-size: large;
+      @include material-icon('local_post_office', $size: large);
       color: $color-medium-secondary-text;
-      content: 'local_post_office';
       margin-right: .5em;
     }
   }
 
   li.CommonActivity.NewForumPost {
-    // background-image: $icon-message-reply;
+    // Hide default image
     background-image: none;
 
+    // & replace with Material icon
     & td:first-child::before {
-      @include material-icons;
-      font-size: large;
+      @include material-icon('reply', $size: large);
       color: $color-medium-secondary-text;
-      content: 'reply';
       margin-right: .5em;
     }
   }
