@@ -5,7 +5,6 @@
 
 .CommonFormArea {
   background-color: $color-content-background;
-  // border: 2px $color-content-background solid;
   padding: 5px;
 }
 
@@ -93,13 +92,12 @@ div#ctl00_bcr_MediaTabs_TabSet a:hover {
 }
 
 
-/* TODO: Fix Report Abuse form
-// Report Abuse
-a.CommonPaneTabSelected[href="#"] {
-  display: none !important;
-}
+// *** TODO: Fix Report Abuse form
+// // Report Abuse
+// a.CommonPaneTabSelected[href="#"] {
+//   display: none !important;
+// }
 
-div#ctl00_ctl00_bcr_bcr_PostForm_ctl05_EditorTabs.CommonPane {
-  background-color: $color-content-background;
-}
-*/
+// div#ctl00_ctl00_bcr_bcr_PostForm_ctl05_EditorTabs.CommonPane {
+//   background-color: $color-content-background;
+// }
