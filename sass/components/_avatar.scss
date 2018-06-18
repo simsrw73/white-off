@@ -1,11 +1,24 @@
+.Normal .CommonCommentUser { 
+  width: 100px; // so we can use margin auto to center img below
+}
+
+.ForumPostUserAvatar {
+  padding: 14px 0 4px 0;
+}
+
+.ForumPostUserAvatar a {
+  display: block;
+}
+
 .ForumPostUserAvatar img {
-  transition: all 0.4s ease;
-  overflow: visible;
+  display: block;
+  margin: 0 auto;
+  transition: transform 0.4s ease-in-out;
   z-index: 1;
 
   &:hover {
-    position: absolute;
-    transform: scale(2);
+    transform: scale(2) translate(24px, 18px);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);  
+    position: absolute;
   }
 }
