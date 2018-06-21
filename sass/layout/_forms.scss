@@ -8,6 +8,10 @@
   padding: 5px;
 }
 
+html:not([xmlns="http://www.w3.org/1999/xhtml"]) {
+  background: white;
+}
+
 .mceContentBody {
   background-color: white;
 }
@@ -72,7 +76,7 @@ body#image {
     background-color: $color-page-background;
   }
 
- 
+
 
   #insert,
   #cancel,
