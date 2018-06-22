@@ -1,0 +1,73 @@
+.defaultSkin table.mceLayout {
+  border: none;
+  box-shadow: $menu-shadow;
+}
+
+.defaultSkin table.mceLayout tr.mceFirst td {
+  border: none;
+}
+
+.defaultSkin td.mceToolbar {
+  padding: 4px 2px;
+  background: linear-gradient(
+    to bottom,
+    rgba(192, 192, 192, 1) 0%,
+    rgba(160, 160, 160, 1) 80%,
+    rgba(144, 144, 144, 1) 100%
+  );
+}
+
+.defaultSkin .mceButton {
+  border: 1px solid transparent;
+}
+
+.defaultSkin a.mceButtonEnabled:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px outset #ccc;
+}
+
+.defaultSkin a.mceButtonActive,
+.defaultSkin a.mceButtonSelected {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px inset #ccc;
+}
+
+.defaultSkin .mceSplitButton a.mceAction {
+  border: 1px solid transparent;
+}
+
+.defaultSkin .mceSplitButton a.mceOpen {
+  border: 1px solid transparent;
+}
+
+.defaultSkin table.mceSplitButtonEnabled:hover a.mceAction,
+.defaultSkin .mceSplitButtonHover a.mceAction,
+.defaultSkin .mceSplitButtonSelected a.mceAction {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px outset #ccc;
+}
+
+
+.defaultSkin table.mceSplitButtonEnabled:hover a.mceOpen,
+.defaultSkin .mceSplitButtonHover a.mceOpen,
+.defaultSkin .mceSplitButtonSelected a.mceOpen {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px outset #ccc;
+}
+.defaultSkin .mceSplitButtonActive a.mceAction {
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px outset #ccc;
+}
+
+.defaultSkin td.mceStatusbar {
+  background: linear-gradient(
+    to bottom,
+    rgba(192, 192, 192, 1) 0%,
+    rgba(160, 160, 160, 1) 80%,
+    rgba(144, 144, 144, 1) 100%
+  );
+}
+
+.defaultSkin table.mceLayout tr.mceLast td {
+  border: none;
+}
