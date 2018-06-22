@@ -1,15 +1,26 @@
-// Left Sidebar
-#CommonSidebarLeft {
+#CommonSidebarLeft,
+#CommonSidebarRight {
   .CommonContentBoxHeader {
-    border-bottom: 1px solid $color-medium-secondary-text;
-    margin: 8px;
+    background-image: none;
     padding: 0;
+    margin: 8px;
+    border-bottom: 1px solid $color-medium-secondary-text;
+    color: $color-medium-secondary-text;
+    text-shadow: $header-text-shadow;
   }
 
   .CommonContentBox {
     padding: 5px;
   }
 
+  ul.CommonContentBoxList a {
+    color: $color-light-secondary-head;
+  }
+}
+
+
+// Left Sidebar
+#CommonSidebarLeft {
   .CommonContentBoxContent {
     color: $color-light-secondary-head;
     margin: 0;
@@ -43,37 +54,6 @@
     a {
       color: $color-medium-secondary-text;
     }
-  }
-
-  ul.CommonContentBoxList a {
-      color: $color-light-secondary-head;
-  }
-
-  ul.CommonContentBoxList a[href="https://faithlife.com/account/edit"] {
-    border-top: 1px dashed $color-light-secondary-head;
-    padding-top: 2px;
-    position: relative;
-    top: 12px;
-    font-size: 8pt;
-    font-weight: normal;
-  }
-
-}
-
-// Right Sidebar
-#CommonSidebarRight {
-  .CommonContentBoxHeader {
-    border-bottom: 1px solid $color-medium-secondary-text;
-    margin: 8px;
-    padding: 0;
-  }
-
-  .CommonContentBox {
-    padding: 5px;
-  }
-
-  ul.CommonContentBoxList a {
-    color: $color-light-secondary-head;
   }
 }
 

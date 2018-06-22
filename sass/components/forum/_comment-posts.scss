@@ -1,0 +1,24 @@
+// Comment Area: The forum post backgrounds
+.CommonCommentArea {
+  background-color: $color-light-primary-head;
+  box-shadow: $card-shadow;
+  margin: 10px 0;
+}
+
+.CommonCommentContent {
+  background-color: $color-light-primary-background !important;
+  border-left: 2px solid $color-primary;
+  padding: 10px;
+}
+
+.CommonCommentAreaAlt {
+  background-color: $color-light-secondary-head;
+  box-shadow: $card-shadow;
+  margin: 10px 0;
+}
+
+.CommonCommentContentAlt {
+  background-color: $color-light-secondary-background !important;
+  border-left: 2px solid $color-primary;
+  padding: 10px;
+}

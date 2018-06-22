@@ -20,9 +20,14 @@
 @import "components/menus";
 @import "components/nav";
 
+@import "components/forum/comment-posts";
+
 @import "layout/forms";
-@import "layout/forum_content";
+
 @import "layout/header";
 @import "layout/sidebar";
+@import "layout/forum_content";
+@import "layout/profile/my-activity";
+@import "layout/profile/edit";
 
 }

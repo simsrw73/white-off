@@ -1,0 +1,28 @@
+// I believe this section only occurs on profile edit page; otherwise, breakage
+
+// Profile section
+.CommonGroupedContentArea {
+  background-color: $color-light-secondary-background;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: $card-shadow;
+
+  h3.CommonSubTitle {
+    color: $color-secondary;
+    margin-top: 5px;
+  }
+
+  .CommonFormFieldDescription {
+    color: black;
+  }
+
+  .CommonFormField {
+    label {
+      color: black;
+
+      input {
+        margin: 0 2px 0 10px;
+      }
+    }
+  }
+}

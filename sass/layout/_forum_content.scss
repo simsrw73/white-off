@@ -1,14 +1,25 @@
-.CommonContentBoxHeader {
-  background-image: none;
-  color: $color-medium-secondary-text;
-  padding: 0;
-  padding: 10px 10px 0 10px;
-}
 
+// ????
 h4.CommonContentBoxHeader + .CommonContentBoxContent {
   color: white;
 }
 
+// Thread title, Above the content box
+h1.CommonTitle {
+  font-variant: small-caps;
+  font-size: 200%;
+  font-weight: 500;
+  color: black;
+}
+
+// Container for the forum content
+.CommonContentBox {
+  background-color: $color-content-background;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+// Dark colored header on content boxes where there is no Form (Main page, Profile page)
 #CommonContent .CommonContentBoxHeader {
   background-image: none;
   color: $color-medium-secondary-text;
@@ -16,22 +27,7 @@ h4.CommonContentBoxHeader + .CommonContentBoxContent {
   text-shadow: $header-text-shadow;
 }
 
-.CommonTitle {
-  color: black;
-}
-
-h1.CommonTitle {
-  font-variant: small-caps;
-  font-size: 200%;
-  font-weight: 500;
-}
-
-.CommonContentBox {
-  background-color: $color-content-background;
-  border-radius: 10px;
-  padding: 5px;
-}
-
+// Form at top of forum content box
 .CommonContentBoxHeaderForm {
   background-image: none;
   margin: 10px 10px 0 10px;
@@ -52,6 +48,7 @@ h1.CommonTitle {
   }
 }
 
+// Container for forum content, excluding header & footer
 .CommonContentBoxContent {
   padding: 10px;
 
@@ -59,10 +56,11 @@ h1.CommonTitle {
     color: $color-medium-secondary-text;
   }
 
-  .ForumPostButtons table a {
+  .ForumPostButtons a {
     color: $color-secondary;
   }
 
+  // These are used on search results page for post abstract bubbles
   li.CommonAvatarListItemArea {
     background-color: desaturate($color-light-primary-background, 30);
     box-shadow: $card-shadow;
@@ -75,6 +73,7 @@ h1.CommonTitle {
     color: black;
   }
 
+  // XXX Reply Form ???
   div.CommonPane {
     background-color: $color-light-secondary-background;
 
@@ -84,88 +83,11 @@ h1.CommonTitle {
   }
 }
 
-ul.CommonContentBoxList {
-  li.Header {
-    color: white;
-    font-weight: normal;
-  }
-
-  li.CommonActivity {
-    color: white;
-
-    table a img {
-      // Hide the Delete Activity image
-      display: none;
-    }
-
-    // & replace with Material icon
-    table tr td + td a::after {
-      @include material-icon('delete', $size: large);
-      color: $color-medium-secondary-text;
-    }
-
-    table tr td + td a:hover {
-      text-decoration: none;
-    }
-  }
-
-  li.CommonActivity.NewForumThread {
-    // Hide default image
-    background-image: none;
-
-    // & replace with Material icon
-    & td:first-child::before {
-      @include material-icon('local_post_office', $size: large);
-      color: $color-medium-secondary-text;
-      margin-right: .5em;
-    }
-  }
-
-  li.CommonActivity.NewForumPost {
-    // Hide default image
-    background-image: none;
-
-    // & replace with Material icon
-    & td:first-child::before {
-      @include material-icon('reply', $size: large);
-      color: $color-medium-secondary-text;
-      margin-right: .5em;
-    }
-  }
-
-}
-
-// I believe this section only occurs on profile edit page; otherwise, breakage
-.CommonGroupedContentArea {
-  background-color: $color-light-secondary-background;
-  border-radius: 10px;
-  padding: 10px;
-
-  h3.CommonSubTitle {
-    color: $color-secondary;
-    margin-top: 5px;
-  }
-
-  .CommonFormFieldDescription {
-    color: black;
-  }
-
-  .CommonFormField {
-    label {
-      color: black;
-
-      input {
-        margin: 0 2px 0 10px;
-      }
-    }
-  }
-}
-
 .CommonListArea {
   padding: 2px 0;
   box-shadow: $card-shadow;
 
-  table tr td a {
+  table a {
     color: #056cb6;
   }
 }
@@ -210,39 +132,12 @@ ul.CommonContentBoxList {
   border-top: none;
   color: $color-logos-brand-header;
 
-  a:link {
-    color: $color-medium-secondary-text;
-  }
-
+  a:link,
   a:visited {
     color: $color-medium-secondary-text;
   }
 }
 
-// Comment Area
-.CommonCommentArea {
-  background-color: $color-light-primary-head;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 10px 0;
-}
-
-.CommonCommentContent {
-  background-color: $color-light-primary-background !important;
-  border-left: 2px solid $color-primary;
-  padding: 10px;
-}
-
-.CommonCommentAreaAlt {
-  background-color: $color-light-secondary-head;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin: 10px 0;
-}
-
-.CommonCommentContentAlt {
-  background-color: $color-light-secondary-background !important;
-  border-left: 2px solid $color-primary;
-  padding: 10px;
-}
 
 // XXX: Fixes the mis-colored empty form on the favorites page.
 h4.CommonAvatarListItemName ~ .CommonFormArea {

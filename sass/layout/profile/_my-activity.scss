@@ -1,0 +1,65 @@
+// My Activity secion on Profile page
+
+// Format "Edit photo/profile" link under avatar in the sidebar
+#CommonSidebarLeft {
+  ul.CommonContentBoxList a[href="https://faithlife.com/account/edit"] {
+    border-top: 1px dashed $color-light-secondary-head;
+    padding-top: 2px;
+    position: relative;
+    top: 12px;
+    font-size: 8pt;
+    font-weight: normal;
+  }
+}
+
+// ...
+ul.CommonContentBoxList {
+  li.Header {
+    color: white;
+    font-weight: normal;
+  }
+
+  li.CommonActivity {
+    color: white;
+
+    table a img {
+      // Hide the Delete Activity image
+      display: none;
+    }
+
+    // & replace with Material icon
+    table tr td + td a::after {
+      @include material-icon('delete', $size: large);
+      color: $color-medium-secondary-text;
+    }
+
+    table tr td + td a:hover {
+      text-decoration: none;
+    }
+  }
+
+  li.CommonActivity.NewForumThread {
+    // Hide default image
+    background-image: none;
+
+    // & replace with Material icon
+    & td:first-child::before {
+      @include material-icon('local_post_office', $size: large);
+      color: $color-medium-secondary-text;
+      margin-right: .5em;
+    }
+  }
+
+  li.CommonActivity.NewForumPost {
+    // Hide default image
+    background-image: none;
+
+    // & replace with Material icon
+    & td:first-child::before {
+      @include material-icon('reply', $size: large);
+      color: $color-medium-secondary-text;
+      margin-right: .5em;
+    }
+  }
+
+}
