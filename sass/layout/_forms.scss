@@ -1,7 +1,40 @@
+// Modal dialogs
+
+.CommonModal {
+  background-color: $color-logos-brand-header;
+  border: solid 3px #ccc;
+  box-shadow: $card-shadow;
+
+  .CommonModalTitle {
+    background-color: $color-logos-brand-header;
+    border: none;
+  }
+}
+
+// Quick Reply Modal
+form[action*="QuickReply.aspx"] #CommonOuter {
+  box-shadow: $card-shadow;
+}
+
+// Reply & Quick Reply
+#ctl00_ctl00_bcr_bcr_PostForm_ctl05_EditorTabs {
+  background-color: $color-content-background;
+  margin: 0;
+  padding: 0;
+}
+
+
+// ???
 .ForumReplyToPostArea {
   border: outset 1px $color-page-background;
   background-color: $color-light-primary-background;
 }
+
+
+.CommonContentBoxHeaderForm .CommonContentBoxHeaderInline a {
+  text-shadow: $header-text-shadow;
+}
+
 
 .CommonFormArea {
   background-color: $color-content-background;
@@ -35,19 +68,6 @@ div.CommonFormFieldName input {
   border-radius: 8px;
   color: black;
   padding: 2px 10px;
-}
-
-// Modal dialogs
-
-.CommonModal {
-  background-color: $color-logos-brand-header;
-  border: solid 3px #ccc;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-  .CommonModalTitle {
-    background-color: $color-logos-brand-header;
-    border: none;
-  }
 }
 
 

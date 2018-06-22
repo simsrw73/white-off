@@ -1,4 +1,4 @@
-.Normal .CommonCommentUser { 
+.Normal .CommonCommentUser {
   width: 100px; // so we can use margin auto to center img below
 }
 
@@ -20,7 +20,7 @@
 
   &:hover {
     transform: scale(2) translate(26px, 18px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.5);  
+    box-shadow: $card-shadow;
     position: absolute;
   }
 }

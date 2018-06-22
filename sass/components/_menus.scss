@@ -1,3 +1,12 @@
+// This is the dynamically _appended_ context menu
+form#aspnetForm > div:last-child {
+  box-shadow: $menu-shadow;
+}
+
+.CommonContextMenuGroup {
+  background-color: $color-light-secondary-background;
+}
+
 .CommonContextMenuItem {
   background-color: $color-light-secondary-background;
   border: solid 1px $color-light-secondary-background;

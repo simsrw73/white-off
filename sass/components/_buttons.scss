@@ -7,7 +7,7 @@
   background-image: none;
   background-color: $color-medium-secondary-text;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: $button-shadow;
   margin: 0 2px;
   opacity: 0.7;
   padding: 0 2px;
@@ -16,18 +16,18 @@
   &:link,
   &:visited {
     transition: all .1s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: $button-shadow;
   }
 
   &:hover {
     opacity: 1;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+    box-shadow: $button-shadow-raised;
   }
 
   &:active {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+    box-shadow: none;
   }
 
   & a:hover {
@@ -43,7 +43,7 @@
   background-image: none;
   background-color: $color-medium-secondary-text;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: $button-shadow;
   color: black;
   margin: 0;
   opacity: 0.7;
@@ -52,17 +52,30 @@
   &:link,
   &:visited {
     transition: all .1s;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: $button-shadow;
   }
 
   &:hover {
     opacity: 1;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(-1px);
+    box-shadow: $button-shadow-raised;
   }
 
   &:active {
-    transform: translateY(-1px);
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+    box-shadow: none;
+  }
+}
+
+.CommonPaneTabSet {
+  margin: 0 0 -8px 0;
+}
+
+#CommonPaneTabSet {
+  .CommonPaneTab,
+  .CommonPaneTabHover,
+  .CommonPaneTabSelected {
+    margin: 0;
+    padding: 10px 10px 3px 10px;
   }
 }

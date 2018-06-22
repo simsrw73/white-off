@@ -13,7 +13,7 @@ h4.CommonContentBoxHeader + .CommonContentBoxContent {
   background-image: none;
   color: $color-medium-secondary-text;
   padding: 10px 10px 0 10px;
-  text-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+  text-shadow: $header-text-shadow;
 }
 
 .CommonTitle {
@@ -37,7 +37,7 @@ h1.CommonTitle {
   margin: 10px 10px 0 10px;
   border: 1px outset $color-logos-brand-header;
   border-radius: 8px;
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: $button-shadow;
   padding: 5px;
   color: $color-logos-brand-header;
 
@@ -65,11 +65,13 @@ h1.CommonTitle {
 
   li.CommonAvatarListItemArea {
     background-color: desaturate($color-light-primary-background, 30);
+    box-shadow: $card-shadow;
     color: black;
   }
 
   li.CommonAvatarListItemArea.Alt {
     background-color: desaturate($color-light-secondary-background, 30);
+    box-shadow: $card-shadow;
     color: black;
   }
 
@@ -161,7 +163,7 @@ ul.CommonContentBoxList {
 
 .CommonListArea {
   padding: 2px 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: $card-shadow;
 
   table tr td a {
     color: #056cb6;
@@ -195,7 +197,7 @@ ul.CommonContentBoxList {
 .ForumPostHeader {
   background-color: $color-logos-brand-header;
   border-radius: 8px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: $card-shadow;
   margin: 10px 0;
 
   .CommonContentBoxFooter {
@@ -242,8 +244,7 @@ ul.CommonContentBoxList {
   padding: 10px;
 }
 
-// XXX: This selector feels naughty and dangerously non-specific.
-//      Fixes the mis-colored empty form on the favorites page.
+// XXX: Fixes the mis-colored empty form on the favorites page.
 h4.CommonAvatarListItemName ~ .CommonFormArea {
   display: none;
 }
