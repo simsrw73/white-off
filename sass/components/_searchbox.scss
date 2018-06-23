@@ -1,0 +1,62 @@
+.CommonSearchArea,
+.CommonSearchAreaSidebar {
+  width: 460px;
+}
+
+.CommonSearchContent,
+.CommonSearchContentSidebar {
+  position: relative;
+  height: 2.5em;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.CommonSearchContentInner {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.CommonSearchContent input,
+.CommonSearchContentSidebar input {
+  box-sizing: border-box;
+  position: absolute;
+  margin: 0;
+  padding: 0 3em 0 1em;
+  height: 100%;
+  width: 100%;
+  border: 1px solid $color-page-background;
+  background-color: $color-logos-brand-header;
+  color: $color-page-background;
+  font-size: 16px;
+  letter-spacing: .02em;
+}
+
+.CommonSearchContent input:focus,
+.CommonSearchContentSidebar input:focus {
+  border: none;
+  outline: none;
+  box-shadow: inset 0px 0px 3px 1px $color-logos-blue;
+  color: $color-content-background;
+}
+
+.CommonSearchContent input.CommonSearchButton,
+.CommonSearchContentSidebar input.CommonSearchButtonSideBar {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  border: none;
+  cursor: pointer;
+}
