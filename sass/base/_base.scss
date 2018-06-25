@@ -6,6 +6,7 @@ html, body {
 }
 
 blockquote {
+  quotes: "\201c" "\201d";
   background-color: $color-light-secondary-head;
   border: none;
   border-radius: 5px;
