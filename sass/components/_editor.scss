@@ -48,7 +48,7 @@
 }
 
 
-// Toolbar Buttons
+// Toolbar Buttons => XXX Replace with Font Awesome: too many missing icons
 .defaultSkin .mceButton {
   border: 1px solid transparent;
   width: 24px;
@@ -63,6 +63,7 @@
 }
 
 .defaultSkin .mceIcon {
+  @include material-icon('', $size: 20px, $weight: normal);
   background: none;
   width: 24px;
   height: 24px;
@@ -81,49 +82,54 @@
   letter-spacing: .02em;
 }
 
-@mixin toolbar-btn ($name, $icon) {
-  .defaultSkin span.mce_#{$name} {
+$toolbar-buttons: (
+  forecolor: "format_color_text",
+  backcolor: "border_color",
+  cut: "clear",
+  copy: "file_copy",
+  paste: "assignment",
+  pasteword: "assignment_ind",
+  code: "edit",
+  bold: "format_bold",
+  italic: "format_italic",
+  underline: "format_underline",
+  strikethrough: "format_strikethrough",
+  indent: "format_indent_increase",
+  outdent: "format_indent_decrease",
+  bullist: "format_list_bulleted",
+  numlist: "format_list_numbered",
+  table: "border_all",
+  link: "link",
+  unlink: "link_off",
+  insertmedia: "attach_file",
+  image: "photo",
+  smilies: insert_emoticon
+);
+
+
+@each $class, $icon in $toolbar-buttons {
+  .defaultSkin span.mce_#{$class} {
     background-position: unset;
 
     &::before {
-      @include material-icon('#{$icon}', $size: 20px, $weight: normal);
+      content: '#{$icon}';
       width: 20px;
       height: 20px;
       margin: 2px;
     }
   }
+
 }
 
-@include toolbar-btn('forecolor', 'format_color_text');
-.defaultSkin span.mce_forecolor::before { padding: 0; }
-@include toolbar-btn('backcolor', 'border_color');
-.defaultSkin span.mce_backcolor::before { padding: 0; }
+.defaultSkin span.mce_forecolor::before {
+  @include material-icon('format_color_text', $size: 20px, $weight: normal);
+  padding: 0;
+}
 
-@include toolbar-btn('cut', 'clear');
-@include toolbar-btn('copy', 'file_copy');
-@include toolbar-btn('paste', 'assignment');
-
-@include toolbar-btn('pasteword', 'assignment_ind');
-@include toolbar-btn('code', 'edit');
-
-
-@include toolbar-btn('bold', 'format_bold');
-@include toolbar-btn('italic', 'format_italic');
-@include toolbar-btn('underline', 'format_underline');
-@include toolbar-btn('strikethrough', 'format_strikethrough');
-
-@include toolbar-btn('indent', 'format_indent_increase');
-@include toolbar-btn('outdent', 'format_indent_decrease');
-
-@include toolbar-btn('bullist', 'format_list_bulleted');
-@include toolbar-btn('numlist', 'format_list_numbered');
-@include toolbar-btn('table', 'border_all');
-
-@include toolbar-btn('link', 'link');
-@include toolbar-btn('unlink', 'link_off');
-@include toolbar-btn('insertmedia', 'attach_file');
-@include toolbar-btn('image', 'photo');
-@include toolbar-btn('smilies', 'insert_emoticon');
+.defaultSkin span.mce_backcolor::before {
+  @include material-icon('border_color', $size: 20px, $weight: normal);
+  padding: 0;
+}
 
 
 // Toolbar Button State
@@ -153,13 +159,13 @@
   border: 1px outset #ccc;
 }
 
-
 .defaultSkin table.mceSplitButtonEnabled:hover a.mceOpen,
 .defaultSkin .mceSplitButtonHover a.mceOpen,
 .defaultSkin .mceSplitButtonSelected a.mceOpen {
   background-color: rgba(255, 255, 255, 0.9);
   border: 1px outset #ccc;
 }
+
 .defaultSkin .mceSplitButtonActive a.mceAction {
   background-color: rgba(255, 255, 255, 0.9);
   border: 1px outset #ccc;
