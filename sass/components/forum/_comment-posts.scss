@@ -22,3 +22,42 @@
   border-left: 2px solid $color-primary;
   padding: 10px;
 }
+
+
+// Post quotes
+
+.CommonCommentContent blockquote,
+.CommonCommentContentAlt blockquote {
+  background-color: rgba(0,0,0,.03);
+  box-shadow: none;
+  margin: 1em 2em 1em 1.5em;
+  padding: .5em 1em 1em 1em;
+  border: none;
+  border-top: 1px solid $color-primary; // or top-right or bottoom right or left-bottom ???
+  border-right: 1px solid $color-primary;
+  border-radius: 0;
+}
+
+.CommonCommentContent blockquote div:first-of-type > img:first-of-type,
+.CommonCommentContentAlt blockquote div:first-of-type > img:first-of-type {
+  display: none;
+
+
+  & + strong {
+    position: relative;
+    top: -1em;
+
+    &:before {
+      display: inline-block;
+      position: relative;
+      left: -.1em;
+      top: .25em;
+      content: '\201c';
+      font-family: "Times New Roman", Times, serif;
+      font-weight: 700;
+      font-size: 3em;
+      color: $color-primary;
+      height: 1em;
+    }
+  }
+}
