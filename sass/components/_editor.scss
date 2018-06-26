@@ -50,7 +50,7 @@
 }
 
 
-// Toolbar Buttons => XXX Replace with Font Awesome: too many missing icons
+// Toolbar Buttons
 .defaultSkin .mceButton {
   border: 1px solid transparent !important;
   width: 24px !important;
@@ -59,13 +59,15 @@
 }
 
 .defaultSkin .mceSplitButton span.mceAction {
-  width: 18px !important;
+  @include fa-icon;
+  @extend .fas;
   height: 18px !important;
   background: none !important;
 }
 
 .defaultSkin .mceIcon {
-  @include material-icon('', $size: 20px, $weight: normal);
+  @include fa-icon;
+  @extend .fas;
   background: none !important;
   width: 24px !important;
   height: 24px !important;
@@ -86,52 +88,47 @@
 }
 
 $toolbar-buttons: (
-  forecolor: "format_color_text",
-  backcolor: "border_color",
-  cut: "clear",
-  copy: "file_copy",
-  paste: "assignment",
-  pasteword: "assignment_ind",
-  code: "edit",
-  bold: "format_bold",
-  italic: "format_italic",
-  underline: "format_underline",
-  strikethrough: "format_strikethrough",
-  indent: "format_indent_increase",
-  outdent: "format_indent_decrease",
-  bullist: "format_list_bulleted",
-  numlist: "format_list_numbered",
-  table: "border_all",
-  link: "link",
-  unlink: "link_off",
-  insertmedia: "attach_file",
-  image: "photo",
-  smilies: insert_emoticon
+  forecolor: $fa-var-font,
+  backcolor: $fa-var-palette,
+  cut: $fa-var-cut,
+  copy: $fa-var-copy,
+  paste: $fa-var-paste,
+  pasteword: $fa-var-file-word,
+  code: $fa-var-code,
+  bold: $fa-var-bold,
+  italic: $fa-var-italic,
+  underline: $fa-var-underline,
+  strikethrough: $fa-var-strikethrough,
+  indent: $fa-var-indent,
+  outdent: $fa-var-outdent,
+  bullist: $fa-var-list-ul,
+  numlist: $fa-var-list-ol,
+  table: $fa-var-table,
+  link: $fa-var-link,
+  unlink: $fa-var-unlink,
+  insertmedia: $fa-var-paperclip,
+  image: $fa-var-image,
+  smilies: $fa-var-smile
 );
 
 
 @each $class, $icon in $toolbar-buttons {
   .defaultSkin span.mce_#{$class} {
-    background-position: unset;
+    background-position: unset !important;
+    text-align: center !important;
 
     &::before {
-      content: '#{$icon}';
+      content: fa-content(#{$icon});
+      color: #333 !important;
+      font-size: 18px !important;
       width: 20px !important;
       height: 20px !important;
-      margin: 2px !important;
     }
   }
 }
 
-.defaultSkin span.mce_forecolor::before {
-  @include material-icon('format_color_text', $size: 20px, $weight: normal);
-  padding: 0 !important;
-}
-
-.defaultSkin span.mce_backcolor::before {
-  @include material-icon('border_color', $size: 20px, $weight: normal);
-  padding: 0 !important;
-}
+.defaultSkin span.mce_forecolor::before { font-size: 16px !important; text-align: center !important; }
+.defaultSkin span.mce_backcolor::before { font-size: 16px !important; text-align: center !important; }
 
 
 // Toolbar Button State

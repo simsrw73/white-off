@@ -85,11 +85,17 @@
 }
 
 #CommonHeaderUserWelcome .sub a[href*="EditProfile.aspx"]::before {
-  @include material-icon('edit', $size: larger, $weight: 600);
+  @include fa-icon;
+  @extend .fas;
+  content: fa-content($fa-var-pencil-alt);
+  font-size: 14px;
   margin-right: 0.3em;
 }
 
 #CommonHeaderUserWelcome .sub a[href$="logout.aspx"]::before {
-  @include material-icon('power_settings_new', $size: larger, $weight: 600);
+  @include fa-icon;
+  @extend .fas;
+  content: fa-content($fa-var-power-off);
+  font-size: 14px;
   margin-right: 0.3em;
 }

@@ -27,9 +27,12 @@ ul.CommonContentBoxList {
       display: none;
     }
 
-    // & replace with Material icon
+    // & replace with FontAwesome font icon
     table tr td + td a::after {
-      @include material-icon('delete', $size: large);
+      @include fa-icon;
+      @extend .fas;
+      content: fa-content($fa-var-trash-alt);
+      font-size: 16px;
       color: $color-medium-secondary-text;
     }
 
@@ -42,9 +45,12 @@ ul.CommonContentBoxList {
     // Hide default image
     background-image: none;
 
-    // & replace with Material icon
+    // & replace with FontAwesome font icon
     & td:first-child::before {
-      @include material-icon('local_post_office', $size: large);
+      @include fa-icon;
+      @extend .fas;
+      content: fa-content($fa-var-envelope);
+      font-size: 18px;
       color: $color-medium-secondary-text;
       margin-right: .5em;
     }
@@ -54,9 +60,12 @@ ul.CommonContentBoxList {
     // Hide default image
     background-image: none;
 
-    // & replace with Material icon
+    // & replace with FontAwesome font icon
     & td:first-child::before {
-      @include material-icon('reply', $size: large);
+      @include fa-icon;
+      @extend .fas;
+      content: fa-content($fa-var-reply);
+      font-size: 18px;
       color: $color-medium-secondary-text;
       margin-right: .5em;
     }

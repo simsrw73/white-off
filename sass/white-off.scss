@@ -7,28 +7,32 @@
  * Github: https://github.com/simsrw73/white-off
  */
 
-@import "base/variables";
-@import "base/colors";
-@import "base/typography";
+@import "./vendor/fontawesome/scss/fontawesome.scss";
+@import "./vendor/fontawesome/scss/fa-solid.scss";
+@import "./vendor/fontawesome/scss/fa-brands.scss";
 
-@import "base/base";
+@import "./base/variables";
+@import "./base/colors";
+@import "./base/typography";
 
-@import "components/alerts";
-@import "components/avatar";
-@import "components/buttons";
-@import "components/editor";
-@import "components/menus";
-@import "components/nav";
-@import "components/searchbox";
+@import "./base/base";
 
-@import "components/forum/comment-posts";
+@import "./components/alerts";
+@import "./components/avatar";
+@import "./components/buttons";
+@import "./components/editor";
+@import "./components/menus";
+@import "./components/nav";
+@import "./components/searchbox";
 
-@import "layout/forms";
+@import "./components/forum/comment-posts";
 
-@import "layout/header";
-@import "layout/sidebar";
-@import "layout/forum_content";
-@import "layout/profile/my-activity";
-@import "layout/profile/edit";
+@import "./layout/forms";
+
+@import "./layout/header";
+@import "./layout/sidebar";
+@import "./layout/forum_content";
+@import "./layout/profile/my-activity";
+@import "./layout/profile/edit";
 
 }
