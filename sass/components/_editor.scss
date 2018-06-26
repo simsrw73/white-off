@@ -1,3 +1,5 @@
+// The huge amount of !important declarations are soley the fault of Edge
+
 // Reply Header Description
 // ctl00_ctl00_bcr_bcr_PostForm_ctl05_ComposePane
 .Editor .CommonFormArea > .CommonFormFieldName > strong {
@@ -13,16 +15,16 @@
 
 
 .defaultSkin table.mceLayout {
-  border: 1px solid #999;
-  box-shadow: $menu-shadow;
+  border: 1px solid #999 !important;
+  box-shadow: $menu-shadow !important;
 }
 
 .defaultSkin table.mceLayout tr.mceFirst td {
-  border: none;
+  border: none !important;
 }
 
 .defaultSkin table.mceLayout tr.mceLast td {
-  border: none;
+  border: none !important;
 }
 
 
@@ -34,7 +36,7 @@
     rgba(192, 192, 192, 1) 0%,
     rgba(160, 160, 160, 1) 80%,
     rgba(144, 144, 144, 1) 100%
-  );
+  ) !important;
 }
 
 // Statusbar
@@ -44,42 +46,43 @@
     rgba(192, 192, 192, 1) 0%,
     rgba(160, 160, 160, 1) 80%,
     rgba(144, 144, 144, 1) 100%
-  );
+  ) !important;
 }
 
 
 // Toolbar Buttons => XXX Replace with Font Awesome: too many missing icons
 .defaultSkin .mceButton {
-  border: 1px solid transparent;
-  width: 24px;
-  height: 24px;
-  margin: 2px;
+  border: 1px solid transparent !important;
+  width: 24px !important;
+  height: 24px !important;
+  margin: 2px !important;
 }
 
 .defaultSkin .mceSplitButton span.mceAction {
-  width: 18px;
-  height: 18px;
-  background-image: none;
+  width: 18px !important;
+  height: 18px !important;
+  background: none !important;
 }
 
 .defaultSkin .mceIcon {
   @include material-icon('', $size: 20px, $weight: normal);
-  background: none;
-  width: 24px;
-  height: 24px;
+  background: none !important;
+  width: 24px !important;
+  height: 24px !important;
+  padding-top: 2px !important;
 }
 
 .defaultSkin img.mceIcon {
-  display: none;
+  display: none !important;
 }
 
 .defaultSkin .mceSeparator {
-  margin: 2px 4px 0 4px;
+  margin: 2px 4px 0 4px !important;
 }
 
 .defaultSkin .mceListBox .mceText {
-  font-family: $font-stack;
-  letter-spacing: .02em;
+  font-family: $font-stack !important;
+  letter-spacing: .02em !important;
 }
 
 $toolbar-buttons: (
@@ -113,60 +116,59 @@ $toolbar-buttons: (
 
     &::before {
       content: '#{$icon}';
-      width: 20px;
-      height: 20px;
-      margin: 2px;
+      width: 20px !important;
+      height: 20px !important;
+      margin: 2px !important;
     }
   }
-
 }
 
 .defaultSkin span.mce_forecolor::before {
   @include material-icon('format_color_text', $size: 20px, $weight: normal);
-  padding: 0;
+  padding: 0 !important;
 }
 
 .defaultSkin span.mce_backcolor::before {
   @include material-icon('border_color', $size: 20px, $weight: normal);
-  padding: 0;
+  padding: 0 !important;
 }
 
 
 // Toolbar Button State
 .defaultSkin a.mceButtonEnabled:hover {
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px outset #ccc;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border: 1px outset #ccc !important;
 }
 
 .defaultSkin a.mceButtonActive,
 .defaultSkin a.mceButtonSelected {
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px inset #ccc;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border: 1px inset #ccc !important;
 }
 
 .defaultSkin .mceSplitButton a.mceAction {
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
 }
 
 .defaultSkin .mceSplitButton a.mceOpen {
-  border: 1px solid transparent;
+  border: 1px solid transparent !important;
 }
 
 .defaultSkin table.mceSplitButtonEnabled:hover a.mceAction,
 .defaultSkin .mceSplitButtonHover a.mceAction,
 .defaultSkin .mceSplitButtonSelected a.mceAction {
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px outset #ccc;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border: 1px outset #ccc !important;
 }
 
 .defaultSkin table.mceSplitButtonEnabled:hover a.mceOpen,
 .defaultSkin .mceSplitButtonHover a.mceOpen,
 .defaultSkin .mceSplitButtonSelected a.mceOpen {
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px outset #ccc;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border: 1px outset #ccc !important;
 }
 
 .defaultSkin .mceSplitButtonActive a.mceAction {
-  background-color: rgba(255, 255, 255, 0.9);
-  border: 1px outset #ccc;
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border: 1px outset #ccc !important;
 }
