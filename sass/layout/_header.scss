@@ -1,10 +1,12 @@
 #CommonHeader {
   background-color: $color-logos-brand-header;
   box-shadow: $card-shadow;
+  padding-top: .75em;
 }
 
 #CommonHeaderTitleArea {
   width: 970px;
+  height: 60px;
 
   table {
     table-layout: fixed;
