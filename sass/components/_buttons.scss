@@ -6,11 +6,11 @@
 .MoreButton {
   background-image: none;
   background-color: $color-medium-secondary-text;
-  border-radius: 8px;
+  border-radius: 1em;
   box-shadow: $button-shadow;
   margin: 0 2px;
+  padding: .1em .5em .1em .5em;
   opacity: 0.7;
-  padding: 0 2px;
   transition-duration: 0.3s;
 
   &:link,
@@ -36,16 +36,21 @@
 
   span {
     color: black;
+    padding: .1em .1em .1em .2em;
+    text-align: center;
   }
 }
 
 .TabButton {
   background-image: none;
   background-color: $color-medium-secondary-text;
-  border-radius: 8px;
+  border-radius: 1em;
   box-shadow: $button-shadow;
-  color: black;
   margin: 0;
+  padding: .2em .5em .1em .5em;
+  text-align: center;
+  color: black;
+
   opacity: 0.7;
   transition-duration: 0.3s;
 

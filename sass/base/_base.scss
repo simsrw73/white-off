@@ -37,4 +37,8 @@ button {
   background-color: $color-light-secondary-background;
   border-radius: 5px !important;
   font-family: $font-stack;
+  margin: 2px 4px;
+  padding: 2px 4px;
+  letter-spacing: .07em;
+  white-space: normal !important;
 }
