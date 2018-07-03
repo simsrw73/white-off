@@ -2,29 +2,29 @@
   "name": "white-off",
   "version": "1.0.0",
   "description": "Theme for Logos forums",
-  "browserslist": [
-    "> 1%",
-    "last 2 versions",
-    "not dead"
-  ],
-  "main": "",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build-task:scss-compile": "node-sass-chokidar --source-map true sass/ -o dist/",
-    "build-task:autoprefixer": "postcss dist/*.css --use autoprefixer --replace",
-    "sass:build": "npm-run-all -p build-task:*",
-    "sass:watch": "chokidar --verbose \"sass/**/*.scss\" -c \"npm run sass:build\""
+  "author": "Randy W. Sims",
+  "license": "MIT",
+  "homepage": "https://github.com/simsrw73/white-off#readme",
+  "bugs": {
+    "url": "https://github.com/simsrw73/white-off/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/simsrw73/white-off.git"
   },
-  "author": "Randy W. Sims",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/simsrw73/white-off/issues"
+  "browserslist": [
+    "> 1%",
+    "last 3 versions",
+    "not dead"
+  ],
+  "main": "",
+  "scripts": {
+    "build": "npm-run-all build:*",
+      "build:scss": "node-sass-chokidar --source-map true sass/ -o dist/",
+      "build:postcss": "postcss dist/*.css --use autoprefixer --replace",
+    "watch": "npm-run-all --parallel watch:*",
+      "watch:scss": "chokidar --verbose \"sass/**/*.scss\" -c \"npm run build\""
   },
-  "homepage": "https://github.com/simsrw73/white-off#readme",
   "devDependencies": {
     "autoprefixer": "^8.5.0",
     "chokidar-cli": "^1.2.0",
