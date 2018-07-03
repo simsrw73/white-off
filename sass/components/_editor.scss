@@ -49,13 +49,28 @@
   ) !important;
 }
 
+// Toolbar Listboxes
+.defaultSkin .mceListBox .mceText {
+  Width: 60px;
+  margin-left: 2px;
+}
+
+//* Why doesn't this work? */
+// a[id$="Editor_fontselect_text"] { width: 100px; }
+
+#ctl00_bcr_EditUserForm1_ctl02_Signature_ctl00_Editor_fontselect_text,
+#ctl00_bcr_PostForm_ctl05_PostBody_ctl00_Editor_fontselect_text,
+#ctl00_ctl00_bcr_bcr_PostForm_ctl05_PostBody_ctl00_Editor_fontselect_text {
+  Width: 100px;
+}
 
 // Toolbar Buttons
 .defaultSkin .mceButton {
   border: 1px solid transparent !important;
-  width: 24px !important;
-  height: 24px !important;
+  width: 20px !important;
+  height: 20px !important;
   margin: 2px !important;
+  padding: 2px !important;
 }
 
 .defaultSkin .mceSplitButton span.mceAction {
@@ -69,8 +84,8 @@
   @include fa-icon;
   @extend .fas;
   background: none !important;
-  width: 24px !important;
-  height: 24px !important;
+  width: 20px !important;
+  height: 20px !important;
   padding-top: 2px !important;
 }
 
@@ -120,7 +135,7 @@ $toolbar-buttons: (
     &::before {
       content: fa-content(#{$icon});
       color: #333 !important;
-      font-size: 18px !important;
+      font-size: 16px !important;
       width: 20px !important;
       height: 20px !important;
     }
