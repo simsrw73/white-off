@@ -30,11 +30,11 @@ h1.CommonTitle {
 
 // Form at top of forum content box
 .CommonContentBoxHeaderForm {
+  @include mdl-shadow--2dp;
   background-image: none;
   margin: 10px 10px 0 10px;
   border: 1px outset $color-logos-brand-header;
   border-radius: 8px;
-  box-shadow: $button-shadow;
   padding: 8px 12px 4px 12px;
   color: $color-logos-brand-header;
 
@@ -63,14 +63,14 @@ h1.CommonTitle {
 
   // These are used on search results page for post abstract bubbles
   li.CommonAvatarListItemArea {
+    @include mdl-shadow--2dp;
     background-color: desaturate($color-light-primary-background, 30);
-    box-shadow: $card-shadow;
     color: black;
   }
 
   li.CommonAvatarListItemArea.Alt {
+    @include mdl-shadow--2dp;
     background-color: desaturate($color-light-secondary-background, 30);
-    box-shadow: $card-shadow;
     color: black;
   }
 
@@ -85,8 +85,8 @@ h1.CommonTitle {
 }
 
 .CommonListArea {
+  @include mdl-shadow--2dp;
   padding: 2px 0;
-  box-shadow: $card-shadow;
 
   table a {
     color: #056cb6;
@@ -114,9 +114,9 @@ h1.CommonTitle {
 }
 
 .ForumPostHeader {
+  @include mdl-shadow--2dp;
   background-color: $color-logos-brand-header;
   border-radius: 8px;
-  box-shadow: $card-shadow;
   margin: 10px 0;
 
   .CommonContentBoxFooter {

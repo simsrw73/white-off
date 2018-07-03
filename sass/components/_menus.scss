@@ -1,6 +1,6 @@
 // This is the dynamically _appended_ context menu
 form#aspnetForm > div:last-child {
-  box-shadow: $menu-shadow;
+  @include mdl-shadow--2dp;
 }
 
 .CommonContextMenuGroup {

@@ -38,11 +38,11 @@
       align-items: center;
 
       img {
+        @include mdl-shadow--2dp;
         max-width: 100%;
         width: 100% !important;
         height: auto !important;
         margin-bottom: 10px;
-        box-shadow: $card-shadow;
         border-radius: 8px;
       }
 

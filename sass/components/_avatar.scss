@@ -19,8 +19,8 @@
   z-index: 1;
 
   &:hover {
+    @include mdl-shadow--8dp;
     transform: scale(2) translate(26px, 18px);
-    box-shadow: $card-shadow;
     position: absolute;
   }
 }

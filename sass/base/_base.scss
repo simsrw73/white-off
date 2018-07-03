@@ -6,11 +6,11 @@ html, body {
 }
 
 blockquote {
+  @include mdl-shadow--2dp;
   quotes: "\201c" "\201d";
   background-color: $color-light-secondary-head;
   border: none;
   border-radius: 5px;
-  box-shadow: $card-shadow;
   margin: 1em 2em 1em 1em;
   padding: .5em 1em 1em 1em;
 }

@@ -1,8 +1,8 @@
 // Error page appears to be the only place where this id is used.
 body div#content {
+  @include mdl-shadow--2dp;
   background-color: $color-light-secondary-background;
   padding: 20px;
-  box-shadow: $card-shadow;
 
   h2 {
       color: $color-secondary;

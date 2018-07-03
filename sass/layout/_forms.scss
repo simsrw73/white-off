@@ -1,9 +1,9 @@
 // Modal dialogs
 
 .CommonModal {
+  @include mdl-shadow--24dp;
   background-color: $color-logos-brand-header;
   border: solid 3px #ccc;
-  box-shadow: $card-shadow;
 
   .CommonModalTitle {
     background-color: $color-logos-brand-header;
@@ -13,7 +13,7 @@
 
 // Quick Reply Modal
 form[action*="QuickReply.aspx"] #CommonOuter {
-  box-shadow: $card-shadow;
+  @include mdl-shadow--24dp;
 }
 
 // Reply & Quick Reply

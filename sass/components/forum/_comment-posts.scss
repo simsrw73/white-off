@@ -1,7 +1,7 @@
 // Comment Area: The forum post backgrounds
 .CommonCommentArea {
+  @include mdl-shadow--2dp;
   background-color: $color-light-primary-head;
-  box-shadow: $card-shadow;
   margin: 10px 0;
 }
 
@@ -12,8 +12,8 @@
 }
 
 .CommonCommentAreaAlt {
+  @include mdl-shadow--2dp;
   background-color: $color-light-secondary-head;
-  box-shadow: $card-shadow;
   margin: 10px 0;
 }
 

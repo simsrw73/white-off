@@ -2,10 +2,10 @@
 
 // Profile section
 .CommonGroupedContentArea {
+  @include mdl-shadow--2dp;
   background-color: $color-light-secondary-background;
   border-radius: 8px;
   padding: 10px;
-  box-shadow: $card-shadow;
 
   h3.CommonSubTitle {
     color: $color-secondary;

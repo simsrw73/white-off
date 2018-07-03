@@ -1,6 +1,6 @@
 #CommonHeader {
+  @include mdl-shadow--2dp;
   background-color: $color-logos-brand-header;
-  box-shadow: $card-shadow;
   padding-top: .75em;
 }
 
