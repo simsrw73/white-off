@@ -34,6 +34,10 @@
   color: $color-page-background;
   font-size: 16px;
   letter-spacing: .02em;
+
+  &::-ms-clear {
+    display: none !important;
+  }
 }
 
 .CommonSearchContent input:focus,
