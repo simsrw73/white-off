@@ -16,13 +16,14 @@ h1.CommonTitle {
 .CommonContentBox {
   background-color: $color-content-background;
   border-radius: 10px;
-  padding: 5px;
+  padding: 8px 8px 2px 8px !important;
 }
 
 // Dark colored header on content boxes where there is no Form (Main page, Profile page)
 #CommonContent .CommonContentBoxHeader {
   background-image: none;
   color: $color-medium-secondary-text;
+  margin: 0;
   padding: 10px 10px 0 10px;
   text-shadow: $header-text-shadow;
 }
@@ -34,7 +35,7 @@ h1.CommonTitle {
   border: 1px outset $color-logos-brand-header;
   border-radius: 8px;
   box-shadow: $button-shadow;
-  padding: 5px;
+  padding: 8px 12px 4px 12px;
   color: $color-logos-brand-header;
 
   a {
@@ -98,11 +99,6 @@ h1.CommonTitle {
   font-family: $font-stack;
 }
 
-.CommonDescription {
-  color: $color-logos-brand-header;
-  margin: 0;
-}
-
 .CommonListRow td {
   background-color: desaturate($color-light-primary-background, 30);
 }
@@ -113,6 +109,7 @@ h1.CommonTitle {
 
 .CommonListCell {
   font-family: $font-stack;
+  color: #333;
   padding: 10px;
 }
 
@@ -142,4 +139,37 @@ h1.CommonTitle {
 // XXX: Fixes the mis-colored empty form on the favorites page.
 h4.CommonAvatarListItemName ~ .CommonFormArea {
   display: none;
+}
+
+
+a.ForumGroupNameReadText,
+a.ForumGroupNameUnReadText,
+.ForumGroupNameReadText:link,
+.ForumGroupNameUnReadText:link,
+.ForumGroupNameReadText:visited,
+.ForumGroupNameUnReadText:visited {
+  color: $color-logos-blue;
+  padding-left: 12px;
+}
+
+.CommonListArea table a {
+  color: $color-logos-blue;
+}
+
+a.ForumNameUnRead,
+.ForumNameUnRead:link,
+.ForumNameUnRead:visited {
+  color: $color-logos-blue;
+  font-weight: bold;
+}
+
+a.ForumNameRead,
+.ForumNameRead:link,
+.ForumNameRead:visited {
+  color: $color-content-background;
+}
+
+.CommonDescription {
+  color: $color-light-secondary-background;
+  margin: 8px 0 4px 0 !important;
 }
