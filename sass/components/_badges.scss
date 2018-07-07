@@ -37,8 +37,7 @@ $color-Faithlife-badge-shadow: #387022;
   filter: drop-shadow(0 0 1px $color-MVP-badge-shadow);
 
   &:hover::after {
-    @include tooltip;
-    left: 2em;
+    @include tooltip($top: -2.25em, $left: 2em);
     content: "MVP";
   }
 }
@@ -58,8 +57,7 @@ $color-Faithlife-badge-shadow: #387022;
   height: 48px;
 
   &:hover::after {
-    @include tooltip;
-    left: 0;
+    @include tooltip($top: -3.5em, $left: 0);
     content: "Requiescat in pace";
   }
 }
@@ -76,8 +74,7 @@ $color-Faithlife-badge-shadow: #387022;
   height: 32px;
 
   &:hover::after {
-    @include tooltip;
-    left: 0;
+    @include tooltip($top: -3.75em, $left: 0);
     content: "Faithlife Employee";
   }
 }
