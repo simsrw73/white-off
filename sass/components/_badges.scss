@@ -1,0 +1,83 @@
+$badge-size: 24px;
+
+$color-MVP-badge: #DAA520; // goldenrod
+$color-MVP-badge-shadow: #987316;
+
+$color-RIP-badge: #B8860B; // darkgoldenrod
+$color-RIP-badge-shadow: #805d07;
+
+$color-Faithlife-badge: $color-faithlife-green;
+$color-Faithlife-badge-shadow: #387022;
+
+
+.ForumPostRoleIcons br {
+  display: none;
+}
+
+.ForumPostRoleIcons a {
+  display: block;
+  position: relative;
+  margin-top: 4px;
+  width: 100%;
+  height: $badge-size;
+
+  background-repeat: no-repeat;
+  background-size: $badge-size auto;
+  background-position-x: center;
+}
+
+
+// MVPs
+.ForumPostRoleIcons img[alt='Forum MVP'] {
+  display: none;
+}
+
+.ForumPostRoleIcons a[href*="#{$member-page-refid-MVPs}"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='33.699' height='32'%3E%3Cpath d='M6.513 32L16.85 0l10.336 32L0 12.177h33.7z' fill='#{$color-MVP-badge}' stroke-width='.142'/%3E%3C/svg%3E");
+  filter: drop-shadow(0 0 1px $color-MVP-badge-shadow);
+
+  &:hover::after {
+    @include tooltip;
+    left: 2em;
+    content: "MVP";
+  }
+}
+
+
+// RIP
+.ForumPostRoleIcons img[alt='RIP'] {
+  display: none;
+}
+
+.ForumPostRoleIcons a[href*="#{$member-page-refid-RIP}"] {
+  /* https://www.etsy.com/shop/VectorartDesigns - Bird Dove Animal */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='99.449' height='120.945' viewBox='0 0 26.313 32'%3E%3Cpath d='M11.645 9.064C4.376 6.247 5.636 1.338 5.636.079c0-.195-.175-.021-.426.43-1.193 1.786-5.609 13.413 4.652 21.46l-.205-.492C1.054 13.84 3.6 4.504 5.133 1.092c-.14 1.77-.43 5.933 6.043 8.441 6.432 2.492 6.632 6.36 6.593 7.218l.455-.29s.69-4.58-6.579-7.397zm13.926 6.629l.742-.398s-4.033.897-4.477 4.585c-.523 3.626-4.865 6.643-9.644 5.982-4.78-.662-5.374 1.6-5.377 2.304-.005 1.491.5 3.405-2.219 3.065 0 0-1.705-.213-3.431-2.007.93 2.191 3.9 2.74 3.9 2.74 2.728.397 2.234-2.617 2.22-3.328-.021-1.018.597-2.966 5.376-2.305 4.78.662 9.208-2.476 9.645-5.981.43-3.452 3.265-4.657 3.265-4.657zm-.151-.676s-1.764-3.03-5.48-.932c0 0 1.821-2.248.825-5.99-.995-3.74-2.332-6.272-1.166-7.823 0 0-.203.22-.521.569-1.047 1.558.242 4.057 1.218 7.724.996 3.741-.825 5.989-.825 5.989 4.02-2.054 5.949.463 5.949.463zM17.41 2.165c.14-.375.153-.18-.039-.28 0 0-3.755 2.08-4.068 6.417 0 0 .502-.307.675-.791.65-2.668 2.569-4.744 3.432-5.346zM8.648 21.872s-5.32 1.214-6.234-.525c-.636-1.21-1.89.172-2.181 1.49-.316 1.741-.392 2.807.3 4.747-.482-1.791-.205-3.691-.097-4.247.202-1.057 1.098-2.645 1.749-1.554 1.177 1.778 6.463.09 6.463.09zm13.126-6.53c.362 0 .362-.55 0-.55s-.362.55 0 .55z' class='fil0' clip-rule='evenodd' stroke-width='0' fill='#{$color-RIP-badge}' image-rendering='optimizeQuality' shape-rendering='geometricPrecision' text-rendering='geometricPrecision'/%3E%3C/svg%3E");
+  filter: drop-shadow(0 0 1px $color-RIP-badge-shadow);
+
+  background-size: 36px auto;
+  height: 48px;
+
+  &:hover::after {
+    @include tooltip;
+    left: 0;
+    content: "Requiescat in pace";
+  }
+}
+
+
+// Employees
+.ForumPostRoleIcons img[alt='LogosEmployee'] {
+  display: none;
+}
+
+.ForumPostRoleIcons a[href*="#{$member-page-refid-Employees}"] {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='54.489' viewBox='0 0 8.467 14.417'%3E%3Cg fill='#{$color-Faithlife-badge}' fill-rule='evenodd'%3E%3Cpath d='M4.75 14.399a.028.028 0 0 1-.048.008 18.377 18.377 0 0 0-3.082-2.635C.628 11.07.24 10.635.127 10.494c-.015-.019 0-.048.024-.047.115.007.383.017.721-.006.023-.001.034-.025.023-.044C.749 10.174.05 9.061 0 7.815c0-.023.023-.037.042-.027.106.06.395.213.764.322.02.006.04-.012.036-.033C.786 7.817.54 6.515.789 5.195a.029.029 0 0 1 .05-.015c.073.082.258.263.584.452.015.009.034.002.04-.015.08-.228.583-1.609 1.434-2.437.016-.016.044-.006.047.017.372 2.441 2.481 2.998 3.478 5.148.67 1.442-.178 2.235-.456 2.446-.024.017-.01.054.02.052 1.59-.129 2.25-1.57 2.422-2.03.011-.03.054-.022.055.01.112 3.4-2.65 3.6-3.087 3.614a.215.215 0 0 1-.106-.025c-2.496-1.33-2.484-3.983-2.458-4.485 0-.015-.021-.02-.027-.006-1.255 3.033.905 4.747 1.675 5.497.309.3.445.567.288.981'/%3E%3Cpath d='M5.13.01c.02-.022.057-.006.053.025a5.268 5.268 0 0 0 1.38 4.111c1.757 1.894 1.566 3.338.94 4.679-.015.03-.06.02-.06-.014.012-.362-.087-1.11-1.31-2.463C4.196 4.208 2.838 2.632 5.13.01'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 18px auto;
+  height: 32px;
+
+  &:hover::after {
+    @include tooltip;
+    left: 0;
+    content: "Faithlife Employee";
+  }
+}

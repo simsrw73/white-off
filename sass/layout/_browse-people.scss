@@ -1,0 +1,78 @@
+.CommonContentBoxHeaderInline {
+  color: #fff;
+  text-shadow: $header-text-shadow;
+  letter-spacing: .02em;
+}
+
+.CommonAvatarListArea {
+  @include mdl-shadow--2dp;
+  background: $color-light-primary-head;
+  width: 76px;
+  margin: 8px;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.CommonAvatarListArea .CommonAvatarArea {
+  width: 76px;
+  height: 76px;
+  margin-bottom: 8px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.CommonAvatarListArea .CommonAvatarArea img {
+  width: 98% !important;
+  height: 98% !important;
+}
+
+.CommonAvatarListArea > a {
+  font-weight: 700 !important;
+  letter-spacing: .025em;
+}
+
+
+// Faithlife Employees
+form[action*="#{$member-page-refid-Employees}"] .CommonAvatarListArea {
+  background: #ceecc1;
+}
+
+
+// RIPs
+form[action*="#{$member-page-refid-RIP}"] .CommonContentBoxHeaderInline {
+  position: relative;
+  color: transparent;
+  text-shadow: none;
+}
+
+form[action*="#{$member-page-refid-RIP}"] .CommonContentBoxHeaderInline::before {
+  display: inline-block;
+  position: absolute;
+  color: #fff;
+  text-shadow: $header-text-shadow;
+  content: 'I have fought the good fight, I have finished the race, I have kept the faith. (2 Ti 4:7)';
+}
+
+form[action*="#{$member-page-refid-RIP}"] .CommonAvatarListArea {
+  background: #fff;
+}
+
+// Bottom page scripture
+form[action$="#{$member-page-refid-RIP}"]::after {
+  @include mdl-shadow--24dp;
+  display: inline-block;
+  position: fixed;
+  margin: 0;
+  padding: 1em 2em;
+  border-radius: .5em;
+  left: 20%;
+  bottom: 5em;
+  width: calc(100Vw - 40%);
+  background: lightgoldenrodyellow;
+  color: darkgoldenrod;
+  font-weight: 500;
+  letter-spacing: .05em;
+  font-size: 1.2em;
+  content: 'For I know that my Redeemer lives, and at the last he will stand upon the earth. And after my skin has been thus destroyed, yet in my flesh I shall see God, whom I shall see for myself, and my eyes shall behold, and not another. My heart faints within me! (Job 19-25-27)';
+  white-space: normal;
+  z-index: 1000;
+}
