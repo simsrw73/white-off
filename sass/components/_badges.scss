@@ -78,3 +78,10 @@ $color-Faithlife-badge-shadow: #387022;
     content: "Faithlife Employee";
   }
 }
+
+
+// Morris Proctor Employees
+.ForumPostRoleIcons a[href*="#{$member-page-refid-MorrisEmps}"]:hover::after {
+  @include tooltip($top: -5em, $left: 0);
+  content: "Morris Proctor Employee";
+}
