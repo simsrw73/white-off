@@ -1,6 +1,10 @@
 
 # TODO
 
+- [ ] Buttons, Form Controls: Style and make consistent throughout
+
+- [ ] Look for hosting alternative to userstyles.org
+
 ## All da Pages
 
 - [ ] Home Page
