@@ -37,8 +37,8 @@ $color-Faithlife-badge-shadow: #387022;
   filter: drop-shadow(0 0 1px $color-MVP-badge-shadow);
 
   &:hover::after {
-    @include tooltip($top: -2.25em, $left: 2em);
-    content: "MVP";
+    @include tooltip($top: -3.75em, $left: .5em, $width: 65%);
+    content: "MVP Volunteer";
   }
 }
 
@@ -57,7 +57,7 @@ $color-Faithlife-badge-shadow: #387022;
   height: 48px;
 
   &:hover::after {
-    @include tooltip($top: -3.5em, $left: 0);
+    @include tooltip($top: -3.75em, $left: .5em, $width: 65%);
     content: "Requiescat in pace";
   }
 }
@@ -74,7 +74,7 @@ $color-Faithlife-badge-shadow: #387022;
   height: 32px;
 
   &:hover::after {
-    @include tooltip($top: -3.75em, $left: 0);
+    @include tooltip($top: -3.75em, $left: .5em, $width: 65%);
     content: "Faithlife Employee";
   }
 }
@@ -82,6 +82,6 @@ $color-Faithlife-badge-shadow: #387022;
 
 // Morris Proctor Employees
 .ForumPostRoleIcons a[href*="#{$member-page-refid-MorrisEmps}"]:hover::after {
-  @include tooltip($top: -5em, $left: 0);
+  @include tooltip($top: -5em, $left: .5em, $width: 65%);
   content: "Morris Proctor Employee";
 }
