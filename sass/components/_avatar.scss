@@ -14,7 +14,7 @@
   display: block;
   margin: 0 auto;
   border-radius: 4px;
-  background-color: white;
+  background-color: white; // transparent causes funky bkgrnds on non-sqare images
   transition: transform 0.4s ease-in-out;
   z-index: 1;
 

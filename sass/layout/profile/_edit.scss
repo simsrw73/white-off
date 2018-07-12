@@ -5,7 +5,7 @@
   @include mdl-shadow--2dp;
   background-color: $color-light-secondary-background;
   border-radius: 8px;
-  padding: 10px;
+  padding: 10px 10px 20px 10px;
 
   h3.CommonSubTitle {
     color: $color-secondary;
@@ -16,12 +16,20 @@
     color: black;
   }
 
+  .CommonFormFieldName {
+    height: 2em;
+  }
+
   .CommonFormField {
     label {
       color: black;
 
       input {
-        margin: 0 2px 0 10px;
+        // margin: 0 2px 0 10px;
+      }
+
+      &:not(:first-child) {
+        margin-left: 12px;
       }
     }
   }

@@ -1,0 +1,25 @@
+// Insert Media dialog tabset
+#ctl00_bcr_MediaTabs_TabSet.CommonPaneTabSet {
+  Background-color: $color-page-background;
+
+  .CommonPaneTab,
+  .CommonPaneTabHover,
+  .CommonPaneTabSelected {
+    text-decoration: none;
+    background-color: #ddd;
+    margin: 0;
+    padding: 0;
+    padding: .5em 1em;
+    margin: .5em .5em 0 0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+  }
+
+  .CommonPaneTabHover {
+    background-color: #eee;
+  }
+
+  .CommonPaneTabSelected {
+    background-color: #fff;
+  }
+}

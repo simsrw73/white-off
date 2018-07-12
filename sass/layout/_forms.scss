@@ -1,5 +1,20 @@
 // Modal dialogs
 
+%modal-form-buttons {
+  background-image: none;
+  background-color: $color-light-secondary-background;
+  color: #666;
+  border-radius: 4px;
+  border: 1px solid  #666;
+
+  &:hover,
+  &:focus {
+    color: #000;
+    border-color: #000;
+  }
+}
+
+
 .CommonModal {
   @include mdl-shadow--24dp;
   background-color: $color-logos-brand-header;
@@ -9,6 +24,15 @@
     background-color: $color-logos-brand-header;
     border: none;
   }
+}
+
+.CommonModalFooter {
+  height: 18px;
+}
+
+.CommonModalResize {
+  right: 4px;
+  bottom: 4px;
 }
 
 // Quick Reply Modal
@@ -61,27 +85,20 @@ div.CommonFormFieldPadding {
   padding: 5px 10px 10px 10px;
 }
 
-div.CommonFormFieldName input {
-  background-image: none;
-  background-color: $color-light-secondary-background;
-  border: 1px solid  #808080;
-  border-radius: 8px;
-  color: black;
-  padding: 2px 10px;
-}
-
 
 // HTML Editor
 
 body.forceColors {
-  background-color: #f0f0ee;
+  background-color: $color-page-background; // #f0f0ee;
 
   #insert, #cancel, input {
-    background-image: none;
-    background-color: $color-light-secondary-background;
-    border: 1px solid  #808080;
-    border-radius: 8px;
-    color: black;
+    @extend %modal-form-buttons;
+    margin: 0;
+  }
+
+  textarea {
+    margin: .25em 0 0 0;
+    padding: .5em;
   }
 }
 
@@ -89,32 +106,34 @@ body.forceColors {
 body#image {
 
   .panel_wrapper {
-    height: 190px;
+    height: 224px;
   }
 
   .CommonModal {
     background-color: $color-page-background;
   }
 
-
+  #src, #alt {
+    width: 160px !important;
+  }
 
   #insert,
   #cancel,
   .mceActionPanel input {
-    background-image: none;
-    background-color: $color-light-secondary-background;
-    border: 1px solid  #808080;
-    border-radius: 8px;
-    color: black;
+    @extend %modal-form-buttons;
+    margin-bottom: 8px;
   }
 }
 
+.CommonPane {
+  input[type='submit'] {
+    @extend %modal-form-buttons;
+  }
 
-div#ctl00_bcr_MediaTabs_TabSet a:hover {
-  background-color: $color-light-secondary-background;
-  color: black;
+  input[value='cancel'] {
+    float: right;
+  }
 }
-
 
 // *** TODO: Fix Report Abuse form
 // // Report Abuse

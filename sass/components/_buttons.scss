@@ -71,16 +71,3 @@
     box-shadow: none;
   }
 }
-
-.CommonPaneTabSet {
-  margin: 0 0 -8px 0;
-}
-
-#CommonPaneTabSet {
-  .CommonPaneTab,
-  .CommonPaneTabHover,
-  .CommonPaneTabSelected {
-    margin: 0;
-    padding: 10px 10px 3px 10px;
-  }
-}
