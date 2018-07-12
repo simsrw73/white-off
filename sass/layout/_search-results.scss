@@ -1,0 +1,27 @@
+form[action^="/search/SearchResults.aspx"] {
+  & .Common {
+    box-shadow: none !important;
+  }
+
+  #ctl00_bcr_ctl00_ctl00_SearchTextTop {
+    height: 1.8em;
+    width: 90%;
+    padding: .25em .75em;
+    border: 1px solid #777;
+    color: #333;
+    font-weight: 400;
+    font-size: 100%;
+    letter-spacing: .05em;
+
+    & + span:nth-of-type(2)::before {
+      // next 2 lines force a line break
+      content: ' \A';
+      white-space: pre;
+    }
+  }
+
+  #ctl00_bcr_ctl00_ctl00_SearchButtonTop {
+    width: auto !important;
+    margin-left: 12px;
+  }
+}
