@@ -16,36 +16,28 @@ form[action^="/forums/ForumSubscriptions.aspx"] {
     }
   }
 
-  .CommonListCell a[id$="_off"] {
-    color: transparent;
 
-    &::before {
-      content: "\2718";
-      font-size: 120%;
-      font-weight: 700;
-      color: #ff0000;
-    }
-  }
-
-  .CommonListCell a[id$="_on"] {
-    color: transparent;
-
-    &::before {
-      content: "\2714";
-      font-size: 120%;
-      font-weight: 700;
-      color: #008000;
-    }
-  }
-
+  .CommonListCell a[id$="_off"],
+  .CommonListCell a[id$="_on"],
   .CommonListCell a[id$="_processing"] {
     color: transparent;
 
     &::before {
-      content: "\2026"; // "\231b"
       font-size: 120%;
       font-weight: 700;
-      color: #000;
+      color: #333;
     }
+  }
+
+  .CommonListCell a[id$="_off"]::before {
+    content: "\2718";
+  }
+
+  .CommonListCell a[id$="_on"]::before {
+    content: "\2714";
+  }
+
+  .CommonListCell a[id$="_processing"]::before {
+    content: "\2026"; // "\231b"
   }
 }
