@@ -48,33 +48,3 @@
 
 }
 
-.TabButton {
-  @include mdl-shadow--2dp;
-  background-image: none;
-  background-color: $color-medium-secondary-text;
-  border-radius: 1em;
-  margin: 0;
-  padding: .2em .5em .1em .5em;
-  text-align: center;
-  color: #333;
-
-  opacity: 0.85;
-  transition-duration: 0.3s;
-
-  &:link,
-  &:visited {
-    @include mdl-shadow--2dp;
-    transition: all .1s;
-  }
-
-  &:hover {
-    @include mdl-shadow--4dp;
-    opacity: 1;
-    transform: translateY(-1px);
-  }
-
-  &:active {
-    transform: translateY(1px);
-    box-shadow: none;
-  }
-}
