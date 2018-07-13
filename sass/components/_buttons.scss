@@ -10,8 +10,9 @@
   border-radius: 1em;
   margin: 0 2px;
   padding: .1em .5em .1em .5em;
-  opacity: 0.7;
+  opacity: 0.85;
   transition-duration: 0.3s;
+  width: 60px;
 
   &:link,
   &:visited {
@@ -35,10 +36,16 @@
   }
 
   span {
-    color: black;
+    color: #333;
     padding: .1em .1em .1em .2em;
     text-align: center;
+    width: auto;
+
+  font {
+      margin-left: .25em;
+    }
   }
+
 }
 
 .TabButton {
@@ -49,9 +56,9 @@
   margin: 0;
   padding: .2em .5em .1em .5em;
   text-align: center;
-  color: black;
+  color: #333;
 
-  opacity: 0.7;
+  opacity: 0.85;
   transition-duration: 0.3s;
 
   &:link,
