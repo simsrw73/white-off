@@ -42,6 +42,8 @@
     margin: .5em .5em 0 0;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
+    transform: scale(.95);
+    transform-origin: bottom;
   }
 
   a.CommonPaneTab {
@@ -51,11 +53,20 @@
   a.CommonPaneTabHover {
     background: none;
     background-color: $color-light-secondary-head;
+
+    .TabButton {
+      font-weight: 500;
+    }
   }
 
   a.CommonPaneTabSelected {
     background: none;
     background-color: $color-medium-secondary-text;
+    transform: scale(1);
+
+    .TabButton {
+      font-weight: 700;
+    }
   }
 
   .TabButton {
@@ -63,5 +74,6 @@
     background-color: transparent;
     color: #333;
     text-decoration: none;
+    font-weight: 400;
   }
 }
