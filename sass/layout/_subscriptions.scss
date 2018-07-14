@@ -1,6 +1,13 @@
 
 form[action^="/forums/ForumSubscriptions.aspx"] {
 
+  h2.CommonListTitle::after {
+    font-weight: 400;
+    font-size: 60%;
+    content: "(Select \2714 or \2718 to toggle forum subscriptions on or off.)";
+    margin-left: 1em;
+  }
+
   // center Subscribe column header
   .CommonListHeader:nth-of-type(2) {
     text-align: center;
