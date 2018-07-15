@@ -65,7 +65,8 @@ form[action*="QuickReply.aspx"] #CommonOuter {
   padding: 5px;
 }
 
-// TODO: Breaks error pages
+// XXX: This selector catches sub-documents that appear in iframes
+// and tend to be undeclared. It's ugly, and breaks error pages.
 html:not([xmlns="http://www.w3.org/1999/xhtml"]) {
   background: white;
 }

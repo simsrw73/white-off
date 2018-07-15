@@ -26,7 +26,7 @@
   box-sizing: border-box;
   position: absolute;
   margin: 0;
-  padding: 0 3em 0 1em;
+  padding: 0 5em 0 1em;
   height: 100%;
   width: 100%;
   border: 1px solid $color-page-background;
@@ -38,29 +38,30 @@
   &::-ms-clear {
     display: none !important;
   }
+
+  &:focus,
+  &:focus {
+    border: none;
+    outline: none;
+    box-shadow: inset 0px 0px 3px 1px $color-logos-blue;
+    color: $color-content-background;
+  }
+
+  &.CommonSearchButton,
+  &.CommonSearchButtonSideBar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+  }
 }
 
-.CommonSearchContent input:focus,
-.CommonSearchContentSidebar input:focus {
-  border: none;
-  outline: none;
-  box-shadow: inset 0px 0px 3px 1px $color-logos-blue;
-  color: $color-content-background;
-}
-
-.CommonSearchContent input.CommonSearchButton,
-.CommonSearchContentSidebar input.CommonSearchButtonSideBar {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50px;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  border: none;
-  cursor: pointer;
-}
