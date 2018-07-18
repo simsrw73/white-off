@@ -1,8 +1,21 @@
 // Error page appears to be the only place where this id is used.
-body div#content {
+body > div#content {
   @include mdl-shadow--2dp;
   background-color: $color-light-secondary-background;
   padding: 20px;
+
+  // Workaround: html elem is white and can't be changed without breaking other pages.
+  // Likewise, can't repos body elem to cover it, so we cover it with pseudo elem.
+  &::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background-color: $color-page-background;
+    z-index: -1;
+  }
 
   h2 {
       color: $color-secondary;
