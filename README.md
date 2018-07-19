@@ -10,6 +10,7 @@ A low contrast, modern theme for the Faithlife Community Forums
 ### Table of Contents
 **[Using the Theme](#using-the-theme)**<br>
 **[Modifying the Theme](#modifying-the-theme)**<br>
+**[See Also](#see-also)**<br>
 **[Gallery](#gallery)**<br>
 
 ## Using the Theme
@@ -18,14 +19,14 @@ A low contrast, modern theme for the Faithlife Community Forums
 
 There are a couple of options for installing the theme in your browser.
 
-[![Stylus](https://github.com/openstyles/stylus/raw/master/images/icon/32.png)](https://add0n.com/stylus.html) Stylus is a browser extension for Chrome, Firefox, and Opera that allows you to override the styling of websites, to change their appearance.
+[![Stylus](https://github.com/openstyles/stylus/raw/master/images/icon/32.png) Stylus](https://add0n.com/stylus.html) is a browser extension for Chrome, Firefox, and Opera that allows you to override the styling of websites, to change their appearance.
 
   * [Stylus for Chrome](https://chrome.google.com/webstore/detail/clngdbkpkpeebahjckkjfobafhncgmne)
   * [Stylus for Firefox](https://addons.mozilla.org/firefox/addon/styl-us/)
   * [Stylus for Opera](https://addons.opera.com/extensions/details/stylus/)
 
 
-[![Tampermonkey](https://github.com/Tampermonkey/tampermonkey/raw/master/images/icon.png)](http://tampermonkey.net/) Tampermonkey is a browser extension for Chrome, Firefox, Edge, Opera, and Safari that allows running scripts to change the behavior of websites and add new functionality.
+[![Tampermonkey](https://github.com/Tampermonkey/tampermonkey/raw/master/images/icon.png) Tampermonkey](http://tampermonkey.net/) is a browser extension for Chrome, Firefox, Edge, Opera, and Safari that allows running scripts to change the behavior of websites and add new functionality.
 
   * [Tampermonkey for Chrome](https://chrome.google.com/webstore/detail/dhdgffkkebhmkfjojejmpbldmpobfkfo)
   * [Tampermonkey for Firefox](https://addons.mozilla.org/en-US/firefox/addon/tampermonkey/)
@@ -78,6 +79,11 @@ npm run build
 Stylus is the best option for development. It has features for live updates when a theme is installed from a local file.
 
 See [Installation](https://github.com/openstyles/stylus/wiki/Usercss#installation) in Stylus documentation.
+
+
+## See Also
+
+[Faithlife Community Forum Search2G](https://github.com/simsrw73/userscripts) - Userscript for Tampermonkey to send forum searches to Google.
 
 
 ## Gallery
