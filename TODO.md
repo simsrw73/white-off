@@ -1,9 +1,6 @@
 
 # TODO
 
-- [ ] Buttons, Form Controls: Style and make consistent throughout
-
-- [ ] Look for hosting alternative to userstyles.org
 
 ## All da Pages
 
@@ -48,6 +45,7 @@ http://community.logos.com/forums/aggregaterss.aspx?Mode=0
 
 - [ ] Error Pages
 https://community.logos.com/error.htm?aspxerrorpath=/themes/logoswhite/search/indexpostlist.aspx
+https://community.logos.com/error.htm?aspxerrorpath=/themes/logoswhite/forums/filteredthreadlist.aspx
 
 
 ### Profile
