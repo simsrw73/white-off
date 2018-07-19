@@ -10,6 +10,7 @@ A low contrast, modern theme for the Faithlife Community Forums
 ### Table of Contents
 **[Using the Theme](#using-the-theme)**<br>
 **[Modifying the Theme](#modifying-the-theme)**<br>
+**[See Also](#see-also)**<br>
 **[Gallery](#gallery)**<br>
 
 ## Using the Theme
@@ -78,6 +79,11 @@ npm run build
 Stylus is the best option for development. It has features for live updates when a theme is installed from a local file.
 
 See [Installation](https://github.com/openstyles/stylus/wiki/Usercss#installation) in Stylus documentation.
+
+
+## See Also
+
+[Faithlife Community Forum Search2G](https://github.com/simsrw73/userscripts) - Userscript for Tampermonkey to send forum searches to Google.
 
 
 ## Gallery
