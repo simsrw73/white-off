@@ -41,9 +41,11 @@ There are a couple of options for installing the theme in your browser.
 
 Once you've installed one of the extensions above, you are ready to install the theme:
 
-For Stylus users: [![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://github.com/simsrw73/white-off/raw/master/release/white-off.user.css)
+For Stylus users:<br>
+[![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://github.com/simsrw73/white-off/raw/master/release/white-off.user.css)
 
-For Tampermonkey users: [![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://github.com/simsrw73/white-off/raw/master/release/white-off.user.js)
+For Tampermonkey users:<br>
+[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://github.com/simsrw73/white-off/raw/master/release/white-off.user.js)
 
 ## Modifying the Theme
 
