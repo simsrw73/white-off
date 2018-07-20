@@ -80,7 +80,7 @@ Stylus is the best option for development. It has a feature, Live Reload, that d
 
 See [Installation](https://github.com/openstyles/stylus/wiki/Usercss#installation) in Stylus documentation.
 
-> **Note:***
+> **Note:**
 > For Chrome, permissions need to be enabled for Live Reload to work. Go to the Extensions page and Click on "Details" for the Stylus extension. Scroll down and enable "Allow access to file URLs"
 
 
