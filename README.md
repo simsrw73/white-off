@@ -76,9 +76,12 @@ npm run build
 
 ### Import the Theme to the Browser Plugin
 
-Stylus is the best option for development. It has features for live updates when a theme is installed from a local file.
+Stylus is the best option for development. It has a feature, Live Reload, that detects changes to the file on disk and reloads the changes.
 
 See [Installation](https://github.com/openstyles/stylus/wiki/Usercss#installation) in Stylus documentation.
+
+> **Note:***
+> For Chrome, permissions need to be enabled for Live Reload to work. Go to the Extensions page and Click on "Details" for the Stylus extension. Scroll down and enable "Allow access to file URLs"
 
 
 ## See Also
