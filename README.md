@@ -88,6 +88,8 @@ See [Installation](https://github.com/openstyles/stylus/wiki/Usercss#installatio
 
 [Faithlife Community Forum Search2G](https://github.com/simsrw73/userscripts) - Userscript for Tampermonkey to send forum searches to Google.
 
+[Boilerplate for creating User Styles](https://github.com/simsrw73/boilerplate-userstyle-theme) - Create your own themes, starting with this boilerplate.
+
 
 ## Gallery
 
