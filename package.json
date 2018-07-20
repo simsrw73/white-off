@@ -1,7 +1,7 @@
 {
   "name": "white-off",
   "version": "0.9.0",
-  "description": "Theme for Logos forums",
+  "description": "Theme for Logos Community Forums",
   "author": "Randy W. Sims",
   "license": "MIT",
   "homepage": "https://github.com/simsrw73/white-off#readme",
@@ -25,7 +25,7 @@
     "watch": "npm-run-all --parallel watch:*",
       "watch:scss": "chokidar --verbose \"sass/**/*.scss\" -c \"npm run build\"",
     "lint": "stylelint \"sass/**/*.scss\"",
-    "prerelease": "mkdirp release && npm run lint",
+    "prerelease": "mkdirp release",
     "release": "npm-run-all release:*",
       "release:userstyle": "node-sass-chokidar --output-style compact sass/white-off.scss > release/white-off.user.css",
       "release:userjs": "echo Don't know how to do this yet.",
