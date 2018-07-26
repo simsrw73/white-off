@@ -14,9 +14,21 @@
 
   .CommonFormFieldDescription {
     color: black;
+
+    a:link,
+    a:visited,
+    a:active,
+    a:hover {
+      color: $color-secondary;
+    }
   }
 
-  .CommonFormFieldName {
+  div.CommonFormFieldName {
+    color: black;
+    padding: 2px;
+  }
+
+  td.CommonFormFieldName {
     height: 2em;
   }
 

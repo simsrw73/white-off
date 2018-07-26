@@ -47,13 +47,31 @@ form[action*="QuickReply.aspx"] #CommonOuter {
   padding: 0;
 }
 
-
-// ???
+// The post that is being replied to
 .ForumReplyToPostArea {
-  border: outset 1px $color-page-background;
-  background-color: $color-light-primary-background;
+  background-color: rgba(0, 0, 0, .05);
+  box-shadow: none;
+  margin: 1em 0;
+  padding: .5em 1em 1em 1em;
+  border: none;
+  border-top: 1px solid $color-primary; // or top-right or bottoom right or left-bottom ???
+  border-right: 1px solid $color-primary;
+  border-radius: 0;
+
+  .CommonTextButton {
+    margin: 0;
+    padding: 0;
+  }
 }
 
+// The text "Description" above the reply form
+.ForumReplyToPostArea + .CommonFormArea > .CommonFormFieldName {
+  color: $color-medium-secondary-text;
+}
+
+#ctl00_ctl00_bcr_bcr_PostForm_ctl05_OptionsPane > .CommonFormFieldName > label {
+  color: $color-medium-secondary-text;
+}
 
 .CommonContentBoxHeaderForm .CommonContentBoxHeaderInline a {
   text-shadow: $header-text-shadow;
@@ -76,11 +94,8 @@ html:not([xmlns="http://www.w3.org/1999/xhtml"]) {
 }
 
 .CommonFormField label {
-  color: $color-logos-brand-header;
-}
-
-.CommonFormFieldName {
   color: $color-medium-secondary-text;
+  letter-spacing: .25px;
 }
 
 div.CommonFormFieldPadding {
@@ -129,6 +144,7 @@ body#image {
 }
 
 .CommonPane {
+
   input[type='submit'] {
     @extend %modal-form-buttons;
   }

@@ -1,9 +1,3 @@
-
-// ????
-h4.CommonContentBoxHeader + .CommonContentBoxContent {
-  color: white;
-}
-
 // Thread title, Above the content box
 h1.CommonTitle {
   font-variant: small-caps;
@@ -61,27 +55,6 @@ h1.CommonTitle {
     color: $color-secondary;
   }
 
-  // These are used on search results page for post abstract bubbles
-  li.CommonAvatarListItemArea {
-    @include mdl-shadow--2dp;
-    background-color: desaturate($color-light-primary-background, 30);
-    color: black;
-  }
-
-  li.CommonAvatarListItemArea.Alt {
-    @include mdl-shadow--2dp;
-    background-color: desaturate($color-light-secondary-background, 30);
-    color: black;
-  }
-
-  // XXX Reply Form ???
-  div.CommonPane {
-    background-color: $color-light-secondary-background;
-
-    .CommonFormField label {
-      color: black;
-    }
-  }
 }
 
 .CommonListArea {
@@ -99,6 +72,8 @@ h1.CommonTitle {
   font-family: $font-stack;
 }
 
+// limit row highlight to Topics list;
+// TODO: make it work everywhere
 form[action*='TopicsActive'] {
   .CommonListRow:hover::after,
   .CommonListRowAlt:hover::after {
@@ -113,25 +88,16 @@ form[action*='TopicsActive'] {
   }
 }
 
-// form:not([action*='TopicsActive']) {
-//   .CommonListRow:hover::after,
-//   .CommonListRowAlt:hover::after {
-//     position: absolute;
-//     display: block;
-//     content: "";
-//     width: 694px;
-//     height: 41px;
-//     margin-left: -694px;
-//     background-color: rgba(0, 0, 0, .1);
-//     pointer-events: none;
-//   }
-// }
+.CommonListRow td,
+.CommonListRowAlt td {
+  background-color: transparent;
+}
 
-.CommonListRow td {
+.CommonListRow {
   background-color: desaturate($color-light-primary-background, 30);
 }
 
-.CommonListRowAlt td {
+.CommonListRowAlt {
   background-color: grayscale($color-light-primary-background);
 }
 
@@ -144,11 +110,23 @@ form[action*='TopicsActive'] {
 .ForumPostHeader {
   @include mdl-shadow--2dp;
   background-color: $color-logos-brand-header;
+  border: none;
   border-radius: 8px;
   margin: 10px 0;
 
+
   .CommonContentBoxFooter {
     color: Black;
+    font-weight: normal;
+
+    a:link,
+    a:visited,
+    a:active,
+    a:hover {
+      color: $color-secondary;
+      font-weight: 500;
+      letter-spacing: .5px;
+    }
   }
 }
 
@@ -164,7 +142,7 @@ form[action*='TopicsActive'] {
 }
 
 
-// XXX: Fixes the mis-colored empty form on the favorites page.
+// XXX: This selector hides the mis-colored empty form on the favorites page.
 h4.CommonAvatarListItemName ~ .CommonFormArea {
   display: none;
 }

@@ -1,5 +1,3 @@
-// My Activity secion on Profile page
-
 // Format "Edit photo/profile" link under avatar in the sidebar
 #CommonSidebarLeft {
   ul.CommonContentBoxList a[href="https://faithlife.com/account/edit"] {
@@ -12,7 +10,12 @@
   }
 }
 
-// ...
+// Content of the About box
+h4.CommonContentBoxHeader + .CommonContentBoxContent {
+  color: white;
+}
+
+// My Activity secion on Profile page
 ul.CommonContentBoxList {
   li.Header {
     color: white;

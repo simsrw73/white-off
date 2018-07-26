@@ -24,4 +24,17 @@ form[action^="/search/SearchResults.aspx"] {
     width: auto !important;
     margin-left: 12px;
   }
+
+    // These are used on search results page for post abstract bubbles
+    .CommonAvatarListItemArea {
+      @include mdl-shadow--2dp;
+      background-color: desaturate($color-light-primary-background, 30);
+      color: black;
+    }
+
+    .CommonAvatarListItemArea.Alt {
+      @include mdl-shadow--2dp;
+      background-color: desaturate($color-light-secondary-background, 30);
+      color: black;
+    }
 }
