@@ -99,6 +99,34 @@ h1.CommonTitle {
   font-family: $font-stack;
 }
 
+form[action*='TopicsActive'] {
+  .CommonListRow:hover::after,
+  .CommonListRowAlt:hover::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 934px;
+    height: 41px;
+    margin-left: -934px;
+    background-color: rgba(0, 0, 0, .1);
+    pointer-events: none;
+  }
+}
+
+// form:not([action*='TopicsActive']) {
+//   .CommonListRow:hover::after,
+//   .CommonListRowAlt:hover::after {
+//     position: absolute;
+//     display: block;
+//     content: "";
+//     width: 694px;
+//     height: 41px;
+//     margin-left: -694px;
+//     background-color: rgba(0, 0, 0, .1);
+//     pointer-events: none;
+//   }
+// }
+
 .CommonListRow td {
   background-color: desaturate($color-light-primary-background, 30);
 }
