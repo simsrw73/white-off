@@ -29,6 +29,7 @@
     "release": "npm-run-all release:*",
       "release:userstyle": "node-sass-chokidar --output-style compact sass/white-off.scss > release/white-off.user.css",
       "release:userjs": "echo Don't know how to do this yet.",
+    "postrelease": "postcss release/white-off.user.css --use autoprefixer --replace --no-map",
     "clean": "rimraf dist release"
   },
   "devDependencies": {
