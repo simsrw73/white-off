@@ -74,19 +74,20 @@ h1.CommonTitle {
 
 // limit row highlight to Topics list;
 // TODO: make it work everywhere
-form[action*='TopicsActive'] {
-  .CommonListRow:hover::after,
-  .CommonListRowAlt:hover::after {
-    position: absolute;
-    display: block;
-    content: "";
-    width: 934px;
-    height: 41px;
-    margin-left: -934px;
-    background-color: rgba(0, 0, 0, .1);
-    pointer-events: none;
-  }
-}
+// form[action*='TopicsActive'] {
+//   .CommonListRow:hover::after,
+//   .CommonListRowAlt:hover::after {
+//     position: absolute;
+//     display: block;
+//     content: "";
+//     width: 934px;
+//     height: 41px;
+//     margin-left: -934px;
+//     background-color: rgba(0, 0, 0, .1);
+//     pointer-events: none;
+//   }
+// }
+
 
 .CommonListRow td,
 .CommonListRowAlt td {
@@ -95,10 +96,18 @@ form[action*='TopicsActive'] {
 
 .CommonListRow {
   background-color: desaturate($color-light-primary-background, 30);
+
+  &:hover {
+    background-color: transparentize(desaturate($color-light-primary-background, 30), .1);
+  }
 }
 
 .CommonListRowAlt {
   background-color: grayscale($color-light-primary-background);
+
+  &:hover {
+    background-color: transparentize(grayscale($color-light-primary-background), .1);
+  }
 }
 
 .CommonListCell {
