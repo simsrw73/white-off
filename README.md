@@ -95,7 +95,11 @@ See [Installation](https://github.com/openstyles/stylus/wiki/Usercss#installatio
 
 ![Forum Posts](screenshots/posts.png)
 
+Hover over avatars to see larger size image
 ![Zoomable Avatar](screenshots/avatar-zoom.png)
+
+Active Row is Highlighted
+![Highlighted Rows](screenshots/row-hilite.png)
 
 ![Profile](screenshots/profile.png)
 
