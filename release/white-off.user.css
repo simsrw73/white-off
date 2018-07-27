@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         White-Off for Logos Community Forums
 @description  A theme for the Faithlife Community Forums
-@version      0.9.0
+@version      0.9.1
 @author       Randy W. Sims <simsrw73@gmail.com>
 @namespace    https://github.com/simsrw73
 @homepageURL  https://github.com/simsrw73/white-off
@@ -179,6 +179,7 @@
   .CommonModalFooter { height: 18px; }
   .CommonModalResize { right: 4px; bottom: 4px; }
   form[action*="QuickReply.aspx"] #CommonOuter { box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2); }
+  form[action*="QuickReply.aspx"] .CommonFormFieldName > label { color: #e39c4f; }
   #ctl00_ctl00_bcr_bcr_PostForm_ctl05_EditorTabs { background-color: #626262; margin: 0; padding: 0; }
   .ForumReplyToPostArea { background-color: rgba(0, 0, 0, 0.05); box-shadow: none; margin: 1em 0; padding: .5em 1em 1em 1em; border: none; border-top: 1px solid #005ec4; border-right: 1px solid #005ec4; border-radius: 0; }
   .ForumReplyToPostArea .CommonTextButton { margin: 0; padding: 0; }
@@ -254,10 +255,11 @@
   .CommonListArea { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); padding: 2px 0; }
   .CommonListArea table a { color: #056cb6; }
   .CommonListHeader { color: black; background-color: #f4f4f4 !important; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
-  form[action*='TopicsActive'] .CommonListRow:hover::after, form[action*='TopicsActive'] .CommonListRowAlt:hover::after { position: absolute; display: block; content: ""; width: 934px; height: 41px; margin-left: -934px; background-color: rgba(0, 0, 0, 0.1); pointer-events: none; }
   .CommonListRow td, .CommonListRowAlt td { background-color: transparent; }
   .CommonListRow { background-color: #f4f7fa; }
+  .CommonListRow:hover { background-color: rgba(244, 247, 250, 0.9); }
   .CommonListRowAlt { background-color: #f7f7f7; }
+  .CommonListRowAlt:hover { background-color: rgba(247, 247, 247, 0.9); }
   .CommonListCell { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: #333; padding: 10px; }
   .ForumPostHeader { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); background-color: #f4f4f4; border: none; border-radius: 8px; margin: 10px 0; }
   .ForumPostHeader .CommonContentBoxFooter { color: Black; font-weight: normal; }

@@ -36,8 +36,14 @@
 }
 
 // Quick Reply Modal
-form[action*="QuickReply.aspx"] #CommonOuter {
-  @include mdl-shadow--24dp;
+form[action*="QuickReply.aspx"] {
+  #CommonOuter {
+    @include mdl-shadow--24dp;
+  }
+
+  .CommonFormFieldName > label {
+    color: $color-medium-secondary-text;
+  }
 }
 
 // Reply & Quick Reply
