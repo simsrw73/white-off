@@ -9,7 +9,7 @@
 // @include       http://*.community.logos.com/*
 // @include       https://*.community.logos.com/*
 // @run-at        document-start
-// @version       0.20180727031035
+// @version       0.9.1
 // ==/UserScript==
 (function() {var css = [
 	"/*! Font Awesome Free 5.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */",
