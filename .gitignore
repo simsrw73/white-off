@@ -1,5 +1,6 @@
 # Project build files
 dist/
+debug/
 playground/
 
 # Created by https://www.gitignore.io/api/node,sass,windows
