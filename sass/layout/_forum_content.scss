@@ -72,22 +72,6 @@ h1.CommonTitle {
   font-family: $font-stack;
 }
 
-// limit row highlight to Topics list;
-// TODO: make it work everywhere
-// form[action*='TopicsActive'] {
-//   .CommonListRow:hover::after,
-//   .CommonListRowAlt:hover::after {
-//     position: absolute;
-//     display: block;
-//     content: "";
-//     width: 934px;
-//     height: 41px;
-//     margin-left: -934px;
-//     background-color: rgba(0, 0, 0, .1);
-//     pointer-events: none;
-//   }
-// }
-
 
 .CommonListRow td,
 .CommonListRowAlt td {
