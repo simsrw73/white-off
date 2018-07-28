@@ -160,12 +160,13 @@ body#image {
   }
 }
 
-// *** TODO: Fix Report Abuse form
-// // Report Abuse
-// a.CommonPaneTabSelected[href="#"] {
-//   display: none !important;
-// }
+// Quick Reply Modal
+form[action*="UploadAttachment.aspx"] {
+  .CommonFormArea {
+    background-color: white;
+  }
 
-// div#ctl00_ctl00_bcr_bcr_PostForm_ctl05_EditorTabs.CommonPane {
-//   background-color: $color-content-background;
-// }
+  input[type='submit'] {
+    @extend %modal-form-buttons;
+  }
+}
