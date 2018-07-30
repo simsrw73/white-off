@@ -14,17 +14,17 @@
   },
   "browserslist": [
     "> 1%",
-    "last 3 versions",
+    "last 10 versions",
     "not dead"
   ],
   "main": "",
   "config": {
-    "build": "dev"
+    "build": "debug"
   },
   "scripts": {
     "build": "cross-var npm-run-all build:$npm_package_config_build:*",
-      "build:dev:scss": "node-sass-chokidar --source-map true sass/ -o debug/",
-      "build:dev:postcss": "postcss debug/*.css --use autoprefixer --replace",
+      "build:debug:scss": "node-sass-chokidar --source-map true sass/ -o debug/",
+      "build:debug:postcss": "postcss debug/*.css --use autoprefixer --replace",
       "build:release:scss": "node-sass-chokidar --output-style compact sass/white-off.scss > release/white-off.user.css",
       "build:release:postcss": "postcss release/white-off.user.css --use autoprefixer --replace --no-map",
     "watch": "npm-run-all --parallel watch:*",

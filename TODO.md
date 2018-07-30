@@ -18,6 +18,7 @@ https://community.logos.com/forums/AddPost.aspx?ForumID=77
 
   - [ ] Preview Post
   - [ ] Post Options
+    - [ ] Upload Attachment
 
   - [ ] Editor Form
     - [ ] Paste from Word
