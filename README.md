@@ -74,6 +74,26 @@ npm install
 npm run build
 ```
 
+Or, to continuously monitor changes and automatically rebuild:
+
+```shell
+npm run watch
+```
+
+### Test the Theme
+
+Load the theme in to your browser with the Stylus extension by either: dragging the file **"theme.user.css"** to your browser or using the Open Dialog in the browser (Ctrl-o). When Stylus opens the install window, check the options ***Check for updates*** and ***Live reload***, and then click the **Install style** button.
+
+
+### Release the Theme
+
+Build the final relase version of the theme:
+
+```shell
+npm run release
+```
+
+
 ### Import the Theme to the Browser Plugin
 
 Stylus is the best option for development. It has a feature, Live Reload, that detects changes to the file on disk and reloads the changes.
