@@ -1,18 +1,21 @@
 // Insert Media dialog tabset
 #ctl00_bcr_MediaTabs_TabSet.CommonPaneTabSet {
   Background-color: $color-page-background;
+  width: 100%;
+  border: none;
 
   .CommonPaneTab,
   .CommonPaneTabHover,
   .CommonPaneTabSelected {
-    text-decoration: none;
+    background: none;
     background-color: #ddd;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
     margin: 0;
     padding: 0;
     padding: .5em 1em;
     margin: .5em .5em 0 0;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
+    text-decoration: none;
   }
 
   .CommonPaneTabHover {
@@ -26,7 +29,7 @@
 
 ///////////////////////////////////////////
 
-#ctl00_ctl00_bcr_bcr_PostForm_ctl05_EditorTabs_TabSet.CommonPaneTabSet {
+.CommonPaneTabSet {
   width: 70%;
   border-bottom: 4px solid $color-medium-secondary-text;
 
@@ -34,9 +37,9 @@
     display: inline;
   }
 
-  a.CommonPaneTab,
-  a.CommonPaneTabHover,
-  a.CommonPaneTabSelected {
+  .CommonPaneTab,
+  .CommonPaneTabHover,
+  .CommonPaneTabSelected {
     display: inline-block;
     padding: .5em 1em;
     margin: .5em .5em 0 0;
@@ -46,12 +49,11 @@
     transform-origin: bottom;
   }
 
-  a.CommonPaneTab {
+  .CommonPaneTab {
     background: linear-gradient(to bottom, silver 0%, #a0a0a0 80%, #909090 100%);
   }
 
-  a.CommonPaneTabHover {
-    background: none;
+  .CommonPaneTabHover {
     background-color: $color-light-secondary-head;
 
     .TabButton {
@@ -59,8 +61,7 @@
     }
   }
 
-  a.CommonPaneTabSelected {
-    background: none;
+  .CommonPaneTabSelected {
     background-color: $color-medium-secondary-text;
     transform: scale(1);
 
@@ -69,11 +70,19 @@
     }
   }
 
-  .TabButton {
-    background-image: none;
-    background-color: transparent;
-    color: #333;
-    text-decoration: none;
-    font-weight: 400;
-  }
+
+}
+
+.TabButton {
+  display: block;
+  box-sizing: border-box;
+  padding: 2px;
+  background: none;
+  color: #333 !important;
+  font-size: 13px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 400;
+  width: 70px;
+  height: 20px;
 }
