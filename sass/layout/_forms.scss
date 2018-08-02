@@ -6,14 +6,23 @@
   color: #666;
   border-radius: 4px;
   border: 1px solid  #666;
+  margin-top: 4px !important;
+  margin-right: 4px !important;
+  transform: none;
+  box-shadow: none;
 
   &:hover,
   &:focus {
     color: #000;
     border-color: #000;
+    transform: none;
+    box-shadow: none;
   }
 }
 
+.mceActionPanel {
+  margin: 0;
+}
 
 .CommonModal {
   @include mdl-shadow--24dp;
@@ -79,6 +88,14 @@ form[action*="QuickReply"] {
   color: $color-medium-secondary-text;
 }
 
+#ctl00_ctl00_bcr_bcr_PostForm_ctl05_ctl09_ctl02_IsLocked {
+  margin: 0;
+}
+
+#ctl00_ctl00_bcr_bcr_PostForm_ctl05_AttachmentSubForm_ctl00_Filename + button {
+  margin-left: 10px;
+}
+
 .CommonContentBoxHeaderForm .CommonContentBoxHeaderInline a {
   text-shadow: $header-text-shadow;
 }
@@ -105,7 +122,7 @@ html:not([xmlns="http://www.w3.org/1999/xhtml"]) {
 }
 
 div.CommonFormFieldPadding {
-  padding: 5px 10px 10px 10px;
+  padding: 0 10px 10px;
 }
 
 
@@ -147,6 +164,10 @@ body#image {
     @extend %modal-form-buttons;
     margin-bottom: 8px;
   }
+
+  select {
+    margin-left: 0;
+  }
 }
 
 .CommonPane {
@@ -156,7 +177,8 @@ body#image {
   }
 
   input[value='cancel'] {
-    float: right;
+    // float: right;
+    position: absolute;
   }
 }
 
@@ -194,21 +216,22 @@ form[action*='ReportAbuse'] {
       font-size: 20px;
     }
 
-    .validationWarning {
-      color: transparent;
-
-      &::before {
-        @include fa-icon;
-        @extend .fas;
-        content: fa-content($fa-var-exclamation-triangle);
-        color: $color-medium-secondary-text;
-        vertical-align: top;
-      }
-    }
   }
 
   .CommonFormField > input {
     margin: 0;
     height: 2em;
+  }
+}
+
+.validationWarning {
+  color: transparent;
+
+  &::before {
+    @include fa-icon;
+    @extend .fas;
+    content: fa-content($fa-var-exclamation-triangle);
+    color: $color-medium-secondary-text;
+    vertical-align: top;
   }
 }

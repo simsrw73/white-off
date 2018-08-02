@@ -12,6 +12,7 @@ form[action*="SearchResults"] {
     font-weight: 400;
     font-size: 100%;
     letter-spacing: .05em;
+    margin-bottom: 8px;
 
     & + span:nth-of-type(2)::before {
       // next 2 lines force a line break
