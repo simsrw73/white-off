@@ -36,7 +36,7 @@
 }
 
 // Quick Reply Modal
-form[action*="QuickReply.aspx"] {
+form[action*="QuickReply"] {
   #CommonOuter {
     @include mdl-shadow--24dp;
   }
@@ -161,12 +161,54 @@ body#image {
 }
 
 // Quick Reply Modal
-form[action*="UploadAttachment.aspx"] {
+form[action*="UploadAttachment"] {
   .CommonFormArea {
     background-color: white;
   }
 
   input[type='submit'] {
     @extend %modal-form-buttons;
+  }
+}
+
+
+form[action*='ReportAbuse'] {
+
+  .CommonPaneTabSelected {
+    @extend .TabButton;
+    background-color: $color-medium-secondary-text !important;
+    font-weight: 700 !important;
+    width: 92px;
+    height: 30px;
+    padding: 8px;
+  }
+
+  .CommonFormArea {
+    padding: 0;
+  }
+
+  .CommonFormFieldName {
+    & > label {
+      color: $color-medium-secondary-text;
+      text-shadow: $header-text-shadow;
+      font-size: 20px;
+    }
+
+    .validationWarning {
+      color: transparent;
+
+      &::before {
+        @include fa-icon;
+        @extend .fas;
+        content: fa-content($fa-var-exclamation-triangle);
+        color: $color-medium-secondary-text;
+        vertical-align: top;
+      }
+    }
+  }
+
+  .CommonFormField > input {
+    margin: 0;
+    height: 2em;
   }
 }
