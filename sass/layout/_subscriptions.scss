@@ -1,5 +1,5 @@
 
-form[action^="/forums/ForumSubscriptions.aspx"] {
+form[action*="ForumSubscriptions"] {
 
   h2.CommonListTitle::after {
     font-weight: 400;
@@ -30,6 +30,8 @@ form[action^="/forums/ForumSubscriptions.aspx"] {
     color: transparent;
 
     &::before {
+      position:relative;
+      left: .7em;
       font-size: 120%;
       font-weight: 700;
       color: #333;
