@@ -1,26 +1,31 @@
 // Comment Area: The forum post backgrounds
-.CommonCommentArea {
+.CommonCommentArea,
+.CommonCommentAreaAlt {
   @include mdl-shadow--2dp;
-  background-color: $color-light-primary-head;
   margin: 10px 0;
+  border: none;
 }
 
-.CommonCommentContent, {
-  background-color: $color-light-primary-background !important;
+.CommonCommentArea {
+  background-color: $color-light-primary-head;
+}
+
+.CommonCommentAreaAlt {
+  background-color: $color-light-secondary-head;
+}
+
+.CommonCommentContent,
+.CommonCommentContentAlt {
   border-left: 2px solid $color-primary;
   padding: 10px;
 }
 
-.CommonCommentAreaAlt {
-  @include mdl-shadow--2dp;
-  background-color: $color-light-secondary-head;
-  margin: 10px 0;
+.CommonCommentContent {
+  background-color: $color-light-primary-background !important;
 }
 
 .CommonCommentContentAlt {
   background-color: $color-light-secondary-background !important;
-  border-left: 2px solid $color-primary;
-  padding: 10px;
 }
 
 .CommonCommentContent > div,
