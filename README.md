@@ -123,6 +123,8 @@ See [Installation](https://github.com/openstyles/stylus/wiki/Usercss#installatio
 
 ![Profile](screenshots/profile.png)
 
+![Profile](screenshots/favorites.png)
+
 ![Edit Profile](screenshots/edit-profile.png)
 
 ![Compose Post](screenshots/compose.png)
