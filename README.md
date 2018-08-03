@@ -48,6 +48,8 @@ For Stylus users:<br>
 For Tampermonkey users:<br>
 [![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://github.com/simsrw73/white-off/raw/master/release/white-off.user.js)
 
+You can also find this theme on [OpenUserCSS](https://openusercss.org/theme/5b51e072d2829c0b00d2df3b).
+
 ## Modifying the Theme
 
 ### Install Build Tools
