@@ -1,6 +1,8 @@
 
 # TODO
 
+- [ ] Write an npm module (usertyle-gen), to input a css file along with metadata json and output properly formatted user.css & user.js
+
 
 ## All da Pages
 
