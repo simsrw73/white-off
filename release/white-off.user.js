@@ -1,14 +1,14 @@
 // ==UserScript==
 // @name          White-Off for Logos Community Forums
 // @description	  A theme for the Faithlife Community Forums
-// @version       0.9.2
+// @version       0.9.3
 // @author        Randy W. Sims <simsrw73@gmail.com>
+// @license       MIT
 // @namespace     https://github.com/simsrw73
 // @homepageURL   https://github.com/simsrw73/white-off
 // @supportURL    https://github.com/simsrw73/white-off/issues
 // @downloadURL   https://github.com/simsrw73/white-off/raw/master/release/white-off.user.css
 // @updateURL     https://github.com/simsrw73/white-off/raw/master/release/white-off.user.css
-// @license       MIT
 // @include       http://community.logos.com/*
 // @include       https://community.logos.com/*
 // @include       http://*.community.logos.com/*
@@ -17,9 +17,9 @@
 // ==/UserScript==
 (function() {var css = [
 	"/*! Font Awesome Free 5.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */",
-	"  .fa, .fas, .defaultSkin .mceSplitButton span.mceAction, .defaultSkin .mceIcon, #CommonHeaderUserWelcome .sub a[href*=\"EditProfile\"]::before, #CommonHeaderUserWelcome .sub a[href$=\"logout\"]::before, .validationWarning::before, ul.CommonContentBoxList li.CommonActivity table tr td + td a::after, ul.CommonContentBoxList li.CommonActivity.NewForumThread td:first-child::before, ul.CommonContentBoxList li.CommonActivity.NewForumPost td:first-child::before, .far, .fal, .fab { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }",
+	"  .fa, .fas, .defaultSkin .mceSplitButton span.mceAction, .defaultSkin .mceIcon, #CommonHeaderUserWelcome .sub a[href*=\"EditProfile\"]::before, #CommonHeaderUserWelcome .sub a[href$=\"logout\"]::before, .validationWarning::before, ul.CommonContentBoxList li.CommonActivity table tr td + td a::after, ul.CommonContentBoxList li.CommonActivity.NewForumThread td:first-child::before, ul.CommonContentBoxList li.CommonActivity.NewForumPost td:first-child::before, form[action*=\'favorites\'] .CommonAvatarListItemArea .CommonAvatarListItemName::before, .far, .fal, .fab { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }",
 	"  @font-face { font-family: \'Font Awesome 5 Free\'; font-style: normal; font-weight: 900; src: url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.eot\"); src: url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.eot?#iefix\") format(\"embedded-opentype\"), url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.woff2\") format(\"woff2\"), url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.woff\") format(\"woff\"), url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.ttf\") format(\"truetype\"), url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.svg#fontawesome\") format(\"svg\"); }",
-	"  .fa, .fas, .defaultSkin .mceSplitButton span.mceAction, .defaultSkin .mceIcon, #CommonHeaderUserWelcome .sub a[href*=\"EditProfile\"]::before, #CommonHeaderUserWelcome .sub a[href$=\"logout\"]::before, .validationWarning::before, ul.CommonContentBoxList li.CommonActivity table tr td + td a::after, ul.CommonContentBoxList li.CommonActivity.NewForumThread td:first-child::before, ul.CommonContentBoxList li.CommonActivity.NewForumPost td:first-child::before { font-family: \'Font Awesome 5 Free\'; font-weight: 900; }",
+	"  .fa, .fas, .defaultSkin .mceSplitButton span.mceAction, .defaultSkin .mceIcon, #CommonHeaderUserWelcome .sub a[href*=\"EditProfile\"]::before, #CommonHeaderUserWelcome .sub a[href$=\"logout\"]::before, .validationWarning::before, ul.CommonContentBoxList li.CommonActivity table tr td + td a::after, ul.CommonContentBoxList li.CommonActivity.NewForumThread td:first-child::before, ul.CommonContentBoxList li.CommonActivity.NewForumPost td:first-child::before, form[action*=\'favorites\'] .CommonAvatarListItemArea .CommonAvatarListItemName::before { font-family: \'Font Awesome 5 Free\'; font-weight: 900; }",
 	"  @font-face { font-family: \'Font Awesome 5 Brands\'; font-style: normal; font-weight: normal; src: url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.eot\"); src: url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.eot?#iefix\") format(\"embedded-opentype\"), url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.woff2\") format(\"woff2\"), url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.woff\") format(\"woff\"), url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.ttf\") format(\"truetype\"), url(\"https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.svg#fontawesome\") format(\"svg\"); }",
 	"  .fab { font-family: \'Font Awesome 5 Brands\'; }",
 	"  @font-face { font-family: \"Source Sans Pro\"; font-style: normal; font-weight: 300; src: local(\"Source Sans Pro Light\"), local(\"SourceSansPro-Light\"), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format(\"woff2\"); unicode-range: U+0000-00FF; }",
@@ -30,7 +30,7 @@
 	"  select, input, button { border-radius: 4px !important; }",
 	"  select, textarea, input, button { background-color: #fcf7f2; color: #333; font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif; margin: 2px 4px; padding: 2px 4px; letter-spacing: .1em; white-space: normal !important; }",
 	"  button { -webkit-appearance: none; -moz-appearance: none; appearance: none; }",
-	"  select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(\"data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' aria-hidden=\'true\' data-prefix=\'fas\' data-icon=\'caret-down\' class=\'svg-inline--fa fa-caret-down fa-w-10\' width=\'10.577\' height=\'6\'%3E%3Cpath d=\'M.712 0h9.154a.71.71 0 0 1 .501 1.213L5.792 5.792a.713.713 0 0 1-1.007 0L.21 1.213A.71.71 0 0 1 .712 0z\' fill=\'%23777\' stroke-width=\'.036\'/%3E%3C/svg%3E\") calc(100% - 10px) no-repeat #fcf7f2; border: none; border: solid 1px #777; padding: 4px 32px 4px 16px; }",
+	"  select { -webkit-appearance: none; -moz-appearance: none; appearance: none; background: url(\"data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' aria-hidden=\'true\' data-prefix=\'fas\' data-icon=\'caret-down\' class=\'svg-inline--fa fa-caret-down fa-w-10\' width=\'10.577\' height=\'6\'%3E%3Cpath d=\'M.712 0h9.154a.71.71 0 0 1 .501 1.213L5.792 5.792a.713.713 0 0 1-1.007 0L.21 1.213A.71.71 0 0 1 .712 0z\' fill=\'%23777\' stroke-width=\'.036\'/%3E%3C/svg%3E\") calc(100% - 10px) no-repeat #fcf7f2; border: none; border: solid 1px #666; padding: 4px 32px 4px 16px; }",
 	"  label { letter-spacing: .1em; }",
 	"  label > input { margin-right: 4px !important; }",
 	"  body > div#content { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); background-color: #fcf7f2; padding: 20px; }",
@@ -173,6 +173,7 @@
 	"  .CommonPaneTabSet .CommonPaneTabSelected .TabButton, .CommonPaneTabSet .CommonPaneTabSelected form[action*=\'ReportAbuse\'] .CommonPaneTabSelected, form[action*=\'ReportAbuse\'] .CommonPaneTabSet .CommonPaneTabSelected .CommonPaneTabSelected { font-weight: 700; }",
 	"  .TabButton, form[action*=\'ReportAbuse\'] .CommonPaneTabSelected { display: block; box-sizing: border-box; padding: 2px; background: none; color: #333 !important; font-size: 13px; text-decoration: none; text-align: center; font-weight: 400; width: 70px; height: 20px; }",
 	"  .CommonCommentArea, .CommonCommentAreaAlt { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); margin: 10px 0; border: none; }",
+	"  .CommonContentBoxContent > div:last-child { margin-bottom: 0; }",
 	"  .CommonCommentArea { background-color: #d7e7f8; }",
 	"  .CommonCommentAreaAlt { background-color: #f8e8d7; }",
 	"  .CommonCommentContent, .CommonCommentContentAlt { border-left: 2px solid #005ec4; padding: 10px; }",
@@ -236,30 +237,35 @@
 	"  #CommonHeaderTitleArea table { table-layout: fixed; }",
 	"  #CommonHeaderTitleArea table tr { vertical-align: middle; }",
 	"  #CommonHeaderTitleArea table tr td:first-child { width: 500px; }",
-	"  #CommonHeaderTitleArea table tr td:first-child a { display: inline-block; background-image: url(https://styles2.faithlifecdn.com/Content/Images/faithlife-logo.svg); background-size: cover; width: 180px; height: 52px; }",
-	"  #CommonHeaderTitleArea table tr td:first-child a::after { content: \"Community\"; color: #666666; font-family: \"Source Sans Pro\", sans-serif; font-size: 44px; font-weight: 300; position: relative; left: 190px; }",
+	"  #CommonHeaderTitleArea table tr td:first-child a { -webkit-transition: all 0.3s cubic-bezier(0.17, 0.65, 0.65, 1.75); transition: all 0.3s cubic-bezier(0.17, 0.65, 0.65, 1.75); display: inline-block; background-image: url(https://styles2.faithlifecdn.com/Content/Images/faithlife-logo.svg); background-size: cover; width: 180px; height: 52px; }",
+	"  #CommonHeaderTitleArea table tr td:first-child a::after { content: \"Community\"; color: #666; font-family: \"Source Sans Pro\", sans-serif; font-size: 44px; font-weight: 300; position: relative; left: 190px; }",
 	"  #CommonHeaderTitleArea table tr td:first-child a:hover { text-decoration: none; filter: drop-shadow(0px 0px 2px rgba(95, 188, 57, 0.7)); }",
 	"  #CommonHeaderTitleArea table img { display: none; }",
 	"  #CommonNavigationShadow { visibility: hidden; display: inline; }",
 	"  form[action*=\"SearchResults\"] .Common { box-shadow: none !important; }",
-	"  form[action*=\"SearchResults\"] #ctl00_bcr_ctl00_ctl00_SearchTextTop { height: 1.8em; width: 90%; padding: .25em .75em; border: 1px solid #777; color: #333; font-weight: 400; font-size: 100%; letter-spacing: .05em; margin-bottom: 8px; }",
+	"  form[action*=\"SearchResults\"] #ctl00_bcr_ctl00_ctl00_SearchTextTop { height: 1.8em; width: 90%; padding: .25em .75em; border: 1px solid #666; color: #333; font-weight: 400; font-size: 100%; letter-spacing: .05em; margin-bottom: 8px; }",
 	"  form[action*=\"SearchResults\"] #ctl00_bcr_ctl00_ctl00_SearchTextTop + span:nth-of-type(2)::before { content: \' \\A\'; white-space: pre; }",
 	"  form[action*=\"SearchResults\"] #ctl00_bcr_ctl00_ctl00_SearchButtonTop { width: auto !important; margin-left: 12px; }",
 	"  form[action*=\"SearchResults\"] .CommonAvatarListItemArea { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); background-color: #f4f7fa; color: black; }",
 	"  form[action*=\"SearchResults\"] .CommonAvatarListItemArea.Alt { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); background-color: #faf7f4; color: black; }",
+	"  form[action*=\"SearchResults\"] .CommonAvatarListItemArea:last-child { margin-bottom: 0; }",
 	"  #CommonSidebarLeft .CommonContentBoxHeader, #CommonSidebarRight .CommonContentBoxHeader { background-image: none; padding: 0; margin: 8px; border-bottom: 1px solid #e39c4f; color: #e39c4f; text-shadow: 0 2px 2px rgba(0, 0, 0, 0.14); }",
 	"  #CommonSidebarLeft .CommonContentBox, #CommonSidebarRight .CommonContentBox { padding: 5px; }",
 	"  #CommonSidebarLeft ul.CommonContentBoxList a, #CommonSidebarRight ul.CommonContentBoxList a { color: #f8e8d7; }",
-	"  #CommonSidebarLeft .CommonContentBoxContent { color: #f8e8d7; margin: 0; padding: 10px; display: flex !important; flex-flow: column nowrap; align-items: center; }",
+	"  #CommonSidebarLeft .CommonContentBoxContent { color: #f8e8d7; margin: 0; padding: 8px; display: flex !important; flex-flow: column nowrap; align-items: center; }",
 	"  #CommonSidebarLeft .CommonContentBoxContent div { float: none !important; margin: 0 !important; display: flex; flex-flow: column; align-items: center; }",
-	"  #CommonSidebarLeft .CommonContentBoxContent div img { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); max-width: 100%; width: 100% !important; height: auto !important; margin-bottom: 10px; border-radius: 8px; }",
+	"  #CommonSidebarLeft .CommonContentBoxContent div img { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); max-width: 100%; width: 100% !important; height: auto !important; margin-bottom: 8px; border-radius: 8px; }",
 	"  #CommonSidebarLeft .CommonContentBoxContent div div { display: block; }",
 	"  #CommonSidebarLeft .CommonContentBoxContent a { color: #e39c4f; }",
 	"  ul.CommonContentBoxList, ul.CommonSidebarList a { color: #f8e8d7; }",
-	"  form[action*=\"ForumSubscriptions\"] h2.CommonListTitle::after { font-weight: 400; font-size: 60%; content: \"(Select \\2714 or \\2718 to toggle forum subscriptions on or off.)\"; margin-left: 1em; }",
+	"  form[action*=\"ForumSubscriptions\"] .CommonContentBox { padding: 8px !important; }",
+	"  form[action*=\"ForumSubscriptions\"] .CommonDescription { margin: 0 0 8px 0 !important; }",
+	"  form[action*=\"ForumSubscriptions\"] .CommonListTitle::after { font-weight: 400; font-size: 60%; content: \"(Select \\2714 or \\2718 to toggle forum subscriptions on or off.)\"; margin-left: 1em; }",
+	"  form[action*=\"ForumSubscriptions\"] .CommonListHeader { background-color: #f8e8d7 !important; }",
 	"  form[action*=\"ForumSubscriptions\"] .CommonListHeader:nth-of-type(2) { text-align: center; }",
-	"  form[action*=\"ForumSubscriptions\"] .CommonListArea { background: #fff; padding: 1em; }",
+	"  form[action*=\"ForumSubscriptions\"] .CommonListArea { background: #fcf7f2; border-radius: 6px; padding: 1em; }",
 	"  form[action*=\"ForumSubscriptions\"] .CommonListArea table { border-top: 1px solid #ccc; border-left: 1px solid #ccc; }",
+	"  form[action*=\"ForumSubscriptions\"] .CommonListArea table tr:last-of-type td { border-bottom: 1px solid #ccc; }",
 	"  form[action*=\"ForumSubscriptions\"] .CommonListCell a[id$=\"_off\"], form[action*=\"ForumSubscriptions\"] .CommonListCell a[id$=\"_on\"], form[action*=\"ForumSubscriptions\"] .CommonListCell a[id$=\"_processing\"] { color: transparent; }",
 	"  form[action*=\"ForumSubscriptions\"] .CommonListCell a[id$=\"_off\"]::before, form[action*=\"ForumSubscriptions\"] .CommonListCell a[id$=\"_on\"]::before, form[action*=\"ForumSubscriptions\"] .CommonListCell a[id$=\"_processing\"]::before { position: relative; left: .7em; font-size: 120%; font-weight: 700; color: #333; }",
 	"  form[action*=\"ForumSubscriptions\"] .CommonListCell a[id$=\"_off\"]::before { content: \"\\2718\"; }",
@@ -271,11 +277,12 @@
 	"  .CommonContentBoxHeaderForm { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); background-image: none; margin: 10px 10px 0 10px; border: 1px outset #f4f4f4; border-radius: 8px; padding: 8px 12px 4px 12px; color: #f4f4f4; }",
 	"  .CommonContentBoxHeaderForm a { color: #e39c4f; }",
 	"  .CommonContentBoxHeaderForm a.ForumLinkUnread, .CommonContentBoxHeaderForm .ForumLinkUnread:link, .CommonContentBoxHeaderForm .ForumLinkUnread:visited { color: #e39c4f; }",
-	"  .CommonContentBoxContent { padding: 10px; }",
+	"  .CommonContentBoxContent { padding: 0; margin: 10px; }",
 	"  .CommonContentBoxContent table a { color: #e39c4f; }",
 	"  .CommonContentBoxContent .ForumPostButtons a { color: #c46600; }",
 	"  .CommonListArea { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); padding: 0; }",
-	"  .CommonListArea table a { color: #056cb6; }",
+	"  .CommonListArea table a { color: #005ec4; }",
+	"  .CommonListArea > table tr:last-of-type td { border-bottom: none; }",
 	"  .CommonListHeader { color: black; background-color: #f4f4f4 !important; font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif; }",
 	"  .CommonListRow td, .CommonListRowAlt td { background-color: transparent; }",
 	"  .CommonListRow { background-color: #f4f7fa; }",
@@ -288,7 +295,6 @@
 	"  .ForumPostHeader .CommonContentBoxFooter a:link, .ForumPostHeader .CommonContentBoxFooter a:visited, .ForumPostHeader .CommonContentBoxFooter a:active, .ForumPostHeader .CommonContentBoxFooter a:hover { color: #c46600; font-weight: 500; letter-spacing: .5px; }",
 	"  .CommonContentBoxFooter { padding: 0 10px 10px 10px; border-top: none; color: #f4f4f4; }",
 	"  .CommonContentBoxFooter a:link, .CommonContentBoxFooter a:visited { color: #e39c4f; }",
-	"  h4.CommonAvatarListItemName ~ .CommonFormArea { display: none; }",
 	"  a.ForumGroupNameReadText, a.ForumGroupNameUnReadText, .ForumGroupNameReadText:link, .ForumGroupNameUnReadText:link, .ForumGroupNameReadText:visited, .ForumGroupNameUnReadText:visited { color: #005ec4; padding-left: 12px; }",
 	"  .CommonListArea table a { color: #005ec4; }",
 	"  a.ForumNameUnRead, .ForumNameUnRead:link, .ForumNameUnRead:visited { color: #005ec4; font-weight: bold; }",
@@ -313,7 +319,14 @@
 	"  .CommonGroupedContentArea td.CommonFormFieldName { height: 2em; }",
 	"  .CommonGroupedContentArea .CommonFormField label { color: black; }",
 	"  .CommonGroupedContentArea .CommonFormField label:not(:first-child) { margin-left: 12px; }",
-	"  content > div.CommonFormFieldName { margin-top: -12px; margin-bottom: 8px; }"
+	"  content > div.CommonFormFieldName { margin: 0; padding: 0; }",
+	"  form[action*=\'favorites\'] .CommonAvatarListItemList { color: #f8e8d7; }",
+	"  form[action*=\'favorites\'] .CommonAvatarListItemArea { background: none; margin: 0; padding: 0; min-height: 0; }",
+	"  form[action*=\'favorites\'] .CommonAvatarListItemArea .CommonAvatarListItemName { margin-bottom: .5em; font-size: 1.3em; }",
+	"  form[action*=\'favorites\'] .CommonAvatarListItemArea .CommonAvatarListItemName::before { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: inline-block; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; vertical-align: -.125em; content: \"\\f02e\"; color: #e39c4f; margin-left: .2em; margin-right: 1em; }",
+	"  form[action*=\'favorites\'] .CommonAvatarListItemArea .CommonAvatarListItemName a { color: #e39c4f; }",
+	"  form[action*=\'favorites\'] .CommonAvatarListItemArea .CommonAvatarListItemDetails { display: none; }",
+	"  form[action*=\'favorites\'] .CommonAvatarListItemArea .CommonFormArea { display: none; }"
 ].join("\n");
 if (typeof GM_addStyle != "undefined") {
 	GM_addStyle(css);
