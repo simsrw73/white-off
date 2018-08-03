@@ -1,0 +1,33 @@
+
+form[action*='favorites'] {
+  .CommonAvatarListItemList {
+    color: $color-light-secondary-head;
+  }
+
+  .CommonAvatarListItemArea {
+    background: none;
+    margin: 0;
+    padding: 0;
+
+    .CommonAvatarListItemName::before {
+      @include fa-icon;
+      @extend .fas;
+      content: fa-content($fa-var-bookmark);
+      color: $color-medium-secondary-text;
+      margin-left: .2em;
+      margin-right: 1em;
+    }
+
+    .CommonAvatarListItemName a {
+      color: $color-medium-secondary-text;
+    }
+
+    .CommonAvatarListItemDetails {
+      display: none;
+    }
+
+    .CommonFormArea {
+      display: none;
+    }
+  }
+}

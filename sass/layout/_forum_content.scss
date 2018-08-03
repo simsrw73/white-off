@@ -139,13 +139,6 @@ h1.CommonTitle {
   }
 }
 
-
-// XXX: This selector hides the mis-colored empty form on the favorites page.
-h4.CommonAvatarListItemName ~ .CommonFormArea {
-  display: none;
-}
-
-
 a.ForumGroupNameReadText,
 a.ForumGroupNameUnReadText,
 .ForumGroupNameReadText:link,
