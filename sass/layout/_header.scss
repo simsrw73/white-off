@@ -18,6 +18,7 @@
         width: 500px;
 
         a {
+          transition: all .3s cubic-bezier(.17,.65,.65,1.75);
           display: inline-block;
           background-image: url(https://styles2.faithlifecdn.com/Content/Images/faithlife-logo.svg);
           background-size: cover;
