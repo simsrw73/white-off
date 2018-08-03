@@ -62,7 +62,12 @@ h1.CommonTitle {
   padding: 0;
 
   table a {
-    color: #056cb6;
+    color: $color-logos-blue;
+  }
+
+  // remove last dotted border in list
+  & > table tr:last-of-type td {
+    border-bottom: none;
   }
 }
 
