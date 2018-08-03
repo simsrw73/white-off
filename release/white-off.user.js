@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name          White-Off for Logos Community Forums
-// @description	  An easier to read, modernized theme for Logos' Forums. It's not a dark theme, but instead eliminates white and other bright colors and uses color selections that reduce contrast. It's not designed to pop and wow like most sites, but tries to relax and ease eye strain.
+// @description	  A theme for the Faithlife Community Forums
 // @version       0.9.2
-// @author        Randy W. Sims (Shayne)
+// @author        Randy W. Sims <simsrw73@gmail.com>
 // @namespace     https://github.com/simsrw73
 // @homepageURL   https://github.com/simsrw73/white-off
 // @supportURL    https://github.com/simsrw73/white-off/issues
