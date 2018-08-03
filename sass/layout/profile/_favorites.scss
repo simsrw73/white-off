@@ -8,18 +8,24 @@ form[action*='favorites'] {
     background: none;
     margin: 0;
     padding: 0;
+    min-height: 0;
 
-    .CommonAvatarListItemName::before {
-      @include fa-icon;
-      @extend .fas;
-      content: fa-content($fa-var-bookmark);
-      color: $color-medium-secondary-text;
-      margin-left: .2em;
-      margin-right: 1em;
-    }
+    .CommonAvatarListItemName {
+      margin-bottom: .5em;
+      font-size: 1.3em;
 
-    .CommonAvatarListItemName a {
-      color: $color-medium-secondary-text;
+      &::before {
+        @include fa-icon;
+        @extend .fas;
+        content: fa-content($fa-var-bookmark);
+        color: $color-medium-secondary-text;
+        margin-left: .2em;
+        margin-right: 1em;
+      }
+
+      a {
+        color: $color-medium-secondary-text;
+      }
     }
 
     .CommonAvatarListItemDetails {

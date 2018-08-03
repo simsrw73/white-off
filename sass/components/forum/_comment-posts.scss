@@ -6,6 +6,12 @@
   border: none;
 }
 
+// The above sets all comment bubbles to 10px padding,
+// here we exclude the last one
+.CommonContentBoxContent > div:last-child {
+  margin-bottom: 0;
+}
+
 .CommonCommentArea {
   background-color: $color-light-primary-head;
 }
