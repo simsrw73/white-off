@@ -8,21 +8,29 @@ form[action*="ForumSubscriptions"] {
     margin-left: 1em;
   }
 
-  // center Subscribe column header
-  .CommonListHeader:nth-of-type(2) {
-    text-align: center;
+  .CommonListHeader {
+    background-color: $color-light-secondary-head !important;
+
+    // center Subscribe column header
+    &:nth-of-type(2) {
+      text-align: center;
+    }
   }
 
   .CommonListArea {
-    background: #fff;
+    background: $color-light-secondary-background;
     padding: 1em;
 
     table {
       border-top: 1px solid #ccc;
       border-left: 1px solid #ccc;
+
+      // restore border that's removed in general tables
+      tr:last-of-type td {
+        border-bottom: 1px solid #ccc;
+      }
     }
   }
-
 
   .CommonListCell a[id$="_off"],
   .CommonListCell a[id$="_on"],
@@ -49,4 +57,5 @@ form[action*="ForumSubscriptions"] {
   .CommonListCell a[id$="_processing"]::before {
     content: "\2026"; // "\231b"
   }
+
 }
