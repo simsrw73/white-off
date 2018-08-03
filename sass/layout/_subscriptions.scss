@@ -1,7 +1,15 @@
 
 form[action*="ForumSubscriptions"] {
 
-  h2.CommonListTitle::after {
+  .CommonContentBox {
+    padding: 8px !important;
+  }
+
+  .CommonDescription {
+    margin: 0 0 8px 0 !important;
+  }
+
+  .CommonListTitle::after {
     font-weight: 400;
     font-size: 60%;
     content: "(Select \2714 or \2718 to toggle forum subscriptions on or off.)";
@@ -19,6 +27,7 @@ form[action*="ForumSubscriptions"] {
 
   .CommonListArea {
     background: $color-light-secondary-background;
+    border-radius: 6px;
     padding: 1em;
 
     table {
