@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         White-Off for Faithlife Community Forums
 @description  A low contrast, modern theme for the Faithlife Community Forums
-@version      1.0.0
+@version      1.0.1
 @author       Randy W. Sims <simsrw73@gmail.com>
 @namespace    https://github.com/simsrw73
 @homepageURL  https://github.com/simsrw73/white-off
@@ -272,7 +272,7 @@
   .CommonContentBoxHeaderForm { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); background-image: none; margin: 10px 10px 0 10px; border: 1px outset #f4f4f4; border-radius: 8px; padding: 8px 12px 4px 12px; color: #f4f4f4; }
   .CommonContentBoxHeaderForm a { color: #e39c4f; }
   .CommonContentBoxHeaderForm a.ForumLinkUnread, .CommonContentBoxHeaderForm .ForumLinkUnread:link, .CommonContentBoxHeaderForm .ForumLinkUnread:visited { color: #e39c4f; }
-  .CommonContentBoxContent { padding: 0; margin: 10px; }
+  .CommonContentBoxContent { padding: 4px; margin: 6px; }
   .CommonContentBoxContent table a { color: #e39c4f; }
   .CommonContentBoxContent .ForumPostButtons a { color: #c46600; }
   .CommonListArea { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); padding: 0; }
