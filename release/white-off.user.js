@@ -7,8 +7,8 @@
 // @namespace     https://github.com/simsrw73
 // @homepageURL   https://github.com/simsrw73/white-off
 // @supportURL    https://github.com/simsrw73/white-off/issues
-// @downloadURL   https://github.com/simsrw73/white-off/raw/master/release/white-off.user.css
-// @updateURL     https://github.com/simsrw73/white-off/raw/master/release/white-off.user.css
+// @downloadURL   https://github.com/simsrw73/white-off/raw/master/release/white-off.user.js
+// @updateURL     https://github.com/simsrw73/white-off/raw/master/release/white-off.user.js
 // @include       http://community.logos.com/*
 // @include       https://community.logos.com/*
 // @include       http://*.community.logos.com/*
