@@ -98,7 +98,7 @@
   margin-right: 0.3em;
 }
 
-#CommonHeaderUserWelcome .sub a[href$="logout"]::before {
+#CommonHeaderUserWelcome .sub a[href*="logout"]::before {
   @include fa-icon;
   @extend .fas;
   content: fa-content($fa-var-power-off);

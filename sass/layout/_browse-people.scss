@@ -57,7 +57,7 @@ form[action*="#{$member-page-refid-RIP}"] .CommonAvatarListArea {
 }
 
 // Bottom page scripture
-form[action$="#{$member-page-refid-RIP}"]::after {
+form[action*="#{$member-page-refid-RIP}"]::after {
   @include mdl-shadow--24dp;
   display: inline-block;
   position: fixed;
