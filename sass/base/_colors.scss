@@ -6,6 +6,7 @@ $color-logos-complement: complement($color-logos-blue);
 $color-primary: $color-logos-blue;
 $color-light-primary-head: saturate( mix(white, $color-primary, $weight: 85%), 10 );
 $color-light-primary-background: mix(white, $color-primary, $weight: 95%);
+$color-light-primary-background-alt: mix(white, $color-primary, $weight: 96%);
 
 $color-secondary: $color-logos-complement;
 $color-medium-secondary-text: saturate( mix(white, $color-secondary, $weight: 35%), 10 );

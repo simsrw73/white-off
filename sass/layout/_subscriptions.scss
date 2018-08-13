@@ -30,12 +30,16 @@ form[action*="ForumSubscriptions"] {
     border-radius: 6px;
     padding: 1em;
 
-    table {
+    & > table {
       border-top: 1px solid #ccc;
       border-left: 1px solid #ccc;
 
+      & > tbody > tr {
+        background-color: $color-light-secondary-background;
+      }
+
       // restore border that's removed in general tables
-      tr:last-of-type td {
+      & > tbody > tr:last-of-type td {
         border-bottom: 1px solid #ccc;
       }
     }

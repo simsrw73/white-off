@@ -66,6 +66,11 @@ h1.CommonTitle {
     color: $color-logos-blue;
   }
 
+  // This is used for a default row color where class .CommonListRow is not applied
+  & > table > tbody > tr {
+    background-color: $color-light-primary-background;
+  }
+
   // remove last dotted border in list
   & > table tr:last-of-type td {
     border-bottom: none;
@@ -85,18 +90,18 @@ h1.CommonTitle {
 }
 
 .CommonListRow {
-  background-color: desaturate($color-light-primary-background, 30);
+  background-color: $color-light-primary-background !important;
 
   &:hover {
-    background-color: transparentize(desaturate($color-light-primary-background, 30), .05);
+    background-color: transparentize($color-light-primary-background, .05) !important;
   }
 }
 
 .CommonListRowAlt {
-  background-color: grayscale($color-light-primary-background);
+  background-color: $color-light-primary-background-alt !important;
 
   &:hover {
-    background-color: transparentize(grayscale($color-light-primary-background), .05);
+    background-color: transparentize($color-light-primary-background-alt, .05) !important;
   }
 }
 
@@ -148,10 +153,6 @@ a.ForumGroupNameUnReadText,
 .ForumGroupNameUnReadText:visited {
   color: $color-logos-blue;
   padding-left: 12px;
-}
-
-.CommonListArea table a {
-  color: $color-logos-blue;
 }
 
 a.ForumNameUnRead,
