@@ -2,6 +2,7 @@
 # TODO
 
 - [ ] Write an npm module (usertyle-gen), to input a css file along with metadata json and output properly formatted user.css & user.js
+- [ ] There are a few areas that don't respond well to different text sizes set in user profile settings.
 
 
 ## All da Pages
