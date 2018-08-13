@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name         White-Off for Faithlife Community Forums
 @description  A low contrast, modern theme for the Faithlife Community Forums
-@version      1.0.1
+@version      1.0.3
 @author       Randy W. Sims <simsrw73@gmail.com>
 @namespace    https://github.com/simsrw73
 @homepageURL  https://github.com/simsrw73/white-off
@@ -12,9 +12,9 @@
 @preprocessor default
 ==/UserStyle== */
 @-moz-document domain("community.logos.com") { /*! Font Awesome Free 5.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) */
-  .fa, .fas, .defaultSkin .mceSplitButton span.mceAction, .defaultSkin .mceIcon, #CommonHeaderUserWelcome .sub a[href*="EditProfile"]::before, #CommonHeaderUserWelcome .sub a[href$="logout"]::before, .validationWarning::before, ul.CommonContentBoxList li.CommonActivity table tr td + td a::after, ul.CommonContentBoxList li.CommonActivity.NewForumThread td:first-child::before, ul.CommonContentBoxList li.CommonActivity.NewForumPost td:first-child::before, form[action*='favorites'] .CommonAvatarListItemArea .CommonAvatarListItemName::before, .far, .fal, .fab { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+  .fa, .fas, .defaultSkin .mceSplitButton span.mceAction, .defaultSkin .mceIcon, #CommonHeaderUserWelcome .sub a[href*="EditProfile"]::before, #CommonHeaderUserWelcome .sub a[href*="logout"]::before, .validationWarning::before, ul.CommonContentBoxList li.CommonActivity table tr td + td a::after, ul.CommonContentBoxList li.CommonActivity.NewForumThread td:first-child::before, ul.CommonContentBoxList li.CommonActivity.NewForumPost td:first-child::before, form[action*='favorites'] .CommonAvatarListItemArea .CommonAvatarListItemName::before, .far, .fal, .fab { -moz-osx-font-smoothing: grayscale; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
   @font-face { font-family: 'Font Awesome 5 Free'; font-style: normal; font-weight: 900; src: url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.eot"); src: url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.eot?#iefix") format("embedded-opentype"), url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-solid-900.svg#fontawesome") format("svg"); }
-  .fa, .fas, .defaultSkin .mceSplitButton span.mceAction, .defaultSkin .mceIcon, #CommonHeaderUserWelcome .sub a[href*="EditProfile"]::before, #CommonHeaderUserWelcome .sub a[href$="logout"]::before, .validationWarning::before, ul.CommonContentBoxList li.CommonActivity table tr td + td a::after, ul.CommonContentBoxList li.CommonActivity.NewForumThread td:first-child::before, ul.CommonContentBoxList li.CommonActivity.NewForumPost td:first-child::before, form[action*='favorites'] .CommonAvatarListItemArea .CommonAvatarListItemName::before { font-family: 'Font Awesome 5 Free'; font-weight: 900; }
+  .fa, .fas, .defaultSkin .mceSplitButton span.mceAction, .defaultSkin .mceIcon, #CommonHeaderUserWelcome .sub a[href*="EditProfile"]::before, #CommonHeaderUserWelcome .sub a[href*="logout"]::before, .validationWarning::before, ul.CommonContentBoxList li.CommonActivity table tr td + td a::after, ul.CommonContentBoxList li.CommonActivity.NewForumThread td:first-child::before, ul.CommonContentBoxList li.CommonActivity.NewForumPost td:first-child::before, form[action*='favorites'] .CommonAvatarListItemArea .CommonAvatarListItemName::before { font-family: 'Font Awesome 5 Free'; font-weight: 900; }
   @font-face { font-family: 'Font Awesome 5 Brands'; font-style: normal; font-weight: normal; src: url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.eot"); src: url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.eot?#iefix") format("embedded-opentype"), url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.woff2") format("woff2"), url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.woff") format("woff"), url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.ttf") format("truetype"), url("https://use.fontawesome.com/releases/v5.1.0/webfonts//fa-brands-400.svg#fontawesome") format("svg"); }
   .fab { font-family: 'Font Awesome 5 Brands'; }
   @font-face { font-family: "Source Sans Pro"; font-style: normal; font-weight: 300; src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url(https://fonts.gstatic.com/s/sourcesanspro/v11/6xKydSBYKcSV-LCoeQqfX1RYOo3ik4zwlxdu.woff2) format("woff2"); unicode-range: U+0000-00FF; }
@@ -146,7 +146,7 @@
   #CommonHeaderUserWelcome .sub a:link, #CommonHeaderUserWelcome .sub a:visited { padding: 0.3em 0.7em; border: none; color: #005ec4; font-weight: normal; letter-spacing: 0; text-decoration: none; }
   #CommonHeaderUserWelcome .sub a:hover { background-color: #d7e7f8; color: #005ec4; text-decoration: none; border-radius: 5px; }
   #CommonHeaderUserWelcome .sub a[href*="EditProfile"]::before { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: inline-block; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; vertical-align: -.125em; content: "\f303"; font-size: 14px; margin-right: 0.3em; }
-  #CommonHeaderUserWelcome .sub a[href$="logout"]::before { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: inline-block; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; vertical-align: -.125em; content: "\f011"; font-size: 14px; margin-right: 0.3em; }
+  #CommonHeaderUserWelcome .sub a[href*="logout"]::before { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; display: inline-block; font-style: normal; font-variant: normal; font-weight: normal; line-height: 1; vertical-align: -.125em; content: "\f011"; font-size: 14px; margin-right: 0.3em; }
   .CommonSearchArea, .CommonSearchAreaSidebar { width: 460px; }
   .CommonSearchContent, .CommonSearchContentSidebar { position: relative; height: 2.5em; width: 100%; margin: 0; padding: 0; border: none; }
   .CommonSearchContentInner { position: relative; top: 0; left: 0; height: 100%; width: 100%; }
@@ -226,7 +226,7 @@
   form[action*="6388d75f-2687-441f-a94e-e966f273121e"] .CommonContentBoxHeaderInline { position: relative; color: transparent; text-shadow: none; }
   form[action*="6388d75f-2687-441f-a94e-e966f273121e"] .CommonContentBoxHeaderInline::before { display: inline-block; position: absolute; color: #fff; text-shadow: 0 2px 2px rgba(0, 0, 0, 0.14); content: 'I have fought the good fight, I have finished the race, I have kept the faith. (2 Ti 4:7)'; }
   form[action*="6388d75f-2687-441f-a94e-e966f273121e"] .CommonAvatarListArea { background: #fff; }
-  form[action$="6388d75f-2687-441f-a94e-e966f273121e"]::after { box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2); display: inline-block; position: fixed; margin: 0; padding: 1em 2em; border-radius: .5em; left: 16%; bottom: 5em; width: calc(100Vw - 40%); background: lightgoldenrodyellow; color: darkgoldenrod; font-weight: 500; letter-spacing: .05em; font-size: 1.2em; content: 'For I know that my Redeemer lives, and at the last he will stand upon the earth. And after my skin has been thus destroyed, yet in my flesh I shall see God, whom I shall see for myself, and my eyes shall behold, and not another. My heart faints within me! (Job 19:25-27)'; white-space: normal; z-index: 1000; }
+  form[action*="6388d75f-2687-441f-a94e-e966f273121e"]::after { box-shadow: 0 9px 46px 8px rgba(0, 0, 0, 0.14), 0 11px 15px -7px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.2); display: inline-block; position: fixed; margin: 0; padding: 1em 2em; border-radius: .5em; left: 16%; bottom: 5em; width: calc(100Vw - 40%); background: lightgoldenrodyellow; color: darkgoldenrod; font-weight: 500; letter-spacing: .05em; font-size: 1.2em; content: 'For I know that my Redeemer lives, and at the last he will stand upon the earth. And after my skin has been thus destroyed, yet in my flesh I shall see God, whom I shall see for myself, and my eyes shall behold, and not another. My heart faints within me! (Job 19:25-27)'; white-space: normal; z-index: 1000; }
   #CommonHeader { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); background-color: #f4f4f4; padding-top: .75em; }
   #CommonHeaderTitleArea { width: 970px; height: 60px; }
   #CommonHeaderTitleArea table { table-layout: fixed; }
@@ -259,8 +259,9 @@
   form[action*="ForumSubscriptions"] .CommonListHeader { background-color: #f8e8d7 !important; }
   form[action*="ForumSubscriptions"] .CommonListHeader:nth-of-type(2) { text-align: center; }
   form[action*="ForumSubscriptions"] .CommonListArea { background: #fcf7f2; border-radius: 6px; padding: 1em; }
-  form[action*="ForumSubscriptions"] .CommonListArea table { border-top: 1px solid #ccc; border-left: 1px solid #ccc; }
-  form[action*="ForumSubscriptions"] .CommonListArea table tr:last-of-type td { border-bottom: 1px solid #ccc; }
+  form[action*="ForumSubscriptions"] .CommonListArea > table { border-top: 1px solid #ccc; border-left: 1px solid #ccc; }
+  form[action*="ForumSubscriptions"] .CommonListArea > table > tbody > tr { background-color: #fcf7f2; }
+  form[action*="ForumSubscriptions"] .CommonListArea > table > tbody > tr:last-of-type td { border-bottom: 1px solid #ccc; }
   form[action*="ForumSubscriptions"] .CommonListCell a[id$="_off"], form[action*="ForumSubscriptions"] .CommonListCell a[id$="_on"], form[action*="ForumSubscriptions"] .CommonListCell a[id$="_processing"] { color: transparent; }
   form[action*="ForumSubscriptions"] .CommonListCell a[id$="_off"]::before, form[action*="ForumSubscriptions"] .CommonListCell a[id$="_on"]::before, form[action*="ForumSubscriptions"] .CommonListCell a[id$="_processing"]::before { position: relative; left: .7em; font-size: 120%; font-weight: 700; color: #333; }
   form[action*="ForumSubscriptions"] .CommonListCell a[id$="_off"]::before { content: "\2718"; }
@@ -277,13 +278,14 @@
   .CommonContentBoxContent .ForumPostButtons a { color: #c46600; }
   .CommonListArea { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); padding: 0; }
   .CommonListArea table a { color: #005ec4; }
+  .CommonListArea > table > tbody > tr { background-color: #f2f7fc; }
   .CommonListArea > table tr:last-of-type td { border-bottom: none; }
   .CommonListHeader { color: black; background-color: #f4f4f4 !important; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; }
   .CommonListRow td, .CommonListRowAlt td { background-color: transparent; }
-  .CommonListRow { background-color: #f4f7fa; }
-  .CommonListRow:hover { background-color: rgba(244, 247, 250, 0.95); }
-  .CommonListRowAlt { background-color: #f7f7f7; }
-  .CommonListRowAlt:hover { background-color: rgba(247, 247, 247, 0.95); }
+  .CommonListRow { background-color: #f2f7fc !important; }
+  .CommonListRow:hover { background-color: rgba(242, 247, 252, 0.95) !important; }
+  .CommonListRowAlt { background-color: #f5f9fd !important; }
+  .CommonListRowAlt:hover { background-color: rgba(245, 249, 253, 0.95) !important; }
   .CommonListCell { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif; color: #333; padding: 10px; }
   .ForumPostHeader { box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12); background-color: #f4f4f4; border: none; border-radius: 8px; margin: 10px 0; }
   .ForumPostHeader .CommonContentBoxFooter { color: Black; font-weight: normal; }
@@ -291,7 +293,6 @@
   .CommonContentBoxFooter { padding: 0 10px 10px 10px; border-top: none; color: #f4f4f4; }
   .CommonContentBoxFooter a:link, .CommonContentBoxFooter a:visited { color: #e39c4f; }
   a.ForumGroupNameReadText, a.ForumGroupNameUnReadText, .ForumGroupNameReadText:link, .ForumGroupNameUnReadText:link, .ForumGroupNameReadText:visited, .ForumGroupNameUnReadText:visited { color: #005ec4; padding-left: 12px; }
-  .CommonListArea table a { color: #005ec4; }
   a.ForumNameUnRead, .ForumNameUnRead:link, .ForumNameUnRead:visited { color: #005ec4; font-weight: bold; }
   a.ForumNameRead, .ForumNameRead:link, .ForumNameRead:visited { color: #626262; }
   .CommonDescription { color: #fcf7f2; margin: 8px 0 4px 0 !important; }
