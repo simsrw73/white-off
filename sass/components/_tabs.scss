@@ -29,6 +29,12 @@
 
 ///////////////////////////////////////////
 
+#ctl00_ctl00_bcr_bcr_PostForm_ctl05_EditorTabs {
+  background-color: $color-content-background;
+  margin: 0;
+  padding: 0;
+}
+
 .CommonPaneTabSet {
   width: 70%;
   border-bottom: 4px solid $color-medium-secondary-text;
@@ -51,12 +57,17 @@
 
   .CommonPaneTab {
     background: linear-gradient(to bottom, silver 0%, #a0a0a0 80%, #909090 100%);
+
+    .TabButton {
+      background-color: transparent;
+    }
   }
 
   .CommonPaneTabHover {
     background-color: $color-light-secondary-head;
 
     .TabButton {
+      background-color: transparent;
       font-weight: 500;
     }
   }
@@ -76,13 +87,16 @@
 .TabButton {
   display: block;
   box-sizing: border-box;
-  padding: 2px;
   background: none;
+  background-color: $color-medium-secondary-text;
+  height: auto !important;
+  width: 80px !important;
+  padding: .2em;
+  border: none;
+  border-radius: 2px !important;
   color: #333 !important;
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 400;
   text-decoration: none;
   text-align: center;
-  font-weight: 400;
-  width: 70px;
-  height: 20px;
 }

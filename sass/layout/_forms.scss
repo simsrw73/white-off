@@ -55,51 +55,10 @@ form[action*="QuickReply"] {
   }
 }
 
-// Reply & Quick Reply
-#ctl00_ctl00_bcr_bcr_PostForm_ctl05_EditorTabs {
-  background-color: $color-content-background;
-  margin: 0;
-  padding: 0;
-}
-
-// The post that is being replied to
-.ForumReplyToPostArea {
-  background-color: rgba(0, 0, 0, .05);
-  box-shadow: none;
-  margin: 1em 0;
-  padding: .5em 1em 1em 1em;
-  border: none;
-  border-top: 1px solid $color-primary; // or top-right or bottoom right or left-bottom ???
-  border-right: 1px solid $color-primary;
-  border-radius: 0;
-
-  .CommonTextButton {
-    margin: 0;
-    padding: 0;
-  }
-}
-
-// The text "Description" above the reply form
-.ForumReplyToPostArea + .CommonFormArea > .CommonFormFieldName {
-  color: $color-medium-secondary-text;
-}
-
-#ctl00_ctl00_bcr_bcr_PostForm_ctl05_OptionsPane > .CommonFormFieldName > label {
-  color: $color-medium-secondary-text;
-}
-
-#ctl00_ctl00_bcr_bcr_PostForm_ctl05_ctl09_ctl02_IsLocked {
-  margin: 0;
-}
-
-#ctl00_ctl00_bcr_bcr_PostForm_ctl05_AttachmentSubForm_ctl00_Filename + button {
-  margin-left: 10px;
-}
 
 .CommonContentBoxHeaderForm .CommonContentBoxHeaderInline a {
   text-shadow: $header-text-shadow;
 }
-
 
 .CommonFormArea {
   background-color: $color-content-background;
@@ -116,11 +75,6 @@ html:not([xmlns="http://www.w3.org/1999/xhtml"]) {
   background-color: white;
 }
 
-.CommonFormField label {
-  color: $color-medium-secondary-text;
-  letter-spacing: .25px;
-}
-
 div.CommonFormFieldPadding {
   padding: 0 10px 10px;
 }
@@ -129,7 +83,7 @@ div.CommonFormFieldPadding {
 // HTML Editor
 
 body.forceColors {
-  background-color: $color-page-background; // #f0f0ee;
+  background-color: $color-page-background;
 
   #insert, #cancel, input {
     @extend %modal-form-buttons;
@@ -154,6 +108,25 @@ body#image {
     background-color: $color-page-background;
   }
 
+  .tabs {
+    span {
+      background: none;
+      background-color: white;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border-bottom: none;
+    }
+
+    .current {
+      background: none;
+      background-color: white;
+      border-top-left-radius: 4px;
+      border-top-right-radius: 4px;
+      border: 1px solid #999;
+      border-bottom: none;
+    }
+  }
+
   #src, #alt {
     width: 160px !important;
   }
@@ -162,7 +135,13 @@ body#image {
   #cancel,
   .mceActionPanel input {
     @extend %modal-form-buttons;
+    padding: 0;
     margin-bottom: 8px;
+    font-size: 95%;
+  }
+
+  #cancel {
+    margin-right: 0 !important;
   }
 
   select {
@@ -177,7 +156,6 @@ body#image {
   }
 
   input[value='cancel'] {
-    // float: right;
     position: absolute;
   }
 }
@@ -190,37 +168,6 @@ form[action*="UploadAttachment"] {
 
   input[type='submit'] {
     @extend %modal-form-buttons;
-  }
-}
-
-
-form[action*='ReportAbuse'] {
-
-  .CommonPaneTabSelected {
-    @extend .TabButton;
-    background-color: $color-medium-secondary-text !important;
-    font-weight: 700 !important;
-    width: 92px;
-    height: 30px;
-    padding: 8px;
-  }
-
-  .CommonFormArea {
-    padding: 0;
-  }
-
-  .CommonFormFieldName {
-    & > label {
-      color: $color-medium-secondary-text;
-      text-shadow: $header-text-shadow;
-      font-size: 20px;
-    }
-
-  }
-
-  .CommonFormField > input {
-    margin: 0;
-    height: 2em;
   }
 }
 

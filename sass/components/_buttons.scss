@@ -3,27 +3,27 @@ button,
 [type='reset'],
 [type='submit'] {
   display: inline-block;
+  background: $color-medium-secondary-text;
+  height: 2em !important;
+  width: 80px !important;
+  padding: .5em 1.2em;
+  margin: .25em 0;
   border: none;
   border-radius: 2px !important;
-  margin: .25em 0;
-  padding: .5em 1em;
   text-decoration: none;
-  background: $color-medium-secondary-text;
   font-family: $font-stack;
   font-weight: 600;
-  font-size: 1em;
+  font-size: 14px;
   line-height: 1;
   cursor: pointer;
   text-align: center;
-  min-width: 80px;
-  height: 2.2em;
 
   transition: all 0.1s;
   color: #333;
 
   &:hover {
-    color: #000;
-    background-color: $color-light-secondary-head;
+    color: #000 !important;
+    background-color: $color-light-secondary-head !important;
   }
 
   &:active {

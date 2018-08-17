@@ -1,49 +1,48 @@
-// I believe this section only occurs on profile edit page; otherwise, breakage
+form[action*='EditProfile'] {
 
-// Profile section
-.CommonGroupedContentArea {
-  @include mdl-shadow--2dp;
-  background-color: $color-light-secondary-background;
-  border-radius: 8px;
-  padding: 10px 10px 20px 10px;
+  // Profile section
+  .CommonGroupedContentArea {
+    @include mdl-shadow--2dp;
+    background-color: $color-light-secondary-background;
+    border-radius: 8px;
+    padding: 10px 10px 20px 10px;
 
-  h3.CommonSubTitle {
-    color: $color-secondary;
-    margin-top: 5px;
-  }
-
-  .CommonFormFieldDescription {
-    color: black;
-
-    a:link,
-    a:visited,
-    a:active,
-    a:hover {
+    .CommonSubTitle {
       color: $color-secondary;
+      margin-top: 5px;
     }
-  }
 
-  div.CommonFormFieldName {
-    color: black;
-    padding: 2px;
-  }
-
-  td.CommonFormFieldName {
-    height: 2em;
-  }
-
-  .CommonFormField {
-    label {
+    .CommonFormFieldDescription {
       color: black;
 
-      &:not(:first-child) {
-        margin-left: 12px;
+      a:link,
+      a:visited,
+      a:active,
+      a:hover {
+        color: $color-secondary;
       }
     }
-  }
-}
 
-content > div.CommonFormFieldName {
-  margin: 0;
-  padding: 0;
-}
+    .CommonFormFieldName {
+      color: black !important;
+      height: 2em;
+    }
+
+    .CommonFormField {
+      label {
+        color: black;
+
+        &:not(:first-child) {
+          margin-left: 12px;
+        }
+      }
+    }
+
+  } // .CommonGroupedContentArea
+
+  content > .CommonFormFieldName {
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+} // form

@@ -1,0 +1,25 @@
+form[action*='ReportAbuse'] {
+
+  .CommonPaneTabSelected {
+    @extend .TabButton;
+    background-color: $color-medium-secondary-text !important;
+    font-weight: 700 !important;
+    width: calc(80px + 1.5em) !important;
+    padding: .5em;
+  }
+
+  .CommonFormArea {
+    padding: 0;
+  }
+
+  .CommonFormField,
+  .CommonFormFieldName {
+    color: $color-medium-secondary-text !important;
+    font-size: 14px;
+  }
+
+  .CommonFormField > input {
+    margin: 0;
+    height: 2em;
+  }
+}

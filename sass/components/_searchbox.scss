@@ -32,7 +32,7 @@
   border: 1px solid $color-page-background;
   background-color: $color-logos-brand-header;
   color: $color-page-background;
-  font-size: 16px;
+  font-size: 16px !important;
   letter-spacing: .02em;
 
   &::-ms-clear {
@@ -52,11 +52,11 @@
     position: absolute;
     right: 0;
     top: 0;
-    width: 60px;
-    height: 100%;
+    width: 60px !important;
+    height: 100% !important;
     margin: 0;
     padding: 0;
-    background-color: transparent;
+    background-color: transparent !important;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;

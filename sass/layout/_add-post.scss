@@ -1,0 +1,57 @@
+form[action*='AddPost'] {
+
+  // The post that is being replied to
+  .ForumReplyToPostArea {
+    background-color: rgba(0, 0, 0, .05);
+    box-shadow: none;
+    margin: 1em 0;
+    padding: .5em 1em 1em 1em;
+    border: none;
+    border-top: 1px solid $color-primary;
+    border-right: 1px solid $color-primary;
+    border-radius: 0;
+
+    .CommonTextButton {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .CommonFormField,
+  .CommonFormFieldName {
+    color: $color-medium-secondary-text !important;
+  }
+
+  button, [type='button'], [type='reset'], [type='submit'] {
+    min-width: 70px;
+
+    &:hover {
+      color: #000;
+      background-color: $color-light-secondary-head;
+    }
+  }
+
+  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_OptionsPane > .CommonFormField {
+
+    button,
+    input[type='submit'] {
+      width: 120px !important;
+      height: 2em !important;
+      border-radius: 2px !important;
+      border: none;
+      background-color: #e39c4f;
+      color: #333;
+      margin: .5em 0 0 .5em !important
+    }
+
+  }
+
+  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_ctl09_ctl02_IsLocked {
+    margin: 0;
+  }
+
+  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_AttachmentSubForm_ctl00_Filename + button {
+    margin-left: 10px;
+  }
+
+}

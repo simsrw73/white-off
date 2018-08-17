@@ -1,11 +1,3 @@
-// The huge amount of !important declarations are soley the fault of Edge
-
-// Reply Header Description
-// ctl00_ctl00_bcr_bcr_PostForm_ctl05_ComposePane
-.Editor .CommonFormArea > .CommonFormFieldName > strong {
-  font-size: 20px;
-  text-shadow: $header-text-shadow;
-}
 
 // Quick Reply Header Description
 .CommonFormArea > .CommonFormFieldName > label[for="ctl00_bcr_PostForm_ctl05_PostBody"] {
