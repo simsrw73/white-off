@@ -3,7 +3,7 @@
   "namespace": "https://github.com/simsrw73",
   "homepageURL": "https://github.com/simsrw73/white-off",
   "supportURL": "https://github.com/simsrw73/white-off/issues",
-  "updateBaseURL": "https://github.com/simsrw73/white-off/raw/master/release/",
+  "updateBaseURL": "https://raw.githubusercontent.com/simsrw73/white-off/master/release/",
   "match": {
     "domain": "community.logos.com"
   }
