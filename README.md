@@ -1,7 +1,7 @@
 # White-Off for Faithlife Community Forums
 
-[![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://github.com/simsrw73/white-off/raw/master/release/white-off.user.css)
-[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://github.com/simsrw73/white-off/raw/master/release/white-off.user.js)
+[![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/simsrw73/white-off/master/release/white-off.user.css)
+[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://raw.githubusercontent.com/simsrw73/white-off/master/release/white-off.user.js)
 
 A low contrast, modern theme for the Faithlife Community Forums
 
@@ -42,10 +42,10 @@ There are a couple of options for installing the theme in your browser.
 Once you've installed one of the extensions above, you are ready to install the theme:
 
 For Stylus users:<br>
-[![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://github.com/simsrw73/white-off/raw/master/release/white-off.user.css)
+[![Install with Stylus](https://img.shields.io/badge/Install%20with-Stylus-00adad.svg)](https://raw.githubusercontent.com/simsrw73/white-off/master/release/white-off.user.css)
 
 For Tampermonkey users:<br>
-[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://github.com/simsrw73/white-off/raw/master/release/white-off.user.js)
+[![Install with Tampermonkey](https://img.shields.io/badge/Install%20with-Tampermonkey-00485b.svg)](https://raw.githubusercontent.com/simsrw73/white-off/master/release/white-off.user.js)
 
 You can also find this theme on [OpenUserCSS](https://openusercss.org/theme/5b51e072d2829c0b00d2df3b).
 
