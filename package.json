@@ -43,8 +43,9 @@
     "clean": "rimraf debug release"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.3.1",
     "autoprefixer": "^9.0.2",
-    "chokidar-cli": "^1.2.0",
+    "chokidar-cli": "^1.2.1",
     "cross-var": "^1.1.0",
     "mkdirp": "^0.5.1",
     "node-sass-chokidar": "^1.3.3",

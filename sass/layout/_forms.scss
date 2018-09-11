@@ -175,7 +175,7 @@ form[action*="UploadAttachment"] {
   color: transparent;
 
   &::before {
-    @include fa-icon;
+    @extend %fa-icon;
     @extend .fas;
     content: fa-content($fa-var-exclamation-triangle);
     color: $color-medium-secondary-text;

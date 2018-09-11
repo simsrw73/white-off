@@ -65,14 +65,14 @@
 }
 
 .defaultSkin .mceSplitButton span.mceAction {
-  @include fa-icon;
+  @extend %fa-icon;
   @extend .fas;
   height: 18px !important;
   background: none !important;
 }
 
 .defaultSkin .mceIcon {
-  @include fa-icon;
+  @extend %fa-icon;
   @extend .fas;
   background: none !important;
   width: 20px !important;

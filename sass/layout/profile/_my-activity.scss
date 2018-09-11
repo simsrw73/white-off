@@ -32,7 +32,7 @@ ul.CommonContentBoxList {
 
     // & replace with FontAwesome font icon
     table tr td + td a::after {
-      @include fa-icon;
+      @extend %fa-icon;
       @extend .fas;
       content: fa-content($fa-var-trash-alt);
       font-size: 16px;
@@ -50,7 +50,7 @@ ul.CommonContentBoxList {
 
     // & replace with FontAwesome font icon
     & td:first-child::before {
-      @include fa-icon;
+      @extend %fa-icon;
       @extend .fas;
       content: fa-content($fa-var-envelope);
       font-size: 18px;
@@ -65,7 +65,7 @@ ul.CommonContentBoxList {
 
     // & replace with FontAwesome font icon
     & td:first-child::before {
-      @include fa-icon;
+      @extend %fa-icon;
       @extend .fas;
       content: fa-content($fa-var-reply);
       font-size: 18px;

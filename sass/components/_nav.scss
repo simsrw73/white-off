@@ -91,7 +91,7 @@
 }
 
 #CommonHeaderUserWelcome .sub a[href*="EditProfile"]::before {
-  @include fa-icon;
+  @extend %fa-icon;
   @extend .fas;
   content: fa-content($fa-var-pencil-alt);
   font-size: 14px;
@@ -99,7 +99,7 @@
 }
 
 #CommonHeaderUserWelcome .sub a[href*="logout"]::before {
-  @include fa-icon;
+  @extend %fa-icon;
   @extend .fas;
   content: fa-content($fa-var-power-off);
   font-size: 14px;

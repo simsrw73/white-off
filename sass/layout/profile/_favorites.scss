@@ -15,7 +15,7 @@ form[action*='favorites'] {
       font-size: 1.3em;
 
       &::before {
-        @include fa-icon;
+        @extend %fa-icon;
         @extend .fas;
         content: fa-content($fa-var-bookmark);
         color: $color-medium-secondary-text;
