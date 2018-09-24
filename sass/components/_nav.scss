@@ -2,7 +2,8 @@
 
 // #navSites {}
 
-#navInfo ul, #navSites ul {
+#navInfo ul,
+#navSites ul {
   padding: 0;
 }
 
@@ -91,17 +92,11 @@
 }
 
 #CommonHeaderUserWelcome .sub a[href*="EditProfile"]::before {
-  @extend %fa-icon;
-  @extend .fas;
-  content: fa-content($fa-var-pencil-alt);
-  font-size: 14px;
+  @include fontawesome-icon($fa-var-pencil-alt, 14px);
   margin-right: 0.3em;
 }
 
 #CommonHeaderUserWelcome .sub a[href*="logout"]::before {
-  @extend %fa-icon;
-  @extend .fas;
-  content: fa-content($fa-var-power-off);
-  font-size: 14px;
+  @include fontawesome-icon($fa-var-power-off, 14px);
   margin-right: 0.3em;
 }

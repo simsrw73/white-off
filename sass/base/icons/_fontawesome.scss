@@ -1,0 +1,19 @@
+/*
+ *   Fontawesome Icons
+ */
+
+// for using Fontawesome icons, install Fontawesome with npm
+@import "@fortawesome/fontawesome-free/scss/variables";
+@import "@fortawesome/fontawesome-free/scss/mixins";
+@import "@fortawesome/fontawesome-free/scss/core";
+$fa-font-path: "https://use.fontawesome.com/releases/v#{$fa-version}/webfonts";
+
+@import "@fortawesome/fontawesome-free/scss/solid";
+
+@mixin fontawesome-icon($icon, $size: 24px, $weight: 400) {
+  @extend %fa-icon;
+  @extend .fas;
+  content: fa-content($icon);
+  font-weight: $weight;
+  font-size: $size;
+}

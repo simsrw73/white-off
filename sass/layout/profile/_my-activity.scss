@@ -32,10 +32,7 @@ ul.CommonContentBoxList {
 
     // & replace with FontAwesome font icon
     table tr td + td a::after {
-      @extend %fa-icon;
-      @extend .fas;
-      content: fa-content($fa-var-trash-alt);
-      font-size: 16px;
+      @include fontawesome-icon($fa-var-trash-alt, 16px);
       color: $color-medium-secondary-text;
     }
 
@@ -50,12 +47,9 @@ ul.CommonContentBoxList {
 
     // & replace with FontAwesome font icon
     & td:first-child::before {
-      @extend %fa-icon;
-      @extend .fas;
-      content: fa-content($fa-var-envelope);
-      font-size: 18px;
+      @include fontawesome-icon($fa-var-envelope, 16px);
       color: $color-medium-secondary-text;
-      margin-right: .5em;
+      margin-right: 0.5em;
     }
   }
 
@@ -65,13 +59,9 @@ ul.CommonContentBoxList {
 
     // & replace with FontAwesome font icon
     & td:first-child::before {
-      @extend %fa-icon;
-      @extend .fas;
-      content: fa-content($fa-var-reply);
-      font-size: 18px;
+      @include fontawesome-icon($fa-var-reply, 18px);
       color: $color-medium-secondary-text;
-      margin-right: .5em;
+      margin-right: 0.5em;
     }
   }
-
 }

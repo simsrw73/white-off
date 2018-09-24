@@ -1,10 +1,10 @@
-
 // Quick Reply Header Description
-.CommonFormArea > .CommonFormFieldName > label[for="ctl00_bcr_PostForm_ctl05_PostBody"] {
+.CommonFormArea
+  > .CommonFormFieldName
+  > label[for="ctl00_bcr_PostForm_ctl05_PostBody"] {
   font-size: 20px;
   text-shadow: $header-text-shadow;
 }
-
 
 .defaultSkin table.mceLayout {
   border: 1px solid #999 !important;
@@ -17,7 +17,6 @@
 .defaultSkin table.mceLayout tr.mceLast td {
   border: none !important;
 }
-
 
 // Toolbar
 .defaultSkin td.mceToolbar {
@@ -42,7 +41,7 @@
 
 // Toolbar Listboxes
 .defaultSkin .mceListBox .mceText {
-  Width: 60px;
+  width: 60px;
   margin-left: 2px;
 }
 
@@ -52,7 +51,7 @@
 #ctl00_bcr_EditUserForm1_ctl02_Signature_ctl00_Editor_fontselect_text,
 #ctl00_bcr_PostForm_ctl05_PostBody_ctl00_Editor_fontselect_text,
 #ctl00_ctl00_bcr_bcr_PostForm_ctl05_PostBody_ctl00_Editor_fontselect_text {
-  Width: 100px;
+  width: 100px;
 }
 
 // Toolbar Buttons
@@ -65,15 +64,11 @@
 }
 
 .defaultSkin .mceSplitButton span.mceAction {
-  @extend %fa-icon;
-  @extend .fas;
   height: 18px !important;
   background: none !important;
 }
 
 .defaultSkin .mceIcon {
-  @extend %fa-icon;
-  @extend .fas;
   background: none !important;
   width: 20px !important;
   height: 20px !important;
@@ -90,7 +85,7 @@
 
 .defaultSkin .mceListBox .mceText {
   font-family: $font-stack !important;
-  letter-spacing: .02em !important;
+  letter-spacing: 0.02em !important;
 }
 
 $toolbar-buttons: (
@@ -117,42 +112,40 @@ $toolbar-buttons: (
   smilies: $fa-var-smile
 );
 
-
 @each $class, $icon in $toolbar-buttons {
   .defaultSkin span.mce_#{$class} {
     background-position: unset !important;
     text-align: center !important;
-
     &::before {
-      content: fa-content(#{$icon});
+      @include fontawesome-icon(#{$icon}, 16px);
       color: #333 !important;
-      font-size: 16px !important;
       width: 20px !important;
       height: 20px !important;
     }
   }
 }
+.defaultSkin span.mce_forecolor::before {
+  font-size: 16px !important;
+  text-align: center !important;
+}
+.defaultSkin span.mce_backcolor::before {
+  font-size: 16px !important;
 
-.defaultSkin span.mce_forecolor::before { font-size: 16px !important; text-align: center !important; }
-.defaultSkin span.mce_backcolor::before { font-size: 16px !important; text-align: center !important; }
-
-
+  text-align: center !important;
+}
 // Toolbar Button State
 .defaultSkin a.mceButtonEnabled:hover {
   background-color: rgba(255, 255, 255, 0.9) !important;
   border: 1px outset #ccc !important;
 }
-
 .defaultSkin a.mceButtonActive,
 .defaultSkin a.mceButtonSelected {
   background-color: rgba(0, 0, 0, 0.1) !important;
   border: 1px inset #ccc !important;
 }
-
 .defaultSkin .mceSplitButton a.mceAction {
   border: 1px solid transparent !important;
 }
-
 .defaultSkin .mceSplitButton a.mceOpen {
   border: 1px solid transparent !important;
 }
@@ -163,14 +156,12 @@ $toolbar-buttons: (
   background-color: rgba(255, 255, 255, 0.9) !important;
   border: 1px outset #ccc !important;
 }
-
 .defaultSkin table.mceSplitButtonEnabled:hover a.mceOpen,
 .defaultSkin .mceSplitButtonHover a.mceOpen,
 .defaultSkin .mceSplitButtonSelected a.mceOpen {
   background-color: rgba(255, 255, 255, 0.9) !important;
   border: 1px outset #ccc !important;
 }
-
 .defaultSkin .mceSplitButtonActive a.mceAction {
   background-color: rgba(255, 255, 255, 0.9) !important;
   border: 1px outset #ccc !important;

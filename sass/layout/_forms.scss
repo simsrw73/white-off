@@ -5,7 +5,7 @@
   background-color: $color-light-secondary-background;
   color: #666;
   border-radius: 4px;
-  border: 1px solid  #666;
+  border: 1px solid #666;
   margin-top: 4px !important;
   margin-right: 4px !important;
   transform: none;
@@ -55,7 +55,6 @@ form[action*="QuickReply"] {
   }
 }
 
-
 .CommonContentBoxHeaderForm .CommonContentBoxHeaderInline a {
   text-shadow: $header-text-shadow;
 }
@@ -79,27 +78,27 @@ div.CommonFormFieldPadding {
   padding: 0 10px 10px;
 }
 
-
 // HTML Editor
 
 body.forceColors {
   background-color: $color-page-background;
 
-  #insert, #cancel, input {
+  #insert,
+  #cancel,
+  input {
     @extend %modal-form-buttons;
     margin: 0;
   }
 
   textarea {
-    margin: .25em 0 0 0;
-    padding: .5em;
+    margin: 0.25em 0 0 0;
+    padding: 0.5em;
     background-color: #fff;
   }
 }
 
 // Insert Media
 body#image {
-
   .panel_wrapper {
     height: 224px;
   }
@@ -127,7 +126,8 @@ body#image {
     }
   }
 
-  #src, #alt {
+  #src,
+  #alt {
     width: 160px !important;
   }
 
@@ -150,12 +150,11 @@ body#image {
 }
 
 .CommonPane {
-
-  input[type='submit'] {
+  input[type="submit"] {
     @extend %modal-form-buttons;
   }
 
-  input[value='cancel'] {
+  input[value="cancel"] {
     position: absolute;
   }
 }
@@ -166,7 +165,7 @@ form[action*="UploadAttachment"] {
     background-color: white;
   }
 
-  input[type='submit'] {
+  input[type="submit"] {
     @extend %modal-form-buttons;
   }
 }
@@ -175,9 +174,7 @@ form[action*="UploadAttachment"] {
   color: transparent;
 
   &::before {
-    @extend %fa-icon;
-    @extend .fas;
-    content: fa-content($fa-var-exclamation-triangle);
+    @include fontawesome-icon($fa-var-exclamation-triangle, 16px);
     color: $color-medium-secondary-text;
     vertical-align: top;
   }
