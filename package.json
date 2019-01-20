@@ -25,6 +25,7 @@
     "build": "debug"
   },
   "scripts": {
+    "prebuild": "cross-var echo $version: '$npm_package_version'; > ./sass/version.scss",
     "build": "cross-var npm-run-all build:$npm_package_config_build:*",
     "build:debug:lint": "npm run lint --silent || echo \"lint found some problems.\"",
     "build:debug:scss": "node-sass-chokidar --verbose --include-path ./node_modules ./sass/white-off.scss ./debug/white-off.css --source-map-root ./sass --source-map true --source-map-embed",

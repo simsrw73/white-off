@@ -1,4 +1,5 @@
 # Project build files
+sass/version.scss
 dist/
 debug/
 playground/

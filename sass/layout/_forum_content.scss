@@ -111,7 +111,6 @@ h1.CommonTitle {
   color: #333;
   padding: 10px;
 }
-
 .ForumPostHeader {
   @include mdl-shadow--2dp;
   background-color: $color-logos-brand-header;
@@ -160,7 +159,6 @@ a.ForumNameRead,
 .ForumNameRead:visited {
   color: $color-content-background;
 }
-
 .CommonDescription {
   color: $color-light-secondary-background;
   margin: 8px 0 4px 0 !important;
@@ -175,4 +173,13 @@ a.ForumNameRead,
     height: 2.5em !important;
     margin-left: -2px;
   }
+}
+#CommonFooter::after {
+  display: block;
+  content: '{ White-Off v#{$version} }';
+  color: black;
+  font-size: 8px;
+  text-align: center;
+  margin-top: -1em;
+  margin-bottom: 1em;
 }

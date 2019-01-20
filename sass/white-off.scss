@@ -1,33 +1,35 @@
-@import "./base/variables";
-@import "./base/mixins";
-@import "./base/functions";
-@import "./base/colors";
-@import "./base/typography";
+@import './version';
 
-@import "./base/base";
+@import './base/variables';
+@import './base/mixins';
+@import './base/functions';
+@import './base/colors';
+@import './base/typography';
 
-@import "./components/alerts";
-@import "./components/avatar";
-@import "./components/badges";
-@import "./components/buttons";
-@import "./components/editor";
-@import "./components/menus";
-@import "./components/nav";
-@import "./components/searchbox";
-@import "./components/tabs";
+@import './base/base';
 
-@import "./components/forum/comment-posts";
+@import './components/alerts';
+@import './components/avatar';
+@import './components/badges';
+@import './components/buttons';
+@import './components/editor';
+@import './components/menus';
+@import './components/nav';
+@import './components/searchbox';
+@import './components/tabs';
 
-@import "./layout/forms";
+@import './components/forum/comment-posts';
 
-@import "./layout/browse-people";
-@import "./layout/header";
-@import "./layout/search-results";
-@import "./layout/sidebar";
-@import "./layout/subscriptions";
-@import "./layout/forum_content";
-@import "./layout/add-post";
-@import "./layout/report-abuse";
-@import "./layout/profile/my-activity";
-@import "./layout/profile/edit";
-@import "./layout/profile/favorites";
+@import './layout/forms';
+
+@import './layout/browse-people';
+@import './layout/header';
+@import './layout/search-results';
+@import './layout/sidebar';
+@import './layout/subscriptions';
+@import './layout/forum_content';
+@import './layout/add-post';
+@import './layout/report-abuse';
+@import './layout/profile/my-activity';
+@import './layout/profile/edit';
+@import './layout/profile/favorites';
