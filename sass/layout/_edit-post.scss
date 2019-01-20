@@ -1,0 +1,20 @@
+form[action*='EditPost'] {
+  .CommonFormField,
+  .CommonFormFieldName {
+    color: $color-medium-secondary-text !important;
+  }
+
+  .CommonFormFieldName {
+    margin-left: 4px;
+  }
+
+  .validationWarning {
+    margin-left: 4px;
+    color: white;
+  }
+
+  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_PlaceHolder1_ctl01_SubscribeToThread {
+    vertical-align: text-bottom;
+    margin-bottom: 1px;
+  }
+}

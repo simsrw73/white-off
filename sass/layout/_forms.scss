@@ -45,7 +45,7 @@
 }
 
 // Quick Reply Modal
-form[action*="QuickReply"] {
+form[action*='QuickReply'] {
   #CommonOuter {
     @include mdl-shadow--24dp;
   }
@@ -150,22 +150,22 @@ body#image {
 }
 
 .CommonPane {
-  input[type="submit"] {
+  input[type='submit'] {
     @extend %modal-form-buttons;
   }
 
-  input[value="cancel"] {
+  input[value='cancel'] {
     position: absolute;
   }
 }
 
 // Quick Reply Modal
-form[action*="UploadAttachment"] {
+form[action*='UploadAttachment'] {
   .CommonFormArea {
     background-color: white;
   }
 
-  input[type="submit"] {
+  input[type='submit'] {
     @extend %modal-form-buttons;
   }
 }
@@ -175,7 +175,8 @@ form[action*="UploadAttachment"] {
 
   &::before {
     @include fontawesome-icon($fa-var-exclamation-triangle, 16px);
-    color: $color-medium-secondary-text;
+    color: yellow;
     vertical-align: top;
+    width: 1.5em;
   }
 }

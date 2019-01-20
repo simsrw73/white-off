@@ -1,11 +1,10 @@
 form[action*='AddPost'] {
-
   // The post that is being replied to
   .ForumReplyToPostArea {
-    background-color: rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, 0.05);
     box-shadow: none;
     margin: 1em 0;
-    padding: .5em 1em 1em 1em;
+    padding: 0.5em 1em 1em 1em;
     border: none;
     border-top: 1px solid $color-primary;
     border-right: 1px solid $color-primary;
@@ -22,7 +21,14 @@ form[action*='AddPost'] {
     color: $color-medium-secondary-text !important;
   }
 
-  button, [type='button'], [type='reset'], [type='submit'] {
+  .CommonFormFieldName {
+    margin-left: 4px;
+  }
+
+  button,
+  [type='button'],
+  [type='reset'],
+  [type='submit'] {
     min-width: 70px;
 
     &:hover {
@@ -32,7 +38,6 @@ form[action*='AddPost'] {
   }
 
   #ctl00_ctl00_bcr_bcr_PostForm_ctl05_OptionsPane > .CommonFormField {
-
     button,
     input[type='submit'] {
       width: 120px !important;
@@ -41,17 +46,62 @@ form[action*='AddPost'] {
       border: none;
       background-color: #e39c4f;
       color: #333;
-      margin: .5em 0 0 .5em !important
+      margin: 0.5em 0 0 0.5em !important;
     }
+  }
 
+  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_PlaceHolder1_ctl01_SubscribeToThread {
+    vertical-align: text-bottom;
+    margin-bottom: 1px;
   }
 
   #ctl00_ctl00_bcr_bcr_PostForm_ctl05_ctl09_ctl02_IsLocked {
     margin: 0;
+    vertical-align: text-bottom;
+    margin-bottom: 1px;
   }
 
-  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_AttachmentSubForm_ctl00_Filename + button {
+  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_AttachmentSubForm_ctl00_Filename
+    + button {
     margin-left: 10px;
   }
 
+  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_PollPane {
+    padding-left: 8px;
+
+    #ctl00_ctl00_bcr_bcr_PostForm_ctl05_PollSubForm_ctl00_IncludePoll {
+      vertical-align: text-bottom;
+      margin-bottom: 1px;
+    }
+
+    & > .CommonFormFieldName {
+      margin-left: 0;
+      padding-left: 0;
+    }
+
+    & > .CommonFormField {
+      color: white !important;
+    }
+
+    #PollContainer {
+      .CommonFormField,
+      .CommonFormFieldName {
+        margin-left: 0;
+      }
+      input {
+        margin-left: 0;
+      }
+      input[type='submit'] {
+        color: #333;
+        background-color: $color-medium-secondary-text;
+        border: none;
+        padding: 0.5em 1.5em;
+        width: auto !important;
+        height: auto !important;
+        &:hover {
+          border: none;
+        }
+      }
+    }
+  }
 }
