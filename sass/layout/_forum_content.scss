@@ -55,7 +55,6 @@ h1.CommonTitle {
   .ForumPostButtons a {
     color: $color-secondary;
   }
-
 }
 
 .CommonListArea {
@@ -83,7 +82,6 @@ h1.CommonTitle {
   font-family: $font-stack;
 }
 
-
 .CommonListRow td,
 .CommonListRowAlt td {
   background-color: transparent;
@@ -93,18 +91,21 @@ h1.CommonTitle {
   background-color: $color-light-primary-background !important;
 
   &:hover {
-    background-color: transparentize($color-light-primary-background, .05) !important;
+    background-color: transparentize(
+      $color-light-primary-background,
+      0.05
+    ) !important;
   }
 }
-
 .CommonListRowAlt {
   background-color: $color-light-primary-background-alt !important;
-
   &:hover {
-    background-color: transparentize($color-light-primary-background-alt, .05) !important;
+    background-color: transparentize(
+      $color-light-primary-background-alt,
+      0.05
+    ) !important;
   }
 }
-
 .CommonListCell {
   font-family: $font-stack;
   color: #333;
@@ -117,34 +118,28 @@ h1.CommonTitle {
   border: none;
   border-radius: 8px;
   margin: 10px 0;
-
-
   .CommonContentBoxFooter {
     color: Black;
     font-weight: normal;
-
     a:link,
     a:visited,
     a:active,
     a:hover {
       color: $color-secondary;
       font-weight: 500;
-      letter-spacing: .5px;
+      letter-spacing: 0.5px;
     }
   }
 }
-
 .CommonContentBoxFooter {
   padding: 0 10px 10px 10px;
   border-top: none;
   color: $color-logos-brand-header;
-
   a:link,
   a:visited {
     color: $color-medium-secondary-text;
   }
 }
-
 a.ForumGroupNameReadText,
 a.ForumGroupNameUnReadText,
 .ForumGroupNameReadText:link,
@@ -154,14 +149,12 @@ a.ForumGroupNameUnReadText,
   color: $color-logos-blue;
   padding-left: 12px;
 }
-
 a.ForumNameUnRead,
 .ForumNameUnRead:link,
 .ForumNameUnRead:visited {
   color: $color-logos-blue;
   font-weight: bold;
 }
-
 a.ForumNameRead,
 .ForumNameRead:link,
 .ForumNameRead:visited {
@@ -171,4 +164,15 @@ a.ForumNameRead,
 .CommonDescription {
   color: $color-light-secondary-background;
   margin: 8px 0 4px 0 !important;
+}
+#CommonContentInner .CommonContentBox .CommonContentBoxContent .CommonFormArea {
+  padding: 0;
+  padding-bottom: 0.5em;
+  border-bottom: 1px dotted $color-medium-secondary-text;
+  #ctl00_ctl00_bcr_bcr_MoveThreadsForm_ctl00_MoveThreads {
+    font-size: 12px;
+    width: 155px !important;
+    height: 2.5em !important;
+    margin-left: -2px;
+  }
 }
