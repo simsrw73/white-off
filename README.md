@@ -106,6 +106,9 @@ npm run release
 
 [Boilerplate for creating User Styles](https://github.com/simsrw73/boilerplate-userstyle-theme) - Create your own themes, starting with this boilerplate.
 
+[Stylus Theme](https://github.com/simsrw73/stylus-theme) - My theme for the Stylus plugin
+
+
 ## Gallery
 
 ![Forum Posts](screenshots/posts.png)
