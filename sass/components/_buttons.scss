@@ -6,8 +6,8 @@ button,
   background: $color-medium-secondary-text;
   height: 2em !important;
   width: 80px !important;
-  padding: .5em 1.2em;
-  margin: .25em 0;
+  padding: 0.5em 1.2em;
+  margin: 0.25em 0;
   border: none;
   border-radius: 2px !important;
   text-decoration: none;
@@ -41,16 +41,16 @@ button,
   background-image: none;
   background-color: $color-medium-secondary-text;
   border-radius: 1em;
-  margin: 0 2px;
-  padding: .1em .5em .1em .5em;
-  opacity: 0.85;
-  transition-duration: 0.3s;
   width: 60px;
+  margin: 0 2px;
+  padding: 0.1em 0.5em 0.1em 0.5em;
+  opacity: 0.9;
+  transition-duration: 0.3s;
+  transition: all 0.1s;
 
   &:link,
   &:visited {
     @include mdl-shadow--2dp;
-    transition: all .1s;
   }
 
   &:hover {
@@ -70,14 +70,12 @@ button,
 
   span {
     color: #333;
-    padding: .1em .1em .1em .2em;
+    padding: 0.1em 0.1em 0.1em 0.2em;
     text-align: center;
     width: auto;
 
-  font {
-      margin-left: .25em;
+    font {
+      margin-left: 0.25em;
     }
   }
-
 }
-

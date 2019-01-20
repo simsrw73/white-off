@@ -2,7 +2,7 @@
 # TODO
 
 - [x] Consider a share link icon to substitute on each post, next to the user name.
-- [ ] Something wrong with the shadows on the Reply/More buttons on each post
+- [x] Something wrong with the shadows on the Reply/More buttons on each post
 - [ ] Each of the forum pages (eg General, Logos 8) has a form at the top that needs to be styled.
 - [x] Each of the forum pages has a button at the bottom that doesn't contain the text (MVP)
 - [ ] The Edit Post dialog has some styling issues, buttons, etc. (MVP)
