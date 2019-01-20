@@ -1,4 +1,5 @@
-form[action*='AddPost'] {
+form[action*='AddPost'],
+form[action*='EditPost'] {
   // The post that is being replied to
   .ForumReplyToPostArea {
     background-color: rgba(0, 0, 0, 0.05);
@@ -37,35 +38,48 @@ form[action*='AddPost'] {
     }
   }
 
-  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_OptionsPane > .CommonFormField {
-    button,
-    input[type='submit'] {
-      width: 120px !important;
-      height: 2em !important;
-      border-radius: 2px !important;
-      border: none;
-      background-color: #e39c4f;
-      color: #333;
-      margin: 0.5em 0 0 0.5em !important;
-    }
-  }
-
   #ctl00_ctl00_bcr_bcr_PostForm_ctl05_PlaceHolder1_ctl01_SubscribeToThread {
     vertical-align: text-bottom;
     margin-bottom: 1px;
   }
 
-  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_ctl09_ctl02_IsLocked {
-    margin: 0;
-    vertical-align: text-bottom;
-    margin-bottom: 1px;
+  .validationWarning {
+    margin-left: 4px;
+    color: white;
   }
 
-  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_AttachmentSubForm_ctl00_Filename
-    + button {
-    margin-left: 10px;
+  // Options Tab
+  #ctl00_ctl00_bcr_bcr_PostForm_ctl05_OptionsPane {
+    .CommonFormField,
+    .CommonFormFieldName {
+      padding-left: 0px;
+    }
+
+    & > .CommonFormField {
+      button,
+      input[type='submit'] {
+        width: 120px !important;
+        height: 2em !important;
+        border-radius: 2px !important;
+        border: none;
+        background-color: #e39c4f;
+        color: #333;
+        margin: 0.5em 0 0 0.5em !important;
+      }
+    }
+
+    #ctl00_ctl00_bcr_bcr_PostForm_ctl05_AttachmentSubForm_ctl00_Filename
+      + button {
+      margin-left: 10px;
+    }
+
+    #ctl00_ctl00_bcr_bcr_PostForm_ctl05_ctl09_ctl02_IsLocked {
+      margin: 0 0 1px 4px;
+      vertical-align: text-bottom;
+    }
   }
 
+  // Poll tab
   #ctl00_ctl00_bcr_bcr_PostForm_ctl05_PollPane {
     padding-left: 8px;
 
