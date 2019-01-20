@@ -130,6 +130,17 @@ h1.CommonTitle {
     }
   }
 }
+.ForumPostTitleUpper {
+  img {
+    display: none;
+  }
+  & > a:first-of-type::after {
+    @include fontawesome-icon($fa-var-link, 10px);
+    vertical-align: baseline;
+    margin-right: 0.5em;
+    color: $color-primary;
+  }
+}
 .CommonContentBoxFooter {
   padding: 0 10px 10px 10px;
   border-top: none;
