@@ -1,6 +1,4 @@
-
-form[action*="ForumSubscriptions"] {
-
+form[action*='ForumSubscriptions'] {
   .CommonContentBox {
     padding: 8px !important;
   }
@@ -12,7 +10,7 @@ form[action*="ForumSubscriptions"] {
   .CommonListTitle::after {
     font-weight: 400;
     font-size: 60%;
-    content: "(Select \2714 or \2718 to toggle forum subscriptions on or off.)";
+    content: '(Select \2714 or \2718 to toggle forum subscriptions on or off.)';
     margin-left: 1em;
   }
 
@@ -30,6 +28,10 @@ form[action*="ForumSubscriptions"] {
     border-radius: 6px;
     padding: 1em;
 
+    &:not(:last-child) {
+      margin-bottom: 1em;
+    }
+
     & > table {
       border-top: 1px solid #ccc;
       border-left: 1px solid #ccc;
@@ -45,30 +47,29 @@ form[action*="ForumSubscriptions"] {
     }
   }
 
-  .CommonListCell a[id$="_off"],
-  .CommonListCell a[id$="_on"],
-  .CommonListCell a[id$="_processing"] {
+  .CommonListCell a[id$='_off'],
+  .CommonListCell a[id$='_on'],
+  .CommonListCell a[id$='_processing'] {
     color: transparent;
 
     &::before {
-      position:relative;
-      left: .7em;
+      position: relative;
+      left: 0.7em;
       font-size: 120%;
       font-weight: 700;
       color: #333;
     }
   }
 
-  .CommonListCell a[id$="_off"]::before {
-    content: "\2718";
+  .CommonListCell a[id$='_off']::before {
+    content: '\2718';
   }
 
-  .CommonListCell a[id$="_on"]::before {
-    content: "\2714";
+  .CommonListCell a[id$='_on']::before {
+    content: '\2714';
   }
 
-  .CommonListCell a[id$="_processing"]::before {
-    content: "\2026"; // "\231b"
+  .CommonListCell a[id$='_processing']::before {
+    content: '\2026'; // "\231b"
   }
-
 }
