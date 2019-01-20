@@ -2,6 +2,7 @@
 sass/version.scss
 dist/
 debug/
+release/white-off.css
 playground/
 
 # Created by https://www.gitignore.io/api/node,sass,windows
