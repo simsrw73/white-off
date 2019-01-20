@@ -41,6 +41,27 @@ h1.CommonTitle {
   .ForumLinkUnread:visited {
     color: $color-medium-secondary-text;
   }
+
+  #ForumOptions {
+    .CommonFormFieldName {
+      padding: 1em 0 0.25em;
+      font-size: 12px;
+      font-weight: normal;
+
+      input[type='submit'] {
+        width: auto !important;
+        height: auto !important;
+        padding: 0.5em 1.5em !important;
+        margin-right: 4px;
+        font-size: 12px;
+      }
+    }
+    .CommonFormField {
+      padding: 0;
+      color: white;
+      font-size: 12px;
+    }
+  }
 }
 
 // Container for forum content, excluding header & footer
@@ -180,8 +201,9 @@ a.ForumNameRead,
   border-bottom: 1px dotted $color-medium-secondary-text;
   #ctl00_ctl00_bcr_bcr_MoveThreadsForm_ctl00_MoveThreads {
     font-size: 12px;
-    width: 155px !important;
-    height: 2.5em !important;
+    width: auto !important;
+    height: auto !important;
+    padding: 0.5em 1.5em !important;
     margin-left: -2px;
   }
 }
