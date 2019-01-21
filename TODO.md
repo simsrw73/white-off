@@ -1,6 +1,7 @@
 
 # TODO
 
+- [ ] Moderatoration page needs to be styled.
 - [x] Consider a share link icon to substitute on each post, next to the user name.
 - [x] Something wrong with the shadows on the Reply/More buttons on each post
 - [x] Each of the forum pages (eg General, Logos 8) has a form, Forum Options, at the top that needs to be styled.
