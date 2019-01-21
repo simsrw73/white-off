@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name          White-Off for Faithlife Community Forums
 // @description   A low contrast, modern theme for the Faithlife Community Forums
-// @version       1.0.9
+// @version       1.0.10
 // @author        Randy W. Sims <simsrw73@gmail.com>
 // @license       MIT
 // @namespace     https://github.com/simsrw73
