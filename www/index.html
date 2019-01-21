@@ -4,9 +4,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>White-Off for Faithlife Community Forums</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/bulmaswatch/superhero/bulmaswatch.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/beerslider/dist/BeerSlider.css"
+    />
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
   </head>
+
   <body>
-    <h1>White-Off for Faithlife Community Forums</h1>
-    <p>A low contrast, modern theme for the Faithlife Community Forums</p>
+    <nav
+      class="navbar is-primary"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div id="githubNav" class="navbar-menu">
+        <div class="container">
+          <div class="navbar-end">
+            <a class="navbar-item" href="https://github.com/simsrw73/white-off">
+              View on github &nbsp;&nbsp;
+              <svg
+                height="32"
+                class="octicon octicon-mark-github"
+                viewBox="0 0 16 16"
+                version="1.1"
+                width="32"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+          <!-- navbar-end -->
+        </div>
+        <!-- container -->
+      </div>
+      <!-- navbar-menu -->
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero is-primary">
+      <div class="hero-body">
+        <div class="container">
+          <h1 class="title">White-Off Theme for Faithlife Community Forums</h1>
+          <h2 class="subtitle">
+            A low contrast, modern theme for the Faithlife Community Forums
+          </h2>
+        </div>
+      </div>
+    </section>
+
+    <div class="block"></div>
+
+    <section class="before">
+      <div class="container">
+        <div class="block">
+          <h4 class="is-size-4">Homepage</h4>
+          <div
+            id="beer-slider"
+            class="beer-slider"
+            data-beer-label="after"
+            data-beer-start="25"
+          >
+            <img src="img/after/home.png" alt="Homepage - After" />
+            <div class="beer-reveal" data-beer-label="before">
+              <img src="img/before/home.png" alt="Homepage - Before" />
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <h4 class="is-size-4">Forum</h4>
+          <div
+            id="beer-slider"
+            class="beer-slider"
+            data-beer-label="after"
+            data-beer-start="25"
+          >
+            <img src="img/after/forum.png" alt="Forum - After" />
+            <div class="beer-reveal" data-beer-label="before">
+              <img src="img/before/forum.png" alt="Forum - Before" />
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <h4 class="is-size-4">Thread</h4>
+          <div
+            id="beer-slider"
+            class="beer-slider"
+            data-beer-label="after"
+            data-beer-start="25"
+          >
+            <img src="img/after/thread.png" alt="Thread - After" />
+            <div class="beer-reveal" data-beer-label="before">
+              <img src="img/before/thread.png" alt="Thread - Before" />
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <h4 class="is-size-4">Profile</h4>
+          <div
+            id="beer-slider"
+            class="beer-slider"
+            data-beer-label="after"
+            data-beer-start="25"
+          >
+            <img src="img/after/profile.png" alt="Profile - After" />
+            <div class="beer-reveal" data-beer-label="before">
+              <img src="img/before/profile.png" alt="Profile - Before" />
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <h4 class="is-size-4">Favorites</h4>
+          <div
+            id="beer-slider"
+            class="beer-slider"
+            data-beer-label="after"
+            data-beer-start="25"
+          >
+            <img src="img/after/favorites.png" alt="Favorites - After" />
+            <div class="beer-reveal" data-beer-label="before">
+              <img src="img/before/favorites.png" alt="Favorites - Before" />
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <h4 class="is-size-4">Settings</h4>
+          <div
+            id="beer-slider"
+            class="beer-slider"
+            data-beer-label="after"
+            data-beer-start="25"
+          >
+            <img src="img/after/settings.png" alt="Settings - After" />
+            <div class="beer-reveal" data-beer-label="before">
+              <img src="img/before/settings.png" alt="Settings - Before" />
+            </div>
+          </div>
+        </div>
+
+        <div class="block">
+          <h4 class="is-size-4">Editor</h4>
+          <div
+            id="beer-slider"
+            class="beer-slider"
+            data-beer-label="after"
+            data-beer-start="25"
+          >
+            <img src="img/after/editor.png" alt="Editor - After" />
+            <div class="beer-reveal" data-beer-label="before">
+              <img src="img/before/editor.png" alt="Editor - Before" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="block"></div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/beerslider/dist/BeerSlider.js"></script>
+
+    <script>
+      $.fn.BeerSlider = function(options) {
+        options = options || {};
+        return this.each(function() {
+          new BeerSlider(this, options);
+        });
+      };
+      $('.beer-slider').BeerSlider({ start: 50 });
+    </script>
   </body>
 </html>
