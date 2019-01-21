@@ -1,5 +1,6 @@
 form[action*='AddPost'],
-form[action*='EditPost'] {
+form[action*='EditPost'],
+form[action*='DeletePost'] {
   // The post that is being replied to
   .ForumReplyToPostArea {
     background-color: rgba(0, 0, 0, 0.05);
@@ -117,5 +118,30 @@ form[action*='EditPost'] {
         }
       }
     }
+  }
+
+  // Delete Post
+  #ctl00_ctl00_bcr_bcr_ctl01_ctl03_DeletePost {
+    width: 120px !important;
+  }
+}
+
+form[action*='DeletePost'] {
+  input[type='checkbox'] {
+    vertical-align: text-bottom;
+    margin-bottom: 1px;
+  }
+
+  .CommonDescription,
+  .CommonFormFieldDescription {
+    color: white;
+    margin-left: 4px !important;
+  }
+
+  #CommonContentInner
+    .CommonContentBox
+    .CommonContentBoxContent
+    .CommonFormArea {
+    border: none;
   }
 }
