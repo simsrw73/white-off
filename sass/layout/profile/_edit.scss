@@ -1,4 +1,16 @@
 form[action*='EditProfile'] {
+  // Validation box
+  #ctl00_bcr_ValidationSummary {
+    // @include mdl-shadow--2dp;
+    border-radius: 4px;
+    background-color: #d12;
+    color: #eee;
+    letter-spacing: 0.1em;
+
+    ul {
+      padding: 6px 6px 6px 24px;
+    }
+  }
 
   // Profile section
   .CommonGroupedContentArea {
@@ -37,12 +49,10 @@ form[action*='EditProfile'] {
         }
       }
     }
-
   } // .CommonGroupedContentArea
 
   content > .CommonFormFieldName {
     margin-top: 0;
     padding-top: 0;
   }
-
 } // form
