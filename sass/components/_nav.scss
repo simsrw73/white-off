@@ -1,6 +1,8 @@
 // Header Navigation links
 
-// #navSites {}
+#navSites {
+  font-family: $font-stack;
+}
 
 #navInfo ul,
 #navSites ul {
@@ -91,12 +93,12 @@
   border-radius: 5px;
 }
 
-#CommonHeaderUserWelcome .sub a[href*="EditProfile"]::before {
+#CommonHeaderUserWelcome .sub a[href*='EditProfile']::before {
   @include fontawesome-icon($fa-var-pencil-alt, 14px);
   margin-right: 0.3em;
 }
 
-#CommonHeaderUserWelcome .sub a[href*="logout"]::before {
+#CommonHeaderUserWelcome .sub a[href*='logout']::before {
   @include fontawesome-icon($fa-var-power-off, 14px);
   margin-right: 0.3em;
 }
