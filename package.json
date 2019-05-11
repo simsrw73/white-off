@@ -25,7 +25,7 @@
     "build": "debug"
   },
   "scripts": {
-    "prebuild": "cross-var echo $version: '$npm_package_version'; > ./sass/version.scss",
+    "prebuild": "cross-var \"echo $version: '$npm_package_version'; > ./sass/version.scss\"",
     "build": "cross-var npm-run-all build:$npm_package_config_build:*",
     "build:debug:lint": "npm run lint --silent || echo \"lint found some problems.\"",
     "build:debug:scss": "node-sass-chokidar --verbose --include-path ./node_modules ./sass/white-off.scss ./debug/white-off.css --source-map-root ./sass --source-map true --source-map-embed",
@@ -45,20 +45,21 @@
     "deploy": "gh-pages -d www"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.7.1",
-    "autoprefixer": "^9.4.7",
-    "chokidar-cli": "^1.2.1",
+    "@fortawesome/fontawesome-free": "^5.8.2",
+    "autoprefixer": "^9.5.1",
+    "chokidar-cli": "^1.2.2",
     "cross-var": "^1.1.0",
     "gh-pages": "^2.0.1",
     "mkdirp": "^0.5.1",
     "node-sass-chokidar": "^1.3.4",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.1",
+    "postcss-cli": "^6.1.2",
     "rimraf": "^2.6.3",
+    "shelljs": "^0.8.3",
     "stylelint": "^9.10.1",
-    "stylelint-config-recommended-scss": "^3.2.0",
-    "stylelint-config-standard": "^18.2.0",
-    "stylelint-scss": "^3.5.3",
+    "stylelint-config-recommended-scss": "^3.3.0",
+    "stylelint-config-standard": "^18.3.0",
+    "stylelint-scss": "^3.6.1",
     "userstyle-gen": "^0.1.2"
   }
 }
